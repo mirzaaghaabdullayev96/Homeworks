@@ -1,0 +1,14 @@
+D:\c#\1\homework_1_var_dataTypes_operators\homework_1_var_dataTypes_operators\bin\Debug\net8.0\homework_1_var_dataTypes_operators.exe
+D:\c#\1\homework_1_var_dataTypes_operators\homework_1_var_dataTypes_operators\bin\Debug\net8.0\homework_1_var_dataTypes_operators.deps.json
+D:\c#\1\homework_1_var_dataTypes_operators\homework_1_var_dataTypes_operators\bin\Debug\net8.0\homework_1_var_dataTypes_operators.runtimeconfig.json
+D:\c#\1\homework_1_var_dataTypes_operators\homework_1_var_dataTypes_operators\bin\Debug\net8.0\homework_1_var_dataTypes_operators.dll
+D:\c#\1\homework_1_var_dataTypes_operators\homework_1_var_dataTypes_operators\bin\Debug\net8.0\homework_1_var_dataTypes_operators.pdb
+D:\c#\1\homework_1_var_dataTypes_operators\homework_1_var_dataTypes_operators\obj\Debug\net8.0\homework_1_var_dataTypes_operators.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\1\homework_1_var_dataTypes_operators\homework_1_var_dataTypes_operators\obj\Debug\net8.0\homework_1_var_dataTypes_operators.AssemblyInfoInputs.cache
+D:\c#\1\homework_1_var_dataTypes_operators\homework_1_var_dataTypes_operators\obj\Debug\net8.0\homework_1_var_dataTypes_operators.AssemblyInfo.cs
+D:\c#\1\homework_1_var_dataTypes_operators\homework_1_var_dataTypes_operators\obj\Debug\net8.0\homework_1_var_dataTypes_operators.csproj.CoreCompileInputs.cache
+D:\c#\1\homework_1_var_dataTypes_operators\homework_1_var_dataTypes_operators\obj\Debug\net8.0\homework_1_var_dataTypes_operators.dll
+D:\c#\1\homework_1_var_dataTypes_operators\homework_1_var_dataTypes_operators\obj\Debug\net8.0\refint\homework_1_var_dataTypes_operators.dll
+D:\c#\1\homework_1_var_dataTypes_operators\homework_1_var_dataTypes_operators\obj\Debug\net8.0\homework_1_var_dataTypes_operators.pdb
+D:\c#\1\homework_1_var_dataTypes_operators\homework_1_var_dataTypes_operators\obj\Debug\net8.0\homework_1_var_dataTypes_operators.genruntimeconfig.cache
+D:\c#\1\homework_1_var_dataTypes_operators\homework_1_var_dataTypes_operators\obj\Debug\net8.0\ref\homework_1_var_dataTypes_operators.dll

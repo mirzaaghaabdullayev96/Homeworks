@@ -1,0 +1,14 @@
+D:\c#\1\homework_2_flowChart_Switch_While\homework_2_flowChart_Switch_While\bin\Debug\net8.0\homework_2_flowChart_Switch_While.exe
+D:\c#\1\homework_2_flowChart_Switch_While\homework_2_flowChart_Switch_While\bin\Debug\net8.0\homework_2_flowChart_Switch_While.deps.json
+D:\c#\1\homework_2_flowChart_Switch_While\homework_2_flowChart_Switch_While\bin\Debug\net8.0\homework_2_flowChart_Switch_While.runtimeconfig.json
+D:\c#\1\homework_2_flowChart_Switch_While\homework_2_flowChart_Switch_While\bin\Debug\net8.0\homework_2_flowChart_Switch_While.dll
+D:\c#\1\homework_2_flowChart_Switch_While\homework_2_flowChart_Switch_While\bin\Debug\net8.0\homework_2_flowChart_Switch_While.pdb
+D:\c#\1\homework_2_flowChart_Switch_While\homework_2_flowChart_Switch_While\obj\Debug\net8.0\homework_2_flowChart_Switch_While.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\1\homework_2_flowChart_Switch_While\homework_2_flowChart_Switch_While\obj\Debug\net8.0\homework_2_flowChart_Switch_While.AssemblyInfoInputs.cache
+D:\c#\1\homework_2_flowChart_Switch_While\homework_2_flowChart_Switch_While\obj\Debug\net8.0\homework_2_flowChart_Switch_While.AssemblyInfo.cs
+D:\c#\1\homework_2_flowChart_Switch_While\homework_2_flowChart_Switch_While\obj\Debug\net8.0\homework_2_flowChart_Switch_While.csproj.CoreCompileInputs.cache
+D:\c#\1\homework_2_flowChart_Switch_While\homework_2_flowChart_Switch_While\obj\Debug\net8.0\homework_2_flowChart_Switch_While.dll
+D:\c#\1\homework_2_flowChart_Switch_While\homework_2_flowChart_Switch_While\obj\Debug\net8.0\refint\homework_2_flowChart_Switch_While.dll
+D:\c#\1\homework_2_flowChart_Switch_While\homework_2_flowChart_Switch_While\obj\Debug\net8.0\homework_2_flowChart_Switch_While.pdb
+D:\c#\1\homework_2_flowChart_Switch_While\homework_2_flowChart_Switch_While\obj\Debug\net8.0\homework_2_flowChart_Switch_While.genruntimeconfig.cache
+D:\c#\1\homework_2_flowChart_Switch_While\homework_2_flowChart_Switch_While\obj\Debug\net8.0\ref\homework_2_flowChart_Switch_While.dll

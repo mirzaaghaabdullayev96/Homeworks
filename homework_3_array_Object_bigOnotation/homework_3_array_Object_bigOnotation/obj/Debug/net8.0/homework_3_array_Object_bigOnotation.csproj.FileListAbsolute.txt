@@ -1,0 +1,14 @@
+D:\c#\1\homework_3_array_Object_bigOnotation\homework_3_array_Object_bigOnotation\bin\Debug\net8.0\homework_3_array_Object_bigOnotation.exe
+D:\c#\1\homework_3_array_Object_bigOnotation\homework_3_array_Object_bigOnotation\bin\Debug\net8.0\homework_3_array_Object_bigOnotation.deps.json
+D:\c#\1\homework_3_array_Object_bigOnotation\homework_3_array_Object_bigOnotation\bin\Debug\net8.0\homework_3_array_Object_bigOnotation.runtimeconfig.json
+D:\c#\1\homework_3_array_Object_bigOnotation\homework_3_array_Object_bigOnotation\bin\Debug\net8.0\homework_3_array_Object_bigOnotation.dll
+D:\c#\1\homework_3_array_Object_bigOnotation\homework_3_array_Object_bigOnotation\bin\Debug\net8.0\homework_3_array_Object_bigOnotation.pdb
+D:\c#\1\homework_3_array_Object_bigOnotation\homework_3_array_Object_bigOnotation\obj\Debug\net8.0\homework_3_array_Object_bigOnotation.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\1\homework_3_array_Object_bigOnotation\homework_3_array_Object_bigOnotation\obj\Debug\net8.0\homework_3_array_Object_bigOnotation.AssemblyInfoInputs.cache
+D:\c#\1\homework_3_array_Object_bigOnotation\homework_3_array_Object_bigOnotation\obj\Debug\net8.0\homework_3_array_Object_bigOnotation.AssemblyInfo.cs
+D:\c#\1\homework_3_array_Object_bigOnotation\homework_3_array_Object_bigOnotation\obj\Debug\net8.0\homework_3_array_Object_bigOnotation.csproj.CoreCompileInputs.cache
+D:\c#\1\homework_3_array_Object_bigOnotation\homework_3_array_Object_bigOnotation\obj\Debug\net8.0\homework_3_array_Object_bigOnotation.dll
+D:\c#\1\homework_3_array_Object_bigOnotation\homework_3_array_Object_bigOnotation\obj\Debug\net8.0\refint\homework_3_array_Object_bigOnotation.dll
+D:\c#\1\homework_3_array_Object_bigOnotation\homework_3_array_Object_bigOnotation\obj\Debug\net8.0\homework_3_array_Object_bigOnotation.pdb
+D:\c#\1\homework_3_array_Object_bigOnotation\homework_3_array_Object_bigOnotation\obj\Debug\net8.0\homework_3_array_Object_bigOnotation.genruntimeconfig.cache
+D:\c#\1\homework_3_array_Object_bigOnotation\homework_3_array_Object_bigOnotation\obj\Debug\net8.0\ref\homework_3_array_Object_bigOnotation.dll

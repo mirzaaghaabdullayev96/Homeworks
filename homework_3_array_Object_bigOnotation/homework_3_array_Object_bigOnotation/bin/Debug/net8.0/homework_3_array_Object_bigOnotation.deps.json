@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "homework_3_array_Object_bigOnotation/1.0.0": {
+        "runtime": {
+          "homework_3_array_Object_bigOnotation.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "homework_3_array_Object_bigOnotation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

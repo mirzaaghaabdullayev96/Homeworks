@@ -1,0 +1,14 @@
+D:\c#\1\homework_5_methods\homework_5_methods\bin\Debug\net8.0\homework_5_methods.exe
+D:\c#\1\homework_5_methods\homework_5_methods\bin\Debug\net8.0\homework_5_methods.deps.json
+D:\c#\1\homework_5_methods\homework_5_methods\bin\Debug\net8.0\homework_5_methods.runtimeconfig.json
+D:\c#\1\homework_5_methods\homework_5_methods\bin\Debug\net8.0\homework_5_methods.dll
+D:\c#\1\homework_5_methods\homework_5_methods\bin\Debug\net8.0\homework_5_methods.pdb
+D:\c#\1\homework_5_methods\homework_5_methods\obj\Debug\net8.0\homework_5_methods.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\1\homework_5_methods\homework_5_methods\obj\Debug\net8.0\homework_5_methods.AssemblyInfoInputs.cache
+D:\c#\1\homework_5_methods\homework_5_methods\obj\Debug\net8.0\homework_5_methods.AssemblyInfo.cs
+D:\c#\1\homework_5_methods\homework_5_methods\obj\Debug\net8.0\homework_5_methods.csproj.CoreCompileInputs.cache
+D:\c#\1\homework_5_methods\homework_5_methods\obj\Debug\net8.0\homework_5_methods.dll
+D:\c#\1\homework_5_methods\homework_5_methods\obj\Debug\net8.0\refint\homework_5_methods.dll
+D:\c#\1\homework_5_methods\homework_5_methods\obj\Debug\net8.0\homework_5_methods.pdb
+D:\c#\1\homework_5_methods\homework_5_methods\obj\Debug\net8.0\homework_5_methods.genruntimeconfig.cache
+D:\c#\1\homework_5_methods\homework_5_methods\obj\Debug\net8.0\ref\homework_5_methods.dll

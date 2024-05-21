@@ -94,11 +94,11 @@
         //checking if myWord[i] is letter
         static bool CheckLetter(char myWord)
         {
-            char[] list = { ' ', '-', '%', '#', '@', '!', '&', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '$' }; //we can add any symbol here
+            char[] letters = { ' ', '-', '%', '#', '@', '!', '&', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '$' }; //we can add any symbol here
 
-            for (int i = 0; i < list.Length; i++)
+            for (int i = 0; i < letters.Length; i++)
             {
-                if (list[i] == myWord)
+                if (letters[i] == myWord)
                     return true;
             }
             return false;

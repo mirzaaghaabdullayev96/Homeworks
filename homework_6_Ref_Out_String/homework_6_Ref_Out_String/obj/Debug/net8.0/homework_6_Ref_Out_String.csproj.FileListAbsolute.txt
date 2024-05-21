@@ -1,0 +1,14 @@
+D:\c#\1\homework_6_Ref_Out_String\homework_6_Ref_Out_String\bin\Debug\net8.0\homework_6_Ref_Out_String.exe
+D:\c#\1\homework_6_Ref_Out_String\homework_6_Ref_Out_String\bin\Debug\net8.0\homework_6_Ref_Out_String.deps.json
+D:\c#\1\homework_6_Ref_Out_String\homework_6_Ref_Out_String\bin\Debug\net8.0\homework_6_Ref_Out_String.runtimeconfig.json
+D:\c#\1\homework_6_Ref_Out_String\homework_6_Ref_Out_String\bin\Debug\net8.0\homework_6_Ref_Out_String.dll
+D:\c#\1\homework_6_Ref_Out_String\homework_6_Ref_Out_String\bin\Debug\net8.0\homework_6_Ref_Out_String.pdb
+D:\c#\1\homework_6_Ref_Out_String\homework_6_Ref_Out_String\obj\Debug\net8.0\homework_6_Ref_Out_String.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\1\homework_6_Ref_Out_String\homework_6_Ref_Out_String\obj\Debug\net8.0\homework_6_Ref_Out_String.AssemblyInfoInputs.cache
+D:\c#\1\homework_6_Ref_Out_String\homework_6_Ref_Out_String\obj\Debug\net8.0\homework_6_Ref_Out_String.AssemblyInfo.cs
+D:\c#\1\homework_6_Ref_Out_String\homework_6_Ref_Out_String\obj\Debug\net8.0\homework_6_Ref_Out_String.csproj.CoreCompileInputs.cache
+D:\c#\1\homework_6_Ref_Out_String\homework_6_Ref_Out_String\obj\Debug\net8.0\homework_6_Ref_Out_String.dll
+D:\c#\1\homework_6_Ref_Out_String\homework_6_Ref_Out_String\obj\Debug\net8.0\refint\homework_6_Ref_Out_String.dll
+D:\c#\1\homework_6_Ref_Out_String\homework_6_Ref_Out_String\obj\Debug\net8.0\homework_6_Ref_Out_String.pdb
+D:\c#\1\homework_6_Ref_Out_String\homework_6_Ref_Out_String\obj\Debug\net8.0\homework_6_Ref_Out_String.genruntimeconfig.cache
+D:\c#\1\homework_6_Ref_Out_String\homework_6_Ref_Out_String\obj\Debug\net8.0\ref\homework_6_Ref_Out_String.dll

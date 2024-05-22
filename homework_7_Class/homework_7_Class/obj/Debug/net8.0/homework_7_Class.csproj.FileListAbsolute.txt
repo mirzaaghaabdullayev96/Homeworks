@@ -1,0 +1,14 @@
+D:\c#\1\homework_7_Class\homework_7_Class\bin\Debug\net8.0\homework_7_Class.exe
+D:\c#\1\homework_7_Class\homework_7_Class\bin\Debug\net8.0\homework_7_Class.deps.json
+D:\c#\1\homework_7_Class\homework_7_Class\bin\Debug\net8.0\homework_7_Class.runtimeconfig.json
+D:\c#\1\homework_7_Class\homework_7_Class\bin\Debug\net8.0\homework_7_Class.dll
+D:\c#\1\homework_7_Class\homework_7_Class\bin\Debug\net8.0\homework_7_Class.pdb
+D:\c#\1\homework_7_Class\homework_7_Class\obj\Debug\net8.0\homework_7_Class.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\1\homework_7_Class\homework_7_Class\obj\Debug\net8.0\homework_7_Class.AssemblyInfoInputs.cache
+D:\c#\1\homework_7_Class\homework_7_Class\obj\Debug\net8.0\homework_7_Class.AssemblyInfo.cs
+D:\c#\1\homework_7_Class\homework_7_Class\obj\Debug\net8.0\homework_7_Class.csproj.CoreCompileInputs.cache
+D:\c#\1\homework_7_Class\homework_7_Class\obj\Debug\net8.0\homework_7_Class.dll
+D:\c#\1\homework_7_Class\homework_7_Class\obj\Debug\net8.0\refint\homework_7_Class.dll
+D:\c#\1\homework_7_Class\homework_7_Class\obj\Debug\net8.0\homework_7_Class.pdb
+D:\c#\1\homework_7_Class\homework_7_Class\obj\Debug\net8.0\homework_7_Class.genruntimeconfig.cache
+D:\c#\1\homework_7_Class\homework_7_Class\obj\Debug\net8.0\ref\homework_7_Class.dll

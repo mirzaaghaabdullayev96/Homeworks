@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "homework_8_Encapsulation/1.0.0": {
+        "runtime": {
+          "homework_8_Encapsulation.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "homework_8_Encapsulation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

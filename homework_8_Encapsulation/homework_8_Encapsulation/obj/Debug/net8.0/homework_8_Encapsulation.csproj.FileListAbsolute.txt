@@ -1,0 +1,14 @@
+D:\c#\1\homework_8_Encapsulation\homework_8_Encapsulation\obj\Debug\net8.0\homework_8_Encapsulation.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\1\homework_8_Encapsulation\homework_8_Encapsulation\obj\Debug\net8.0\homework_8_Encapsulation.AssemblyInfoInputs.cache
+D:\c#\1\homework_8_Encapsulation\homework_8_Encapsulation\obj\Debug\net8.0\homework_8_Encapsulation.AssemblyInfo.cs
+D:\c#\1\homework_8_Encapsulation\homework_8_Encapsulation\obj\Debug\net8.0\homework_8_Encapsulation.csproj.CoreCompileInputs.cache
+D:\c#\1\homework_8_Encapsulation\homework_8_Encapsulation\bin\Debug\net8.0\homework_8_Encapsulation.exe
+D:\c#\1\homework_8_Encapsulation\homework_8_Encapsulation\bin\Debug\net8.0\homework_8_Encapsulation.deps.json
+D:\c#\1\homework_8_Encapsulation\homework_8_Encapsulation\bin\Debug\net8.0\homework_8_Encapsulation.runtimeconfig.json
+D:\c#\1\homework_8_Encapsulation\homework_8_Encapsulation\bin\Debug\net8.0\homework_8_Encapsulation.dll
+D:\c#\1\homework_8_Encapsulation\homework_8_Encapsulation\bin\Debug\net8.0\homework_8_Encapsulation.pdb
+D:\c#\1\homework_8_Encapsulation\homework_8_Encapsulation\obj\Debug\net8.0\homework_8_Encapsulation.dll
+D:\c#\1\homework_8_Encapsulation\homework_8_Encapsulation\obj\Debug\net8.0\refint\homework_8_Encapsulation.dll
+D:\c#\1\homework_8_Encapsulation\homework_8_Encapsulation\obj\Debug\net8.0\homework_8_Encapsulation.pdb
+D:\c#\1\homework_8_Encapsulation\homework_8_Encapsulation\obj\Debug\net8.0\homework_8_Encapsulation.genruntimeconfig.cache
+D:\c#\1\homework_8_Encapsulation\homework_8_Encapsulation\obj\Debug\net8.0\ref\homework_8_Encapsulation.dll

@@ -1,0 +1,14 @@
+D:\c#\1\homework_9_Static_Extension\homework_9_Static_Extension\obj\Debug\net8.0\homework_9_Static_Extension.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\1\homework_9_Static_Extension\homework_9_Static_Extension\obj\Debug\net8.0\homework_9_Static_Extension.AssemblyInfoInputs.cache
+D:\c#\1\homework_9_Static_Extension\homework_9_Static_Extension\obj\Debug\net8.0\homework_9_Static_Extension.AssemblyInfo.cs
+D:\c#\1\homework_9_Static_Extension\homework_9_Static_Extension\obj\Debug\net8.0\homework_9_Static_Extension.csproj.CoreCompileInputs.cache
+D:\c#\1\homework_9_Static_Extension\homework_9_Static_Extension\bin\Debug\net8.0\homework_9_Static_Extension.exe
+D:\c#\1\homework_9_Static_Extension\homework_9_Static_Extension\bin\Debug\net8.0\homework_9_Static_Extension.deps.json
+D:\c#\1\homework_9_Static_Extension\homework_9_Static_Extension\bin\Debug\net8.0\homework_9_Static_Extension.runtimeconfig.json
+D:\c#\1\homework_9_Static_Extension\homework_9_Static_Extension\bin\Debug\net8.0\homework_9_Static_Extension.dll
+D:\c#\1\homework_9_Static_Extension\homework_9_Static_Extension\bin\Debug\net8.0\homework_9_Static_Extension.pdb
+D:\c#\1\homework_9_Static_Extension\homework_9_Static_Extension\obj\Debug\net8.0\homework_9_Static_Extension.dll
+D:\c#\1\homework_9_Static_Extension\homework_9_Static_Extension\obj\Debug\net8.0\refint\homework_9_Static_Extension.dll
+D:\c#\1\homework_9_Static_Extension\homework_9_Static_Extension\obj\Debug\net8.0\homework_9_Static_Extension.pdb
+D:\c#\1\homework_9_Static_Extension\homework_9_Static_Extension\obj\Debug\net8.0\homework_9_Static_Extension.genruntimeconfig.cache
+D:\c#\1\homework_9_Static_Extension\homework_9_Static_Extension\obj\Debug\net8.0\ref\homework_9_Static_Extension.dll

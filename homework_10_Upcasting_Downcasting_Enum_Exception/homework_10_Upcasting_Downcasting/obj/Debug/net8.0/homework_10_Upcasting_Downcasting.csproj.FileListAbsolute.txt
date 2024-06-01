@@ -1,0 +1,14 @@
+D:\c#\1\homework_10_Upcasting_Downcasting\homework_10_Upcasting_Downcasting\bin\Debug\net8.0\homework_10_Upcasting_Downcasting.exe
+D:\c#\1\homework_10_Upcasting_Downcasting\homework_10_Upcasting_Downcasting\bin\Debug\net8.0\homework_10_Upcasting_Downcasting.deps.json
+D:\c#\1\homework_10_Upcasting_Downcasting\homework_10_Upcasting_Downcasting\bin\Debug\net8.0\homework_10_Upcasting_Downcasting.runtimeconfig.json
+D:\c#\1\homework_10_Upcasting_Downcasting\homework_10_Upcasting_Downcasting\bin\Debug\net8.0\homework_10_Upcasting_Downcasting.dll
+D:\c#\1\homework_10_Upcasting_Downcasting\homework_10_Upcasting_Downcasting\bin\Debug\net8.0\homework_10_Upcasting_Downcasting.pdb
+D:\c#\1\homework_10_Upcasting_Downcasting\homework_10_Upcasting_Downcasting\obj\Debug\net8.0\homework_10_Upcasting_Downcasting.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\1\homework_10_Upcasting_Downcasting\homework_10_Upcasting_Downcasting\obj\Debug\net8.0\homework_10_Upcasting_Downcasting.AssemblyInfoInputs.cache
+D:\c#\1\homework_10_Upcasting_Downcasting\homework_10_Upcasting_Downcasting\obj\Debug\net8.0\homework_10_Upcasting_Downcasting.AssemblyInfo.cs
+D:\c#\1\homework_10_Upcasting_Downcasting\homework_10_Upcasting_Downcasting\obj\Debug\net8.0\homework_10_Upcasting_Downcasting.csproj.CoreCompileInputs.cache
+D:\c#\1\homework_10_Upcasting_Downcasting\homework_10_Upcasting_Downcasting\obj\Debug\net8.0\homework_10_Upcasting_Downcasting.dll
+D:\c#\1\homework_10_Upcasting_Downcasting\homework_10_Upcasting_Downcasting\obj\Debug\net8.0\refint\homework_10_Upcasting_Downcasting.dll
+D:\c#\1\homework_10_Upcasting_Downcasting\homework_10_Upcasting_Downcasting\obj\Debug\net8.0\homework_10_Upcasting_Downcasting.pdb
+D:\c#\1\homework_10_Upcasting_Downcasting\homework_10_Upcasting_Downcasting\obj\Debug\net8.0\homework_10_Upcasting_Downcasting.genruntimeconfig.cache
+D:\c#\1\homework_10_Upcasting_Downcasting\homework_10_Upcasting_Downcasting\obj\Debug\net8.0\ref\homework_10_Upcasting_Downcasting.dll

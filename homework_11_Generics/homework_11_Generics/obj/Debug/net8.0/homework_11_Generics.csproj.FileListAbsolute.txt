@@ -1,0 +1,14 @@
+D:\c#\1\homework_11_Generics\homework_11_Generics\bin\Debug\net8.0\homework_11_Generics.exe
+D:\c#\1\homework_11_Generics\homework_11_Generics\bin\Debug\net8.0\homework_11_Generics.deps.json
+D:\c#\1\homework_11_Generics\homework_11_Generics\bin\Debug\net8.0\homework_11_Generics.runtimeconfig.json
+D:\c#\1\homework_11_Generics\homework_11_Generics\bin\Debug\net8.0\homework_11_Generics.dll
+D:\c#\1\homework_11_Generics\homework_11_Generics\bin\Debug\net8.0\homework_11_Generics.pdb
+D:\c#\1\homework_11_Generics\homework_11_Generics\obj\Debug\net8.0\homework_11_Generics.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\1\homework_11_Generics\homework_11_Generics\obj\Debug\net8.0\homework_11_Generics.AssemblyInfoInputs.cache
+D:\c#\1\homework_11_Generics\homework_11_Generics\obj\Debug\net8.0\homework_11_Generics.AssemblyInfo.cs
+D:\c#\1\homework_11_Generics\homework_11_Generics\obj\Debug\net8.0\homework_11_Generics.csproj.CoreCompileInputs.cache
+D:\c#\1\homework_11_Generics\homework_11_Generics\obj\Debug\net8.0\homework_11_Generics.dll
+D:\c#\1\homework_11_Generics\homework_11_Generics\obj\Debug\net8.0\refint\homework_11_Generics.dll
+D:\c#\1\homework_11_Generics\homework_11_Generics\obj\Debug\net8.0\homework_11_Generics.pdb
+D:\c#\1\homework_11_Generics\homework_11_Generics\obj\Debug\net8.0\homework_11_Generics.genruntimeconfig.cache
+D:\c#\1\homework_11_Generics\homework_11_Generics\obj\Debug\net8.0\ref\homework_11_Generics.dll

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = homework_9_Static_Extension
-build_property.ProjectDir = D:\c#\1\homework_9_Static_Extension\homework_9_Static_Extension\
+build_property.ProjectDir = D:\c#\CodeAcademy\homework_9_Static_Extension\homework_9_Static_Extension\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

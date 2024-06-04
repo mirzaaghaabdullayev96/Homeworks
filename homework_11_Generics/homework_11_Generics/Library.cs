@@ -64,18 +64,17 @@ namespace homework_11_Generics
         public void RemoveBookByCode(string code)
         {
 
-            foreach (Book book in books)
+            Book[] newArr = new Book[books.Length - 1];
+            for (int i = 0, j = 0; i < books.Length; i++, j++)
             {
-                if (book.Code.ToLower() == code.ToLower())
+                if (books[i].Code == code)
                 {
-                    Book temp = books[books.Length-1];
-                    books[books.Length-1] = book;
-                    books[Array.IndexOf(books, book)] = temp;
-                    Array.Resize(ref books, books.Length - 1);
-                    return;
-                    
+                    i++;
                 }
+                newArr[j] = books[i];
+
             }
+            books = newArr;
         }
 
         public void ShowInfo()

@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\c#\\CodeAcademy\\homework_9_Static_Extension\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FA180F73-116B-4DD0-937E-618546C2B506}|homework_9_Static_Extension\\homework_9_Static_Extension.csproj|d:\\c#\\codeacademy\\homework_9_static_extension\\homework_9_static_extension\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA180F73-116B-4DD0-937E-618546C2B506}|homework_9_Static_Extension\\homework_9_Static_Extension.csproj|solutionrelative:homework_9_static_extension\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA180F73-116B-4DD0-937E-618546C2B506}|homework_9_Static_Extension\\homework_9_Static_Extension.csproj|d:\\c#\\codeacademy\\homework_9_static_extension\\homework_9_static_extension\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA180F73-116B-4DD0-937E-618546C2B506}|homework_9_Static_Extension\\homework_9_Static_Extension.csproj|solutionrelative:homework_9_static_extension\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA180F73-116B-4DD0-937E-618546C2B506}|homework_9_Static_Extension\\homework_9_Static_Extension.csproj|d:\\c#\\codeacademy\\homework_9_static_extension\\homework_9_static_extension\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA180F73-116B-4DD0-937E-618546C2B506}|homework_9_Static_Extension\\homework_9_Static_Extension.csproj|solutionrelative:homework_9_static_extension\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA180F73-116B-4DD0-937E-618546C2B506}|homework_9_Static_Extension\\homework_9_Static_Extension.csproj|d:\\c#\\codeacademy\\homework_9_static_extension\\homework_9_static_extension\\iaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA180F73-116B-4DD0-937E-618546C2B506}|homework_9_Static_Extension\\homework_9_Static_Extension.csproj|solutionrelative:homework_9_static_extension\\iaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA180F73-116B-4DD0-937E-618546C2B506}|homework_9_Static_Extension\\homework_9_Static_Extension.csproj|d:\\c#\\codeacademy\\homework_9_static_extension\\homework_9_static_extension\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA180F73-116B-4DD0-937E-618546C2B506}|homework_9_Static_Extension\\homework_9_Static_Extension.csproj|solutionrelative:homework_9_static_extension\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Group.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_9_Static_Extension\\homework_9_Static_Extension\\Group.cs",
+              "RelativeDocumentMoniker": "homework_9_Static_Extension\\Group.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_9_Static_Extension\\homework_9_Static_Extension\\Group.cs",
+              "RelativeToolTip": "homework_9_Static_Extension\\Group.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T15:50:43.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAccount.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_9_Static_Extension\\homework_9_Static_Extension\\IAccount.cs",
+              "RelativeDocumentMoniker": "homework_9_Static_Extension\\IAccount.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_9_Static_Extension\\homework_9_Static_Extension\\IAccount.cs",
+              "RelativeToolTip": "homework_9_Static_Extension\\IAccount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T15:50:41.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_9_Static_Extension\\homework_9_Static_Extension\\User.cs",
+              "RelativeDocumentMoniker": "homework_9_Static_Extension\\User.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_9_Static_Extension\\homework_9_Static_Extension\\User.cs*",
+              "RelativeToolTip": "homework_9_Static_Extension\\User.cs*",
+              "ViewState": "AQIAADAAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T15:50:31.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_9_Static_Extension\\homework_9_Static_Extension\\Student.cs",
+              "RelativeDocumentMoniker": "homework_9_Static_Extension\\Student.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_9_Static_Extension\\homework_9_Static_Extension\\Student.cs*",
+              "RelativeToolTip": "homework_9_Static_Extension\\Student.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T15:50:29.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_9_Static_Extension\\homework_9_Static_Extension\\Program.cs",
+              "RelativeDocumentMoniker": "homework_9_Static_Extension\\Program.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_9_Static_Extension\\homework_9_Static_Extension\\Program.cs*",
+              "RelativeToolTip": "homework_9_Static_Extension\\Program.cs*",
+              "ViewState": "AQIAABMAAAAAAAAAAAAswAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T15:49:33.682Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

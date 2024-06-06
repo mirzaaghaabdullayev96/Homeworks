@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SchoolERP.Business/1.0.0": {
+        "dependencies": {
+          "SchoolERP.Data": "1.0.0"
+        },
+        "runtime": {
+          "SchoolERP.Business.dll": {}
+        }
+      },
+      "SchoolERP.Core/1.0.0": {
+        "runtime": {
+          "SchoolERP.Core.dll": {}
+        }
+      },
+      "SchoolERP.Data/1.0.0": {
+        "dependencies": {
+          "SchoolERP.Core": "1.0.0"
+        },
+        "runtime": {
+          "SchoolERP.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SchoolERP.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SchoolERP.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SchoolERP.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

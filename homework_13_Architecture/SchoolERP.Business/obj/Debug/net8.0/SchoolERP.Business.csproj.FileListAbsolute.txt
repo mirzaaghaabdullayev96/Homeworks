@@ -1,0 +1,17 @@
+D:\c#\1\SchoolERP\SchoolERP.Business\obj\Debug\net8.0\SchoolERP.Business.csproj.AssemblyReference.cache
+D:\c#\1\SchoolERP\SchoolERP.Business\obj\Debug\net8.0\SchoolERP.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\1\SchoolERP\SchoolERP.Business\obj\Debug\net8.0\SchoolERP.Business.AssemblyInfoInputs.cache
+D:\c#\1\SchoolERP\SchoolERP.Business\obj\Debug\net8.0\SchoolERP.Business.AssemblyInfo.cs
+D:\c#\1\SchoolERP\SchoolERP.Business\obj\Debug\net8.0\SchoolERP.Business.csproj.CoreCompileInputs.cache
+D:\c#\1\SchoolERP\SchoolERP.Business\bin\Debug\net8.0\SchoolERP.Business.deps.json
+D:\c#\1\SchoolERP\SchoolERP.Business\bin\Debug\net8.0\SchoolERP.Business.dll
+D:\c#\1\SchoolERP\SchoolERP.Business\bin\Debug\net8.0\SchoolERP.Business.pdb
+D:\c#\1\SchoolERP\SchoolERP.Business\bin\Debug\net8.0\SchoolERP.Core.dll
+D:\c#\1\SchoolERP\SchoolERP.Business\bin\Debug\net8.0\SchoolERP.Data.dll
+D:\c#\1\SchoolERP\SchoolERP.Business\bin\Debug\net8.0\SchoolERP.Data.pdb
+D:\c#\1\SchoolERP\SchoolERP.Business\bin\Debug\net8.0\SchoolERP.Core.pdb
+D:\c#\1\SchoolERP\SchoolERP.Business\obj\Debug\net8.0\SchoolER.918714BC.Up2Date
+D:\c#\1\SchoolERP\SchoolERP.Business\obj\Debug\net8.0\SchoolERP.Business.dll
+D:\c#\1\SchoolERP\SchoolERP.Business\obj\Debug\net8.0\refint\SchoolERP.Business.dll
+D:\c#\1\SchoolERP\SchoolERP.Business\obj\Debug\net8.0\SchoolERP.Business.pdb
+D:\c#\1\SchoolERP\SchoolERP.Business\obj\Debug\net8.0\ref\SchoolERP.Business.dll

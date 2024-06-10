@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CourseERP.Database\CourseERP.Database.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ClassLibraryMyHelper">
+      <HintPath>..\..\ClassLibraryMyHelper\ClassLibraryMyHelper\bin\Debug\net8.0\ClassLibraryMyHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="MyHelpDesk">
+      <HintPath>..\..\MyHelpDesk\MyHelpDesk\bin\Debug\net8.0\MyHelpDesk.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

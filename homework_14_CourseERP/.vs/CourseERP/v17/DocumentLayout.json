@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\c#\\1\\CourseERP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{775C3600-F9E7-443E-BBE5-6B1CAA49CBFE}|CourseERP.CA\\CourseERP.CA.csproj|d:\\c#\\1\\courseerp\\courseerp.ca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{775C3600-F9E7-443E-BBE5-6B1CAA49CBFE}|CourseERP.CA\\CourseERP.CA.csproj|solutionrelative:courseerp.ca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4398C-BF3E-4241-9121-BDAB6B48C187}|CourseERP.Business\\CourseERP.Business.csproj|d:\\c#\\1\\courseerp\\courseerp.business\\implementations\\inputoutput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3D4398C-BF3E-4241-9121-BDAB6B48C187}|CourseERP.Business\\CourseERP.Business.csproj|solutionrelative:courseerp.business\\implementations\\inputoutput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4398C-BF3E-4241-9121-BDAB6B48C187}|CourseERP.Business\\CourseERP.Business.csproj|d:\\c#\\1\\courseerp\\courseerp.business\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3D4398C-BF3E-4241-9121-BDAB6B48C187}|CourseERP.Business\\CourseERP.Business.csproj|solutionrelative:courseerp.business\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8202BC-CFB8-40CE-A991-BF3FD99AD6A0}|CourseERP.Core\\CourseERP.Core.csproj|d:\\c#\\1\\courseerp\\courseerp.core\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8202BC-CFB8-40CE-A991-BF3FD99AD6A0}|CourseERP.Core\\CourseERP.Core.csproj|solutionrelative:courseerp.core\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D8202BC-CFB8-40CE-A991-BF3FD99AD6A0}|CourseERP.Core\\CourseERP.Core.csproj|d:\\c#\\1\\courseerp\\courseerp.core\\models\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D8202BC-CFB8-40CE-A991-BF3FD99AD6A0}|CourseERP.Core\\CourseERP.Core.csproj|solutionrelative:courseerp.core\\models\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4398C-BF3E-4241-9121-BDAB6B48C187}|CourseERP.Business\\CourseERP.Business.csproj|d:\\c#\\1\\courseerp\\courseerp.business\\implementations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3D4398C-BF3E-4241-9121-BDAB6B48C187}|CourseERP.Business\\CourseERP.Business.csproj|solutionrelative:courseerp.business\\implementations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\c#\\1\\CourseERP\\CourseERP.CA\\Program.cs",
+              "RelativeDocumentMoniker": "CourseERP.CA\\Program.cs",
+              "ToolTip": "D:\\c#\\1\\CourseERP\\CourseERP.CA\\Program.cs",
+              "RelativeToolTip": "CourseERP.CA\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAJIAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T12:23:55.155Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InputOutput.cs",
+              "DocumentMoniker": "D:\\c#\\1\\CourseERP\\CourseERP.Business\\implementations\\InputOutput.cs",
+              "RelativeDocumentMoniker": "CourseERP.Business\\implementations\\InputOutput.cs",
+              "ToolTip": "D:\\c#\\1\\CourseERP\\CourseERP.Business\\implementations\\InputOutput.cs",
+              "RelativeToolTip": "CourseERP.Business\\implementations\\InputOutput.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAuwFgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T13:00:55.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "D:\\c#\\1\\CourseERP\\CourseERP.Business\\implementations\\StudentService.cs",
+              "RelativeDocumentMoniker": "CourseERP.Business\\implementations\\StudentService.cs",
+              "ToolTip": "D:\\c#\\1\\CourseERP\\CourseERP.Business\\implementations\\StudentService.cs",
+              "RelativeToolTip": "CourseERP.Business\\implementations\\StudentService.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAswCsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T11:50:08.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GroupService.cs",
+              "DocumentMoniker": "D:\\c#\\1\\CourseERP\\CourseERP.Business\\implementations\\GroupService.cs",
+              "RelativeDocumentMoniker": "CourseERP.Business\\implementations\\GroupService.cs",
+              "ToolTip": "D:\\c#\\1\\CourseERP\\CourseERP.Business\\implementations\\GroupService.cs",
+              "RelativeToolTip": "CourseERP.Business\\implementations\\GroupService.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAADwvxwAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T11:50:01.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Group.cs",
+              "DocumentMoniker": "D:\\c#\\1\\CourseERP\\CourseERP.Core\\Models\\Group.cs",
+              "RelativeDocumentMoniker": "CourseERP.Core\\Models\\Group.cs",
+              "ToolTip": "D:\\c#\\1\\CourseERP\\CourseERP.Core\\Models\\Group.cs",
+              "RelativeToolTip": "CourseERP.Core\\Models\\Group.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T11:40:38.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\c#\\1\\CourseERP\\CourseERP.Core\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "CourseERP.Core\\Models\\Student.cs",
+              "ToolTip": "D:\\c#\\1\\CourseERP\\CourseERP.Core\\Models\\Student.cs",
+              "RelativeToolTip": "CourseERP.Core\\Models\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T11:40:24.754Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

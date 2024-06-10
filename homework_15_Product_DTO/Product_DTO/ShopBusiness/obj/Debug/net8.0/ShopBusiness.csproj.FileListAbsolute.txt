@@ -1,0 +1,17 @@
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopBusiness\bin\Debug\net8.0\ShopBusiness.deps.json
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopBusiness\bin\Debug\net8.0\ShopBusiness.dll
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopBusiness\bin\Debug\net8.0\ShopBusiness.pdb
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopBusiness\bin\Debug\net8.0\ShopCore.dll
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopBusiness\bin\Debug\net8.0\ShopData.dll
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopBusiness\bin\Debug\net8.0\ShopData.pdb
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopBusiness\bin\Debug\net8.0\ShopCore.pdb
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopBusiness\obj\Debug\net8.0\ShopBusiness.csproj.AssemblyReference.cache
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopBusiness\obj\Debug\net8.0\ShopBusiness.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopBusiness\obj\Debug\net8.0\ShopBusiness.AssemblyInfoInputs.cache
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopBusiness\obj\Debug\net8.0\ShopBusiness.AssemblyInfo.cs
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopBusiness\obj\Debug\net8.0\ShopBusiness.csproj.CoreCompileInputs.cache
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopBusiness\obj\Debug\net8.0\ShopBusi.CE4E2ED9.Up2Date
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopBusiness\obj\Debug\net8.0\ShopBusiness.dll
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopBusiness\obj\Debug\net8.0\refint\ShopBusiness.dll
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopBusiness\obj\Debug\net8.0\ShopBusiness.pdb
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopBusiness\obj\Debug\net8.0\ref\ShopBusiness.dll

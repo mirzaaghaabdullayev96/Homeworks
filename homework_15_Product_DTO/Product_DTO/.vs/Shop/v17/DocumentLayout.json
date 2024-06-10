@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\c#\\CodeAcademy\\homework_15_Product_DTO\\Product_DTO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{18BD68E4-C2F2-41FD-BFBE-7792F83F1D5E}|ShopBusiness\\ShopBusiness.csproj|d:\\c#\\codeacademy\\homework_15_product_dto\\product_dto\\shopbusiness\\serviceproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18BD68E4-C2F2-41FD-BFBE-7792F83F1D5E}|ShopBusiness\\ShopBusiness.csproj|solutionrelative:shopbusiness\\serviceproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BD68E4-C2F2-41FD-BFBE-7792F83F1D5E}|ShopBusiness\\ShopBusiness.csproj|d:\\c#\\codeacademy\\homework_15_product_dto\\product_dto\\shopbusiness\\iserviceproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18BD68E4-C2F2-41FD-BFBE-7792F83F1D5E}|ShopBusiness\\ShopBusiness.csproj|solutionrelative:shopbusiness\\iserviceproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBB466DE-C041-4271-B4D6-93B175A7AF5B}|ShopData\\ShopData.csproj|d:\\c#\\codeacademy\\homework_15_product_dto\\product_dto\\shopdata\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBB466DE-C041-4271-B4D6-93B175A7AF5B}|ShopData\\ShopData.csproj|solutionrelative:shopdata\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2F3A6CA-AB68-4309-81FD-A0A91099EF66}|ShopCore\\ShopCore.csproj|d:\\c#\\codeacademy\\homework_15_product_dto\\product_dto\\shopcore\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2F3A6CA-AB68-4309-81FD-A0A91099EF66}|ShopCore\\ShopCore.csproj|solutionrelative:shopcore\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BD68E4-C2F2-41FD-BFBE-7792F83F1D5E}|ShopBusiness\\ShopBusiness.csproj|d:\\c#\\codeacademy\\homework_15_product_dto\\product_dto\\shopbusiness\\productgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18BD68E4-C2F2-41FD-BFBE-7792F83F1D5E}|ShopBusiness\\ShopBusiness.csproj|solutionrelative:shopbusiness\\productgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48145CD4-AB90-485B-A7A2-FF7C04311E1A}|ShopCA\\ShopCA.csproj|d:\\c#\\codeacademy\\homework_15_product_dto\\product_dto\\shopca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48145CD4-AB90-485B-A7A2-FF7C04311E1A}|ShopCA\\ShopCA.csproj|solutionrelative:shopca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18BD68E4-C2F2-41FD-BFBE-7792F83F1D5E}|ShopBusiness\\ShopBusiness.csproj|d:\\c#\\codeacademy\\homework_15_product_dto\\product_dto\\shopbusiness\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18BD68E4-C2F2-41FD-BFBE-7792F83F1D5E}|ShopBusiness\\ShopBusiness.csproj|solutionrelative:shopbusiness\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_15_Product_DTO\\Product_DTO\\ShopCA\\Program.cs",
+              "RelativeDocumentMoniker": "ShopCA\\Program.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_15_Product_DTO\\Product_DTO\\ShopCA\\Program.cs",
+              "RelativeToolTip": "ShopCA\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T13:16:49.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductCreateDto.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_15_Product_DTO\\Product_DTO\\ShopBusiness\\ProductCreateDto.cs",
+              "RelativeDocumentMoniker": "ShopBusiness\\ProductCreateDto.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_15_Product_DTO\\Product_DTO\\ShopBusiness\\ProductCreateDto.cs",
+              "RelativeToolTip": "ShopBusiness\\ProductCreateDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T12:54:25.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductGetDto.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_15_Product_DTO\\Product_DTO\\ShopBusiness\\ProductGetDto.cs",
+              "RelativeDocumentMoniker": "ShopBusiness\\ProductGetDto.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_15_Product_DTO\\Product_DTO\\ShopBusiness\\ProductGetDto.cs",
+              "RelativeToolTip": "ShopBusiness\\ProductGetDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T12:53:46.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServiceProduct.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_15_Product_DTO\\Product_DTO\\ShopBusiness\\ServiceProduct.cs",
+              "RelativeDocumentMoniker": "ShopBusiness\\ServiceProduct.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_15_Product_DTO\\Product_DTO\\ShopBusiness\\ServiceProduct.cs",
+              "RelativeToolTip": "ShopBusiness\\ServiceProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T12:53:20.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IServiceProduct.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_15_Product_DTO\\Product_DTO\\ShopBusiness\\IServiceProduct.cs",
+              "RelativeDocumentMoniker": "ShopBusiness\\IServiceProduct.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_15_Product_DTO\\Product_DTO\\ShopBusiness\\IServiceProduct.cs",
+              "RelativeToolTip": "ShopBusiness\\IServiceProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T12:52:47.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Database.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_15_Product_DTO\\Product_DTO\\ShopData\\Database.cs",
+              "RelativeDocumentMoniker": "ShopData\\Database.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_15_Product_DTO\\Product_DTO\\ShopData\\Database.cs",
+              "RelativeToolTip": "ShopData\\Database.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T12:51:30.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_15_Product_DTO\\Product_DTO\\ShopCore\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ShopCore\\Models\\Product.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_15_Product_DTO\\Product_DTO\\ShopCore\\Models\\Product.cs",
+              "RelativeToolTip": "ShopCore\\Models\\Product.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T12:48:51.717Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

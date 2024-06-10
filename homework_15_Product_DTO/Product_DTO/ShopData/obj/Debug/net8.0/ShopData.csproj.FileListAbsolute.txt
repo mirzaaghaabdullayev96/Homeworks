@@ -1,0 +1,15 @@
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopData\bin\Debug\net8.0\ShopData.deps.json
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopData\bin\Debug\net8.0\ShopData.dll
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopData\bin\Debug\net8.0\ShopData.pdb
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopData\bin\Debug\net8.0\ShopCore.dll
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopData\bin\Debug\net8.0\ShopCore.pdb
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopData\obj\Debug\net8.0\ShopData.csproj.AssemblyReference.cache
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopData\obj\Debug\net8.0\ShopData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopData\obj\Debug\net8.0\ShopData.AssemblyInfoInputs.cache
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopData\obj\Debug\net8.0\ShopData.AssemblyInfo.cs
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopData\obj\Debug\net8.0\ShopData.csproj.CoreCompileInputs.cache
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopData\obj\Debug\net8.0\ShopData.csproj.Up2Date
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopData\obj\Debug\net8.0\ShopData.dll
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopData\obj\Debug\net8.0\refint\ShopData.dll
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopData\obj\Debug\net8.0\ShopData.pdb
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopData\obj\Debug\net8.0\ref\ShopData.dll

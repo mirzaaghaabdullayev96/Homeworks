@@ -1,0 +1,11 @@
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopCore\bin\Debug\net8.0\ShopCore.deps.json
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopCore\bin\Debug\net8.0\ShopCore.dll
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopCore\bin\Debug\net8.0\ShopCore.pdb
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopCore\obj\Debug\net8.0\ShopCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopCore\obj\Debug\net8.0\ShopCore.AssemblyInfoInputs.cache
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopCore\obj\Debug\net8.0\ShopCore.AssemblyInfo.cs
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopCore\obj\Debug\net8.0\ShopCore.csproj.CoreCompileInputs.cache
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopCore\obj\Debug\net8.0\ShopCore.dll
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopCore\obj\Debug\net8.0\refint\ShopCore.dll
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopCore\obj\Debug\net8.0\ShopCore.pdb
+C:\Users\mirzaaghaaa\source\repos\ProductERM\ShopCore\obj\Debug\net8.0\ref\ShopCore.dll

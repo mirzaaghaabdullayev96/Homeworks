@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u0c0YBRh5NLJgvikKoMFRv7Rik1evLs1FuT0XlqpcxyZMRysPZR4K2N/o4YLzhSiPNg70vT5qDo+f2YB1IDySA==",
+  "dgSpecHash": "xTdLFrMgTp+v364pp3ELseDZoFaWCZag/0OLbHoZreWjrrflUaRfxRwnsvZp9x25EVDKhhMPz/l8Fcnbmsx9aA==",
   "success": true,
-  "projectFilePath": "D:\\c#\\1\\SchoolERP\\SchoolERP.Core\\SchoolERP.Core.csproj",
+  "projectFilePath": "D:\\c#\\CodeAcademy\\homework_13_Architecture\\SchoolERP.Core\\SchoolERP.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "homework_16_FileIO/1.0.0": {
+        "runtime": {
+          "homework_16_FileIO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "homework_16_FileIO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

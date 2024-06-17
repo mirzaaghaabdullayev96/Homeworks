@@ -1,0 +1,3 @@
+{"Id":1,"Name":"Iphone","CostPrice":1500,"SalePrice":2000}
+{"Id":2,"Name":"Iphone14","CostPrice":1100,"SalePrice":1600}
+{"Id":3,"Name":"Iphone14","CostPrice":1100,"SalePrice":1600}

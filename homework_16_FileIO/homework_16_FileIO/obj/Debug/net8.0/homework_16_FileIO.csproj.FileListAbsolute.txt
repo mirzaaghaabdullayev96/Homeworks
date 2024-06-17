@@ -1,0 +1,14 @@
+D:\c#\1\homework_16_FileIO\homework_16_FileIO\bin\Debug\net8.0\homework_16_FileIO.exe
+D:\c#\1\homework_16_FileIO\homework_16_FileIO\bin\Debug\net8.0\homework_16_FileIO.deps.json
+D:\c#\1\homework_16_FileIO\homework_16_FileIO\bin\Debug\net8.0\homework_16_FileIO.runtimeconfig.json
+D:\c#\1\homework_16_FileIO\homework_16_FileIO\bin\Debug\net8.0\homework_16_FileIO.dll
+D:\c#\1\homework_16_FileIO\homework_16_FileIO\bin\Debug\net8.0\homework_16_FileIO.pdb
+D:\c#\1\homework_16_FileIO\homework_16_FileIO\obj\Debug\net8.0\homework_16_FileIO.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\1\homework_16_FileIO\homework_16_FileIO\obj\Debug\net8.0\homework_16_FileIO.AssemblyInfoInputs.cache
+D:\c#\1\homework_16_FileIO\homework_16_FileIO\obj\Debug\net8.0\homework_16_FileIO.AssemblyInfo.cs
+D:\c#\1\homework_16_FileIO\homework_16_FileIO\obj\Debug\net8.0\homework_16_FileIO.csproj.CoreCompileInputs.cache
+D:\c#\1\homework_16_FileIO\homework_16_FileIO\obj\Debug\net8.0\homework_16_FileIO.dll
+D:\c#\1\homework_16_FileIO\homework_16_FileIO\obj\Debug\net8.0\refint\homework_16_FileIO.dll
+D:\c#\1\homework_16_FileIO\homework_16_FileIO\obj\Debug\net8.0\homework_16_FileIO.pdb
+D:\c#\1\homework_16_FileIO\homework_16_FileIO\obj\Debug\net8.0\homework_16_FileIO.genruntimeconfig.cache
+D:\c#\1\homework_16_FileIO\homework_16_FileIO\obj\Debug\net8.0\ref\homework_16_FileIO.dll

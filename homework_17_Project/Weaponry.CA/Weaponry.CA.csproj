@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Weaponry.Business\Weaponry.Business.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MyHelpDesk">
+      <HintPath>..\..\..\1\MyHelpDesk\MyHelpDesk\bin\Debug\net8.0\MyHelpDesk.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="SoundEffects\ak-47-firing-8760.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SoundEffects\reload-ak-47-made-with-Voicemod.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SoundEffects\TunePocket-Single-Shot-AK-47-1-Preview.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

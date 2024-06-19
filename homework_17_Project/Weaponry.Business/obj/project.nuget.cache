@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xR9LpenlOmLSa37yP2uZbiNnE0IeXD88Z0l8CtPz/oWElFeu0EfQKLxNMi6YRp3x5i3JX5GfClVYVj3RxaAO/g==",
+  "success": true,
+  "projectFilePath": "D:\\c#\\CodeAcademy\\homework_17_Project\\Weaponry.Business\\Weaponry.Business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

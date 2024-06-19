@@ -26,3 +26,14 @@ D:\c#\CodeAcademy\homework_17_Project\Weaponry.Business\obj\Debug\net8.0\Weaponr
 D:\c#\CodeAcademy\homework_17_Project\Weaponry.Business\obj\Debug\net8.0\Weaponry.Business.dll
 D:\c#\CodeAcademy\homework_17_Project\Weaponry.Business\obj\Debug\net8.0\refint\Weaponry.Business.dll
 D:\c#\CodeAcademy\homework_17_Project\Weaponry.Business\obj\Debug\net8.0\Weaponry.Business.pdb
+D:\c#\CodeAcademy\homework_17_Project\Weaponry.Business\bin\Debug\net8.0\Weaponry.Business.deps.json
+D:\c#\CodeAcademy\homework_17_Project\Weaponry.Business\bin\Debug\net8.0\Weaponry.Business.dll
+D:\c#\CodeAcademy\homework_17_Project\Weaponry.Business\bin\Debug\net8.0\Weaponry.Business.pdb
+D:\c#\CodeAcademy\homework_17_Project\Weaponry.Business\bin\Debug\net8.0\MyHelpDesk.dll
+D:\c#\CodeAcademy\homework_17_Project\Weaponry.Business\bin\Debug\net8.0\Weaponry.Core.dll
+D:\c#\CodeAcademy\homework_17_Project\Weaponry.Business\bin\Debug\net8.0\Weaponry.Database.dll
+D:\c#\CodeAcademy\homework_17_Project\Weaponry.Business\bin\Debug\net8.0\Weaponry.Database.pdb
+D:\c#\CodeAcademy\homework_17_Project\Weaponry.Business\bin\Debug\net8.0\Weaponry.Core.pdb
+D:\c#\CodeAcademy\homework_17_Project\Weaponry.Business\bin\Debug\net8.0\MyHelpDesk.pdb
+D:\c#\CodeAcademy\homework_17_Project\Weaponry.Business\obj\Debug\net8.0\Weaponry.3214E00A.Up2Date
+D:\c#\CodeAcademy\homework_17_Project\Weaponry.Business\obj\Debug\net8.0\ref\Weaponry.Business.dll

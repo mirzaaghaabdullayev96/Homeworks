@@ -1,5 +1,4 @@
-﻿using ClassLibraryMyHelper;
-using MyHelpDesk;
+﻿using MyHelpDesk;
 using System;
 using System.Collections.Generic;
 using System.Linq;

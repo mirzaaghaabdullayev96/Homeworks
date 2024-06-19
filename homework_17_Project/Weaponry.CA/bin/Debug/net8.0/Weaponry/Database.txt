@@ -1,4 +1,4 @@
-{"MaxCapacityMagazine":10,"ShootingMode":"Automatic"}
+{"MaxCapacityMagazine":10,"ShootingMode":"Single"}
                                                                                                               
                                                                                                               
                                                                                                               

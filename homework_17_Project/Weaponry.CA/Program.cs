@@ -1,7 +1,7 @@
 ﻿using Weaponry.Core.Models;
-using ClassLibraryMyHelper;
 using Weaponry.Business.implementation;
 using Weaponry.Business.interfaces;
+using MyHelpDesk;
 
 namespace Weaponry.CA
 {

@@ -1,0 +1,23 @@
+CREATE DATABASE DepartmentDB
+USE DepartmentDB
+CREATE TABLE Departments
+(
+Id INT NOT NULL UNIQUE IDENTITY(1,1),
+Name VARCHAR(150) NOT NULL,
+MaxEmployeeCount INT CHECK(MaxEmployeeCount>=10 AND MaxEmployeeCount<=50)
+)
+
+CREATE TABLE Positions
+(
+Id INT NOT NULL UNIQUE IDENTITY(1,1),
+Name VARCHAR(50) NOT NULL
+)
+
+CREATE TABLE Employees
+(
+Id INT NOT NULL UNIQUE IDENTITY(1,1),
+Name VARCHAR(60) DEFAULT 'Employee Name',
+Surname VARCHAR (70) DEFAULT 'Employee Surname',
+Salary DECIMAL(18,2) CHECK (Salary>=500 AND Salary<=12000)
+)
+

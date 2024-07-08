@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\c#\\1\\CourseERP\\CourseERP.Business\\CourseERP.Business.csproj",
+      "projectUniqueName": "D:\\c#\\CodeAcademy\\homework_14_CourseERP\\CourseERP.Business\\CourseERP.Business.csproj",
       "projectName": "CourseERP.Business",
-      "projectPath": "D:\\c#\\1\\CourseERP\\CourseERP.Business\\CourseERP.Business.csproj",
+      "projectPath": "D:\\c#\\CodeAcademy\\homework_14_CourseERP\\CourseERP.Business\\CourseERP.Business.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\c#\\1\\CourseERP\\CourseERP.Business\\obj\\",
+      "outputPath": "D:\\c#\\CodeAcademy\\homework_14_CourseERP\\CourseERP.Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -77,8 +77,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\c#\\1\\CourseERP\\CourseERP.Database\\CourseERP.Database.csproj": {
-              "projectPath": "D:\\c#\\1\\CourseERP\\CourseERP.Database\\CourseERP.Database.csproj"
+            "D:\\c#\\CodeAcademy\\homework_14_CourseERP\\CourseERP.Database\\CourseERP.Database.csproj": {
+              "projectPath": "D:\\c#\\CodeAcademy\\homework_14_CourseERP\\CourseERP.Database\\CourseERP.Database.csproj"
             }
           }
         }
@@ -113,7 +113,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

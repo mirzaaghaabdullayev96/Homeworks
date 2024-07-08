@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CourseERP.Business
-build_property.ProjectDir = D:\c#\1\CourseERP\CourseERP.Business\
+build_property.ProjectDir = D:\c#\CodeAcademy\homework_14_CourseERP\CourseERP.Business\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

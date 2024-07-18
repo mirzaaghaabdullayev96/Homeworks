@@ -1,0 +1,83 @@
+.header h5{
+  font-weight: 400;
+  font-size:18px;
+  display: inline;
+  margin-right: 1000px;
+}
+.header ul{
+  display: inline-block;
+  font-size: 16px;
+}
+.header li{
+  display: inline;
+  margin-right: 10px;
+}
+.sign-up-button{
+  text-decoration: none;
+  color:#007bff;
+  border: 1px solid;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+
+.text-in-the-middle h1{
+  text-align: center;
+  margin-top:70px;
+  font-size: 50px;
+  font-style: normal;
+}
+
+.text-in-the-middle p{
+  text-align: center;
+  width: 550px;
+  margin-left: 450px;
+}
+
+ul{
+  list-style: none;
+}
+
+
+
+.card1 button{
+  background-color: white;
+  border: 1px solid;
+  color:#007bff;
+  padding: 10px 45px;
+  border-radius: 5px;
+}
+
+.cards {
+  display: inline;
+}
+
+.card1{
+  display: inline;
+}
+
+.card2{
+  display: inline;
+}
+
+.card3{
+  display: inline;
+}
+
+.card2 button{
+  background-color: #007bff;
+  border: 1px solid;
+  color:white;
+  padding: 10px 45px;
+  border-radius: 5px;
+}
+
+.card3 button{
+  background-color: #007bff;
+  border: 1px solid;
+  color:white;
+  padding: 10px 45px;
+  border-radius: 5px;
+}
+
+

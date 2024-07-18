@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{0DFE3FCF-3C9F-4879-8774-1B5B15884731}|Weaponry.Business\\Weaponry.Business.csproj|solutionrelative:weaponry.business\\implementation\\weaponservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{216EAAE4-1FFC-4CC1-AD59-EC54B7B60F49}|Weaponry.Core\\Weaponry.Core.csproj|d:\\c#\\codeacademy\\homework_17_project\\weaponry.core\\models\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{216EAAE4-1FFC-4CC1-AD59-EC54B7B60F49}|Weaponry.Core\\Weaponry.Core.csproj|solutionrelative:weaponry.core\\models\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0DFE3FCF-3C9F-4879-8774-1B5B15884731}|Weaponry.Business\\Weaponry.Business.csproj|d:\\c#\\codeacademy\\homework_17_project\\weaponry.business\\implementation\\choices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0DFE3FCF-3C9F-4879-8774-1B5B15884731}|Weaponry.Business\\Weaponry.Business.csproj|solutionrelative:weaponry.business\\implementation\\choices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AAF3DCAD-1673-42E0-ACE3-0CCC306973F7}|Weaponry.Database\\Weaponry.Database.csproj|d:\\c#\\codeacademy\\homework_17_project\\weaponry.database\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAF3DCAD-1673-42E0-ACE3-0CCC306973F7}|Weaponry.Database\\Weaponry.Database.csproj|solutionrelative:weaponry.database\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{216EAAE4-1FFC-4CC1-AD59-EC54B7B60F49}|Weaponry.Core\\Weaponry.Core.csproj|d:\\c#\\codeacademy\\homework_17_project\\weaponry.core\\models\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{216EAAE4-1FFC-4CC1-AD59-EC54B7B60F49}|Weaponry.Core\\Weaponry.Core.csproj|solutionrelative:weaponry.core\\models\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0DFE3FCF-3C9F-4879-8774-1B5B15884731}|Weaponry.Business\\Weaponry.Business.csproj|d:\\c#\\codeacademy\\homework_17_project\\weaponry.business\\soundeffects\\soundhandling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,19 +54,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Choices.cs",
               "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_17_Project\\Weaponry.Business\\implementation\\Choices.cs",
               "RelativeDocumentMoniker": "Weaponry.Business\\implementation\\Choices.cs",
               "ToolTip": "D:\\c#\\CodeAcademy\\homework_17_Project\\Weaponry.Business\\implementation\\Choices.cs",
               "RelativeToolTip": "Weaponry.Business\\implementation\\Choices.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAAEQAAAAQAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAADwvygAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T11:07:17.355Z"
+              "WhenOpened": "2024-06-18T11:07:17.355Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IWeaponService.cs",
               "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_17_Project\\Weaponry.Business\\interfaces\\IWeaponService.cs",
               "RelativeDocumentMoniker": "Weaponry.Business\\interfaces\\IWeaponService.cs",
@@ -74,7 +75,8 @@
               "RelativeToolTip": "Weaponry.Business\\interfaces\\IWeaponService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T15:29:06.448Z"
+              "WhenOpened": "2024-06-17T15:29:06.448Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -84,13 +86,14 @@
               "RelativeDocumentMoniker": "Weaponry.Business\\implementation\\WeaponService.cs",
               "ToolTip": "D:\\c#\\CodeAcademy\\homework_17_Project\\Weaponry.Business\\implementation\\WeaponService.cs",
               "RelativeToolTip": "Weaponry.Business\\implementation\\WeaponService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAALUAAAAAAAAAAAAQwCcAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T15:29:00.636Z"
+              "WhenOpened": "2024-06-17T15:29:00.636Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Data.cs",
               "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_17_Project\\Weaponry.Database\\Data.cs",
               "RelativeDocumentMoniker": "Weaponry.Database\\Data.cs",
@@ -102,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Weapon.cs",
               "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_17_Project\\Weaponry.Core\\Models\\Weapon.cs",
               "RelativeDocumentMoniker": "Weaponry.Core\\Models\\Weapon.cs",
@@ -110,7 +113,8 @@
               "RelativeToolTip": "Weaponry.Core\\Models\\Weapon.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T15:05:22.209Z"
+              "WhenOpened": "2024-06-17T15:05:22.209Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -120,7 +124,7 @@
               "RelativeDocumentMoniker": "Weaponry.CA\\Program.cs",
               "ToolTip": "D:\\c#\\CodeAcademy\\homework_17_Project\\Weaponry.CA\\Program.cs",
               "RelativeToolTip": "Weaponry.CA\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAmAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADUAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T15:03:49.023Z",
               "EditorCaption": ""

@@ -1,0 +1,23 @@
+.img-in-modal {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.div-modal-body {
+  flex-direction: column;
+  max-height: 200px;
+}
+
+.text-in-modal {
+  font-size: 23px;
+}
+
+.div-items {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 5px 0px;
+}

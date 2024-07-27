@@ -1,0 +1,59 @@
+:root {
+  --border-color: #3d315b;
+  --background-color: #266dd3;
+  --list-background-color: #444b6e;
+  --active-list-background-color: #9ab87a;
+  --border-radius: 5px;
+}
+
+* {
+  font-family: "Poppins";
+}
+body {
+  /* background-color: var(--background-color); */
+  margin: 0;
+}
+a:hover {
+  cursor: pointer;
+}
+#pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#my-pagination-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+#my-pagination-ul li {
+  color: #fff;
+  display: flex;
+}
+
+#my-pagination-ul li a {
+  background-color: #444b6e;
+  padding: 5px 10px;
+  border: 2px solid var(--border-color);
+  border-right: 0;
+}
+
+#my-pagination-ul li.active a {
+  background-color: var(--active-list-background-color);
+}
+#my-pagination-ul li:first-child a {
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+#my-pagination-ul li:last-child a {
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  border-right: 2px solid var(--border-color);
+}
+
+/* // When I feel motivated to get this working
+// @keyframes fadein {
+//   from {opacity: 0;}
+//   to {opacity: 1;}
+// } */

@@ -1,7 +1,7 @@
 const myURL = "https://api.tvmaze.com/shows";
 
 let container = document.getElementById("main-container");
-let moviesOnEveryPage;
+let moviesOnEveryPage = 3;
 let myMovies = [];
 let searchForm = document.getElementById("search-form");
 let searchInput = document.getElementById("search-input");
@@ -10,7 +10,6 @@ fetch(myURL)
   .then((datas) => datas.json())
   .then((movies) => {
     myMovies = movies;
-    moviesOnEveryPage=3
     let pagesCount = myMovies.length / moviesOnEveryPage;
 
     document.getElementById("pagination").innerHTML = createPagination(
@@ -23,12 +22,12 @@ fetch(myURL)
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   document.getElementById("pagination").innerHTML = "";
-  myMovies= myMovies.filter((movie) =>
+  myMovies = myMovies.filter((movie) =>
     movie.name.toLowerCase().includes(searchInput.value.toLowerCase())
   );
-console.log(myMovies)
-  
-    document.getElementById("pagination").innerHTML = createPagination(
+  console.log(myMovies);
+
+  document.getElementById("pagination").innerHTML = createPagination(
     Math.ceil(myMovies.length / moviesOnEveryPage),
     1,
     myMovies
@@ -36,13 +35,14 @@ console.log(myMovies)
 });
 
 //pagination starts here
+//https://codepen.io/robertcooper_rc/pen/XeabLa
 
 function createPagination(pages, page, myMovies) {
   let str = `<ul id="my-pagination-ul">`;
   let active;
   let pageCutLow = page - 1;
   let pageCutHigh = page + 1;
-  
+
   creationOfHtml(myMovies, page);
 
   // Show the Previous button only if you are on a page other than the first
@@ -56,7 +56,7 @@ function createPagination(pages, page, myMovies) {
   if (pages < 6) {
     for (let p = 1; p <= pages; p++) {
       active = page == p ? "active" : "no";
-      str += `<li class="${active}"><a onclick="createPagination(${pages}, ${p}, myMovies); creationOfHtml(myMovies, ${p});">${p}</a></li>`;
+      str += `<li class="${active}"><a onclick="createPagination(${pages}, ${p}, myMovies);">${p}</a></li>`;
     }
   } else {
     // Use "..." to collapse pages outside of a certain range
@@ -94,7 +94,7 @@ function createPagination(pages, page, myMovies) {
         continue;
       }
       active = page == p ? "active" : "no";
-      str += `<li class="page-item ${active}"><a onclick="createPagination(${pages}, ${p}, myMovies); creationOfHtml(myMovies, ${p});">${p}</a></li>`;
+      str += `<li class="page-item ${active}"><a onclick="createPagination(${pages}, ${p}, myMovies); ">${p}</a></li>`;
     }
 
     // Show the very last page preceded by a "..." at the end of the pagination section (before the Next button)
@@ -126,53 +126,61 @@ function createPagination(pages, page, myMovies) {
 function creationOfHtml(movies, n) {
   container.innerHTML = "";
 
-  if (movies.length == 1) {
-    container.innerHTML += `<div class="card" style="width: 22rem; margin-right: 20px; padding: 0;">
-    <img src="${
-      movies[0].image.original
-    }" class="card-img-top" style="height: 390px;" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">${movies[0].name}</h5>
-      <p class="card-text">Premiere: ${movies[0].premiered}</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">IMDB Rating: ${movies[0].rating.average}</li>
-      <li class="list-group-item">Genre: ${movies[0].genres}</li>
-      <li class="list-group-item">Language: ${movies[0].language}</li>
-    </ul>
-    <div class="card-body">
-      <a href="${
-        movies[0].officialSite
-      }" class="card-link"><button type="button" class="btn btn-primary">Go to website</button></a>
-      <a href="task2_details.html" class="card-link" onclick="localStorage.setItem('idOfCurrentPage', ${
-        movies[0].id
-      })"  ><button type="button" class="btn btn-success"  >Go to detail</button></a>
-    </div>
-    </div>`;
-  }
+  let reminder = movies.length % moviesOnEveryPage;
 
-  if (movies.length > 1) {
-    for (let i = (n - 1) * moviesOnEveryPage; i < moviesOnEveryPage * n; i++) {
+  switch (reminder) {
+    case 0:
+      renderPage(movies, moviesOnEveryPage, n, 0);
+      break;
+    case 1:
+      renderPage(movies, moviesOnEveryPage, n, 2);
+      break;
+    case 2:
+      renderPage(movies, moviesOnEveryPage, n, 1);
+      break;
+  }
+}
+
+function renderPage(movies, moviesOnEveryPage, n, number) {
+  if (n == Math.ceil(myMovies.length / moviesOnEveryPage)) {
+    for (
+      let i = (n - 1) * moviesOnEveryPage;
+      i < moviesOnEveryPage * n - number;
+      i++
+    ) {
       container.innerHTML += `<div class="card" style="width: 22rem; margin-right: 20px; padding: 0;">
-<img src="${
-        movies[i].image.original
-      }" class="card-img-top" style="height: 390px;" alt="...">
+<img src="${movies[i].image.original}" class="card-img-top" style="height: 390px;" alt="...">
 <div class="card-body">
-  <h5 class="card-title">${movies[i].name}</h5>
-  <p class="card-text">Premiere: ${movies[i].premiered}</p>
+<h5 class="card-title">${movies[i].name}</h5>
+<p class="card-text">Premiere: ${movies[i].premiered}</p>
 </div>
 <ul class="list-group list-group-flush">
-  <li class="list-group-item">IMDB Rating: ${movies[i].rating.average}</li>
-  <li class="list-group-item">Genre: ${movies[i].genres}</li>
-  <li class="list-group-item">Language: ${movies[i].language}</li>
+<li class="list-group-item">IMDB Rating: ${movies[i].rating.average}</li>
+<li class="list-group-item">Genre: ${movies[i].genres}</li>
+<li class="list-group-item">Language: ${movies[i].language}</li>
 </ul>
 <div class="card-body">
-  <a href="${
-    movies[i].officialSite
-  }" class="card-link"><button type="button" class="btn btn-primary">Go to website</button></a>
-  <a href="task2_details.html" class="card-link" onclick="localStorage.setItem('idOfCurrentPage', ${
-    movies[i].id
-  })"  ><button type="button" class="btn btn-success"  >Go to detail</button></a>
+<a href="${movies[i].officialSite}" class="card-link"><button type="button" class="btn btn-primary">Go to website</button></a>
+<a href="task2_details.html" class="card-link" onclick="localStorage.setItem('idOfCurrentPage', ${movies[i].id})"  ><button type="button" class="btn btn-success"  >Go to detail</button></a>
+</div>
+</div>`;
+    }
+  } else {
+    for (let i = (n - 1) * moviesOnEveryPage; i < moviesOnEveryPage * n; i++) {
+      container.innerHTML += `<div class="card" style="width: 22rem; margin-right: 20px; padding: 0;">
+<img src="${movies[i].image.original}" class="card-img-top" style="height: 390px;" alt="...">
+<div class="card-body">
+<h5 class="card-title">${movies[i].name}</h5>
+<p class="card-text">Premiere: ${movies[i].premiered}</p>
+</div>
+<ul class="list-group list-group-flush">
+<li class="list-group-item">IMDB Rating: ${movies[i].rating.average}</li>
+<li class="list-group-item">Genre: ${movies[i].genres}</li>
+<li class="list-group-item">Language: ${movies[i].language}</li>
+</ul>
+<div class="card-body">
+<a href="${movies[i].officialSite}" class="card-link"><button type="button" class="btn btn-primary">Go to website</button></a>
+<a href="task2_details.html" class="card-link" onclick="localStorage.setItem('idOfCurrentPage', ${movies[i].id})"  ><button type="button" class="btn btn-success"  >Go to detail</button></a>
 </div>
 </div>`;
     }

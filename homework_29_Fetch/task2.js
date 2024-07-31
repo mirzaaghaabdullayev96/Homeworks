@@ -1,14 +1,16 @@
 const myURL = "https://api.tvmaze.com/shows";
 
 let container = document.getElementById("main-container");
-let moviesOnEveryPage = 3;
+let moviesOnEveryPage;
 let myMovies = [];
-
+let searchForm = document.getElementById("search-form");
+let searchInput = document.getElementById("search-input");
 
 fetch(myURL)
   .then((datas) => datas.json())
   .then((movies) => {
     myMovies = movies;
+    moviesOnEveryPage=3
     let pagesCount = myMovies.length / moviesOnEveryPage;
 
     document.getElementById("pagination").innerHTML = createPagination(
@@ -18,6 +20,21 @@ fetch(myURL)
     );
   });
 
+searchForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  document.getElementById("pagination").innerHTML = "";
+  myMovies= myMovies.filter((movie) =>
+    movie.name.toLowerCase().includes(searchInput.value.toLowerCase())
+  );
+console.log(myMovies)
+  
+    document.getElementById("pagination").innerHTML = createPagination(
+    Math.ceil(myMovies.length / moviesOnEveryPage),
+    1,
+    myMovies
+  );
+});
+
 //pagination starts here
 
 function createPagination(pages, page, myMovies) {
@@ -25,7 +42,7 @@ function createPagination(pages, page, myMovies) {
   let active;
   let pageCutLow = page - 1;
   let pageCutHigh = page + 1;
-
+  
   creationOfHtml(myMovies, page);
 
   // Show the Previous button only if you are on a page other than the first
@@ -108,10 +125,38 @@ function createPagination(pages, page, myMovies) {
 
 function creationOfHtml(movies, n) {
   container.innerHTML = "";
-  
-  for (let i = (n - 1) * moviesOnEveryPage; i < moviesOnEveryPage * n; i++) {
+
+  if (movies.length == 1) {
     container.innerHTML += `<div class="card" style="width: 22rem; margin-right: 20px; padding: 0;">
-<img src="${movies[i].image.original}" class="card-img-top" style="height: 390px;" alt="...">
+    <img src="${
+      movies[0].image.original
+    }" class="card-img-top" style="height: 390px;" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">${movies[0].name}</h5>
+      <p class="card-text">Premiere: ${movies[0].premiered}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">IMDB Rating: ${movies[0].rating.average}</li>
+      <li class="list-group-item">Genre: ${movies[0].genres}</li>
+      <li class="list-group-item">Language: ${movies[0].language}</li>
+    </ul>
+    <div class="card-body">
+      <a href="${
+        movies[0].officialSite
+      }" class="card-link"><button type="button" class="btn btn-primary">Go to website</button></a>
+      <a href="task2_details.html" class="card-link" onclick="localStorage.setItem('idOfCurrentPage', ${
+        movies[0].id
+      })"  ><button type="button" class="btn btn-success"  >Go to detail</button></a>
+    </div>
+    </div>`;
+  }
+
+  if (movies.length > 1) {
+    for (let i = (n - 1) * moviesOnEveryPage; i < moviesOnEveryPage * n; i++) {
+      container.innerHTML += `<div class="card" style="width: 22rem; margin-right: 20px; padding: 0;">
+<img src="${
+        movies[i].image.original
+      }" class="card-img-top" style="height: 390px;" alt="...">
 <div class="card-body">
   <h5 class="card-title">${movies[i].name}</h5>
   <p class="card-text">Premiere: ${movies[i].premiered}</p>
@@ -122,11 +167,14 @@ function creationOfHtml(movies, n) {
   <li class="list-group-item">Language: ${movies[i].language}</li>
 </ul>
 <div class="card-body">
-  <a href="${movies[i].officialSite}" class="card-link"><button type="button" class="btn btn-primary">Go to website</button></a>
-  <a href="task2_details.html" class="card-link" onclick="localStorage.setItem('idOfCurrentPage', ${i+1})"  ><button type="button" class="btn btn-success"  >Go to detail</button></a>
+  <a href="${
+    movies[i].officialSite
+  }" class="card-link"><button type="button" class="btn btn-primary">Go to website</button></a>
+  <a href="task2_details.html" class="card-link" onclick="localStorage.setItem('idOfCurrentPage', ${
+    movies[i].id
+  })"  ><button type="button" class="btn btn-success"  >Go to detail</button></a>
 </div>
 </div>`;
+    }
   }
 }
-
-

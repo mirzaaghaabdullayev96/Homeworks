@@ -18,7 +18,7 @@
     ></script>
     <link rel="stylesheet" href="task2.css" />
     <script defer src="task2.js"></script>
-    <link rel="stylesheet" href="tasl2_pagination.css">
+    <link rel="stylesheet" href="tasl2_pagination.css" />
   </head>
 
   <body>
@@ -48,6 +48,16 @@
               <a class="nav-link" href="#" role="button"> Contact </a>
             </li>
           </ul>
+
+          <select
+            class="form-select me-2"
+            style="width: 250px"
+            id="select-genres"
+            aria-label="Default select example"
+          >
+            <option selected>Genres</option>
+          </select>
+
           <form class="d-flex" role="search" id="search-form">
             <input
               class="form-control me-2"
@@ -67,18 +77,16 @@
       </div>
     </nav>
 
-    <section class="d-flex flex-column align-items-center ">
+    <section class="d-flex flex-column align-items-center">
       <div
-        class="row row-cols-4 g-4 justify-content-center my_photos main-container-div container ms-auto me-auto" style="margin-bottom: 20px;"
+        class="row row-cols-4 g-4 justify-content-center my_photos main-container-div container ms-auto me-auto"
+        style="margin-bottom: 20px"
         id="main-container"
       ></div>
 
-
       <div id="pagination"></div>
-      
     </section>
 
-    
     <footer>
       <div class="container">
         <footer

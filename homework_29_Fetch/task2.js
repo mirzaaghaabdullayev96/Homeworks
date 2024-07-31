@@ -5,12 +5,36 @@ let moviesOnEveryPage = 3;
 let myMovies = [];
 let searchForm = document.getElementById("search-form");
 let searchInput = document.getElementById("search-input");
+let selectGenres = document.getElementById("select-genres");
+
+let filteredBooksByGenre = [];
+let searchedBooks = [];
+
+let allGenres = [];
 
 fetch(myURL)
   .then((datas) => datas.json())
   .then((movies) => {
     myMovies = movies;
+    console.log(myMovies);
     let pagesCount = myMovies.length / moviesOnEveryPage;
+
+    movies.forEach((element) => {
+      element.genres.forEach((genre) => {
+        allGenres.push(genre);
+      });
+    });
+
+    let uniqueGenres = allGenres
+      .filter((value, index, array) => array.indexOf(value) === index)
+      .sort();
+
+    uniqueGenres.forEach((uniqueGenre) => {
+      let option = document.createElement("option");
+      option.value = uniqueGenre;
+      option.innerHTML = uniqueGenre;
+      selectGenres.appendChild(option);
+    });
 
     document.getElementById("pagination").innerHTML = createPagination(
       pagesCount,
@@ -22,11 +46,23 @@ fetch(myURL)
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   document.getElementById("pagination").innerHTML = "";
+
   myMovies = myMovies.filter((movie) =>
     movie.name.toLowerCase().includes(searchInput.value.toLowerCase())
   );
   console.log(myMovies);
 
+  document.getElementById("pagination").innerHTML = createPagination(
+    Math.ceil(myMovies.length / moviesOnEveryPage),
+    1,
+    myMovies
+  );
+});
+
+selectGenres.addEventListener("change", () => {
+  document.getElementById("pagination").innerHTML = "";
+  let value = selectGenres.value;
+  myMovies = myMovies.filter((movie) => movie.genres.includes(value));
   document.getElementById("pagination").innerHTML = createPagination(
     Math.ceil(myMovies.length / moviesOnEveryPage),
     1,
@@ -142,7 +178,12 @@ function creationOfHtml(movies, n) {
 }
 
 function renderPage(movies, moviesOnEveryPage, n, number) {
-  if (n == Math.ceil(myMovies.length / moviesOnEveryPage)) {
+  console.log(movies.length)
+  if (movies.length == 0) {
+    alert("not found");
+    return;
+  }
+  if (n == Math.ceil(movies.length / moviesOnEveryPage)) {
     for (
       let i = (n - 1) * moviesOnEveryPage;
       i < moviesOnEveryPage * n - number;

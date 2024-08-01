@@ -3,20 +3,18 @@ const myURL = "https://api.tvmaze.com/shows";
 let container = document.getElementById("main-container");
 let moviesOnEveryPage = 3;
 let myMovies = [];
+let allMovies = [];
 let searchForm = document.getElementById("search-form");
 let searchInput = document.getElementById("search-input");
 let selectGenres = document.getElementById("select-genres");
-
-let filteredBooksByGenre = [];
-let searchedBooks = [];
-
 let allGenres = [];
 
 fetch(myURL)
   .then((datas) => datas.json())
   .then((movies) => {
     myMovies = movies;
-    console.log(myMovies);
+    allMovies = movies;
+
     let pagesCount = myMovies.length / moviesOnEveryPage;
 
     movies.forEach((element) => {
@@ -45,12 +43,11 @@ fetch(myURL)
 
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
+  myMovies = allMovies;
   document.getElementById("pagination").innerHTML = "";
-
   myMovies = myMovies.filter((movie) =>
     movie.name.toLowerCase().includes(searchInput.value.toLowerCase())
   );
-  console.log(myMovies);
 
   document.getElementById("pagination").innerHTML = createPagination(
     Math.ceil(myMovies.length / moviesOnEveryPage),
@@ -59,7 +56,12 @@ searchForm.addEventListener("submit", (e) => {
   );
 });
 
-selectGenres.addEventListener("change", () => {
+selectGenres.addEventListener("change", (e) => {
+  myMovies = allMovies;
+  if(e.target.value=="Genres"){
+    window.location.reload();
+    return;
+  }
   document.getElementById("pagination").innerHTML = "";
   let value = selectGenres.value;
   myMovies = myMovies.filter((movie) => movie.genres.includes(value));
@@ -178,7 +180,6 @@ function creationOfHtml(movies, n) {
 }
 
 function renderPage(movies, moviesOnEveryPage, n, number) {
-  console.log(movies.length)
   if (movies.length == 0) {
     alert("not found");
     return;

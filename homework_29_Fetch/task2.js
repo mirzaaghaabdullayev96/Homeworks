@@ -4,10 +4,10 @@ let container = document.getElementById("main-container");
 let moviesOnEveryPage = 3;
 let myMovies = [];
 let allMovies = [];
+let allGenres = [];
 let searchForm = document.getElementById("search-form");
 let searchInput = document.getElementById("search-input");
 let selectGenres = document.getElementById("select-genres");
-let allGenres = [];
 
 fetch(myURL)
   .then((datas) => datas.json())

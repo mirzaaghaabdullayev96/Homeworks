@@ -9,27 +9,35 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MVC_Pronia_Template
 build_property.RootNamespace = MVC_Pronia_Template
-build_property.ProjectDir = D:\c#\CodeAcademy\homework_30_MVC_ProniaTemplate\MVC_Pronia_Template\MVC_Pronia_Template\
+build_property.ProjectDir = D:\c#\CodeAcademy\homework_31_MVC_DI\MVC_DI\MVC_Pronia_Template\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\c#\CodeAcademy\homework_30_MVC_ProniaTemplate\MVC_Pronia_Template\MVC_Pronia_Template
+build_property.MSBuildProjectDirectory = D:\c#\CodeAcademy\homework_31_MVC_DI\MVC_DI\MVC_Pronia_Template
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/c\#/CodeAcademy/homework_30_MVC_ProniaTemplate/MVC_Pronia_Template/MVC_Pronia_Template/Views/Home/Index.cshtml]
+[D:/c\#/CodeAcademy/homework_31_MVC_DI/MVC_DI/MVC_Pronia_Template/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/CodeAcademy/homework_30_MVC_ProniaTemplate/MVC_Pronia_Template/MVC_Pronia_Template/Views/Product/Index.cshtml]
+[D:/c\#/CodeAcademy/homework_31_MVC_DI/MVC_DI/MVC_Pronia_Template/Views/Product/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/CodeAcademy/homework_31_MVC_DI/MVC_DI/MVC_Pronia_Template/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/CodeAcademy/homework_30_MVC_ProniaTemplate/MVC_Pronia_Template/MVC_Pronia_Template/Views/Shared/_Layout.cshtml]
+[D:/c\#/CodeAcademy/homework_31_MVC_DI/MVC_DI/MVC_Pronia_Template/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/c\#/CodeAcademy/homework_30_MVC_ProniaTemplate/MVC_Pronia_Template/MVC_Pronia_Template/Views/_ViewStart.cshtml]
+[D:/c\#/CodeAcademy/homework_31_MVC_DI/MVC_DI/MVC_Pronia_Template/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/c\#/CodeAcademy/homework_31_MVC_DI/MVC_DI/MVC_Pronia_Template/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

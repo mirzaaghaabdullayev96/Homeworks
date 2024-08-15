@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using MVC_Pronia_Template.DAL;
 using MVC_Pronia_Template.Models;
 using MVC_Pronia_Template.ViewModels;
 
@@ -6,37 +8,22 @@ namespace MVC_Pronia_Template.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly AppDbContext _appDbContext;
+        public HomeController(AppDbContext appDbContext)
+        {
+            _appDbContext = appDbContext;
+        }
+
         public IActionResult Index()
         {
-            List<Slide> slides =
-            [
-                new() {
-                    Id = 1,
-                    Title = "Home",
-                    SubTitle = "Endirim var",
-                    Order = 2,
-                    Image="1-1.png"
-                },
-                new() {
-                    Id = 2,
-                    Title = "Home 2",
-                    SubTitle = "Endirim var helede",
-                    Order = 3,
-                    Image="1-2.png"
-                },
-                new ()
-                {
-                    Id = 3,
-                    Title = "Home 3",
-                    SubTitle = "Endirim var sabaha geder",
-                    Order = 1,
-                    Image="1-3.png"
-                },
-            ];
-
             HomeVM homeVM = new()
             {
-                Slides = slides.OrderBy(s => s.Order).ToList()
+                Slides = _appDbContext.Slides.OrderBy(s => s.Order).ToList(),
+                Products = _appDbContext.Products
+                    .OrderByDescending(p => p.CreateAt)
+                    .Take(8)
+                    .Include(p => p.ProductImages.Where(pi=>pi.IsPrimary!=null))
+                    .ToList()
             };
 
             return View(homeVM);

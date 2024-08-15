@@ -14,16 +14,16 @@ namespace MVC_Pronia_Template.Controllers
             _appDbContext = appDbContext;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             HomeVM homeVM = new()
             {
-                Slides = _appDbContext.Slides.OrderBy(s => s.Order).ToList(),
-                Products = _appDbContext.Products
+                Slides = await _appDbContext.Slides.OrderBy(s => s.Order).ToListAsync(),
+                Products = await _appDbContext.Products
                     .OrderByDescending(p => p.CreateAt)
                     .Take(8)
-                    .Include(p => p.ProductImages.Where(pi=>pi.IsPrimary!=null))
-                    .ToList()
+                    .Include(p => p.ProductImages.Where(pi => pi.IsPrimary != null))
+                    .ToListAsync()
             };
 
             return View(homeVM);

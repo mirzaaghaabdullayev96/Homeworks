@@ -5,6 +5,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|d:\\c#\\codeacademy\\homework_31_mvc_di\\mvc_di\\mvc_pronia_template\\areas\\proniaadmin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|solutionrelative:mvc_pronia_template\\areas\\proniaadmin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|d:\\c#\\codeacademy\\homework_31_mvc_di\\mvc_di\\mvc_pronia_template\\utilities\\extension\\filevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|solutionrelative:mvc_pronia_template\\utilities\\extension\\filevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|d:\\c#\\codeacademy\\homework_31_mvc_di\\mvc_di\\mvc_pronia_template\\utilities\\enums\\filesize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|solutionrelative:mvc_pronia_template\\utilities\\enums\\filesize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|d:\\c#\\codeacademy\\homework_31_mvc_di\\mvc_di\\mvc_pronia_template\\areas\\proniaadmin\\controllers\\slidecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|solutionrelative:mvc_pronia_template\\areas\\proniaadmin\\controllers\\slidecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,9 +36,48 @@
               "RelativeDocumentMoniker": "MVC_Pronia_Template\\Areas\\ProniaAdmin\\Controllers\\CategoryController.cs",
               "ToolTip": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\Areas\\ProniaAdmin\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "MVC_Pronia_Template\\Areas\\ProniaAdmin\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAswCAAAAAJAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAAwEgAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T15:42:36.208Z",
+              "WhenOpened": "2024-08-19T21:26:25.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FileSize.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\Utilities\\Enums\\FileSize.cs",
+              "RelativeDocumentMoniker": "MVC_Pronia_Template\\Utilities\\Enums\\FileSize.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\Utilities\\Enums\\FileSize.cs",
+              "RelativeToolTip": "MVC_Pronia_Template\\Utilities\\Enums\\FileSize.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T21:05:19.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileValidator.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\Utilities\\Extension\\FileValidator.cs",
+              "RelativeDocumentMoniker": "MVC_Pronia_Template\\Utilities\\Extension\\FileValidator.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\Utilities\\Extension\\FileValidator.cs",
+              "RelativeToolTip": "MVC_Pronia_Template\\Utilities\\Extension\\FileValidator.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAA0wCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T20:57:21.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SlideController.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\Areas\\ProniaAdmin\\Controllers\\SlideController.cs",
+              "RelativeDocumentMoniker": "MVC_Pronia_Template\\Areas\\ProniaAdmin\\Controllers\\SlideController.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\Areas\\ProniaAdmin\\Controllers\\SlideController.cs",
+              "RelativeToolTip": "MVC_Pronia_Template\\Areas\\ProniaAdmin\\Controllers\\SlideController.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAAACwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T20:00:50.967Z",
               "EditorCaption": ""
             }
           ]

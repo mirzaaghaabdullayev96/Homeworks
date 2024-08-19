@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "g1HsAecDmLx0apigE2nWUZ2VS2dAGDDoCK+YesIYHqI=",
+  "Hash": "b3Ln1n14qgZPMzCDG3KIPyNLPIHz4hA0teIVH41+JVM=",
   "Source": "MVC_Pronia_Template",
   "BasePath": "_content/MVC_Pronia_Template",
   "Mode": "Default",
@@ -4613,6 +4613,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\dark.png"
+    },
+    {
+      "Identity": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\assets\\images\\website-images\\e581449a-00f6-4ea4-8699-9a6d85034276garden-rose-red-pink-56866.webp",
+      "SourceId": "MVC_Pronia_Template",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\",
+      "BasePath": "_content/MVC_Pronia_Template",
+      "RelativePath": "assets/images/website-images/e581449a-00f6-4ea4-8699-9a6d85034276garden-rose-red-pink-56866.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\e581449a-00f6-4ea4-8699-9a6d85034276garden-rose-red-pink-56866.webp"
     },
     {
       "Identity": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\assets\\images\\website-images\\quotation.png",

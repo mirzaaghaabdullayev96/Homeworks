@@ -5,6 +5,9 @@ namespace MVC_Pronia_Template.Areas.ProniaAdmin.ViewModels
 {
     public class CreateProductVM
     {
+        public IFormFile MainPhoto { get; set; }
+        public IFormFile HoverPhoto { get; set; }
+        public List<IFormFile>? Photos { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         [Required]

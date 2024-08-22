@@ -19,18 +19,36 @@
                             </div> *@
 
                             <div class="form-group">
+                                <label asp-for="MainPhoto">Main Image</label>
+                                <input asp-for="MainPhoto" class="form-control" placeholder="MainPhoto">
+                                <span class="text-danger" asp-validation-for="MainPhoto"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="HoverPhoto">Hover Image</label>
+                                <input asp-for="HoverPhoto" class="form-control" placeholder="HoverPhoto">
+                                <span class="text-danger" asp-validation-for="HoverPhoto"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Photos">Additional Images</label>
+                                <input asp-for="Photos" class="form-control" placeholder="Photos">
+                                <span class="text-danger" asp-validation-for="Photos"></span>
+                            </div>
+
+                            <div class="form-group">
                                 <label asp-for="Name">Name</label>
-                                <input asp-for="Name" class="form-control" id="Name" placeholder="Name">
+                                <input asp-for="Name" class="form-control" placeholder="Name">
                                 <span class="text-danger" asp-validation-for="Name"></span>
                             </div>
                             <div class="form-group">
                                 <label asp-for="Price">Price</label>
-                                <input asp-for="Price" class="form-control" id="Price" placeholder="Price">
+                                <input asp-for="Price" class="form-control" placeholder="Price">
                                 <span class="text-danger" asp-validation-for="Price"></span>
                             </div>
                             <div class="form-group">
                                 <label asp-for="SKU">SKU</label>
-                                <input asp-for="SKU" class="form-control" id="SKU" placeholder="SKU">
+                                <input asp-for="SKU" class="form-control" placeholder="SKU">
                                 <span class="text-danger" asp-validation-for="SKU"></span>
                             </div>
 
@@ -51,7 +69,7 @@
                            
                             <div class="form-group">
                                 <label asp-for="Description">Description</label>
-                                <input asp-for="Description" class="form-control" id="Description" placeholder="Description">
+                                <input asp-for="Description" class="form-control"  placeholder="Description">
                                 <span class="text-danger" asp-validation-for="Description"></span>
                             </div>
 

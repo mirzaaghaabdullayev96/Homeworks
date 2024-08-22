@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using MVC_Pronia_Template.Areas.ProniaAdmin.ViewModels;
 using MVC_Pronia_Template.DAL;
 using MVC_Pronia_Template.Models;
+using MVC_Pronia_Template.Utilities.Enums;
+using MVC_Pronia_Template.Utilities.Extension;
 using NuGet.Packaging;
 
 namespace MVC_Pronia_Template.Areas.ProniaAdmin.Controllers
@@ -11,10 +13,12 @@ namespace MVC_Pronia_Template.Areas.ProniaAdmin.Controllers
     public class ProductController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IWebHostEnvironment _env;
 
-        public ProductController(AppDbContext context)
+        public ProductController(AppDbContext context, IWebHostEnvironment env)
         {
             _context = context;
+            _env = env;
         }
 
         public async Task<IActionResult> Index()
@@ -61,6 +65,39 @@ namespace MVC_Pronia_Template.Areas.ProniaAdmin.Controllers
                 return View(productVM);
             }
 
+            //photos check
+
+            if (!productVM.MainPhoto.ValidateType("image/"))
+            {
+                ModelState.AddModelError("Photo", "File type is not correct");
+                return View();
+            }
+
+            if (!productVM.MainPhoto.ValidateSize(FileSize.MB, 1))
+            {
+                ModelState.AddModelError("Photo", "File size is not correct");
+                return View();
+            }
+
+
+            if (!productVM.HoverPhoto.ValidateType("image/"))
+            {
+                ModelState.AddModelError("Photo", "File type is not correct");
+                return View();
+            }
+
+            if (!productVM.HoverPhoto.ValidateSize(FileSize.MB, 1))
+            {
+                ModelState.AddModelError("Photo", "File size is not correct");
+                return View();
+            }
+
+
+
+
+
+
+
             bool result = productVM.Categories.Any(c => c.Id == productVM.CategoryId && c.IsDeleted == false);
 
             if (!result)
@@ -79,6 +116,22 @@ namespace MVC_Pronia_Template.Areas.ProniaAdmin.Controllers
                 }
             }
 
+            ProductImage mainImage = new()
+            {
+                CreateAt = DateTime.Now,
+                IsDeleted = false,
+                IsPrimary = true,
+                ImageURL = await productVM.MainPhoto.CreateFileAsync(_env.WebRootPath, "assets", "images", "website-images")
+            };
+
+            ProductImage hoverImage = new()
+            {
+                CreateAt = DateTime.Now,
+                IsDeleted = false,
+                IsPrimary = false,
+                ImageURL = await productVM.HoverPhoto.CreateFileAsync(_env.WebRootPath, "assets", "images", "website-images")
+            };
+
 
 
 
@@ -90,8 +143,42 @@ namespace MVC_Pronia_Template.Areas.ProniaAdmin.Controllers
                 Description = productVM.Description,
                 Price = productVM.Price.Value,
                 CreateAt = DateTime.Now,
-                IsDeleted = false
+                IsDeleted = false,
+                ProductImages = new List<ProductImage>() { mainImage, hoverImage }
             };
+
+
+            if (productVM.Photos is not null)
+            {
+                string text = string.Empty;
+                foreach (IFormFile file in productVM.Photos)
+                {
+                    if (!file.ValidateType("image/"))
+                    {
+                        text += $"{file.FileName} named file type is not correct";
+                        continue;
+                    }
+
+                    if (!file.ValidateSize(FileSize.MB, 1))
+                    {
+                        text += $"{file.FileName} named file size is not correct";
+                        continue;
+                    }
+                    ProductImage Image = new()
+                    {
+                        CreateAt = DateTime.Now,
+                        IsDeleted = false,
+                        IsPrimary = null,
+                        ImageURL = await file.CreateFileAsync(_env.WebRootPath, "assets", "images", "website-images")
+                    };
+
+                    product.ProductImages.Add(Image);
+                }
+
+                TempData["ErrorMessage"] = text;
+            }
+
+
 
             if (productVM.TagIds is not null)
             {
@@ -125,7 +212,7 @@ namespace MVC_Pronia_Template.Areas.ProniaAdmin.Controllers
         {
             if (id == null || id <= 0) return BadRequest();
 
-            Product product = await _context.Products.Include(p => p.ProductTags).FirstOrDefaultAsync(c => c.Id == id && !c.IsDeleted);
+            Product product = await _context.Products.Include(p => p.ProductTags).Include(p=>p.ProductImages).FirstOrDefaultAsync(c => c.Id == id && !c.IsDeleted);
 
             if (product == null) return NotFound();
 
@@ -138,7 +225,8 @@ namespace MVC_Pronia_Template.Areas.ProniaAdmin.Controllers
                 CategoryId = product.CategoryId,
                 TagIds = product.ProductTags.Select(pt => pt.TagId).ToList(),
                 Categories = await _context.Categories.Where(p => !p.IsDeleted).ToListAsync(),
-                Tags = await _context.Tags.Where(t => !t.IsDeleted).ToListAsync()
+                Tags = await _context.Tags.Where(t => !t.IsDeleted).ToListAsync(),
+                Images=product.ProductImages.ToList()
             };
 
             return View(productVM);

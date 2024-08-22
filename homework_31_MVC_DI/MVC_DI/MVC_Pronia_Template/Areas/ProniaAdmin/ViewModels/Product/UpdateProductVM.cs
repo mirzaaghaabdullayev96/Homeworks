@@ -6,6 +6,10 @@ namespace MVC_Pronia_Template.Areas.ProniaAdmin.ViewModels
     public class UpdateProductVM
     {
 
+
+        public IFormFile? MainPhoto { get; set; }
+        public IFormFile? HoverPhoto { get; set; }
+        public List<IFormFile>? Photos { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         [Required]
@@ -15,5 +19,6 @@ namespace MVC_Pronia_Template.Areas.ProniaAdmin.ViewModels
         public string SKU { get; set; }
         public List<Category>? Categories { get; set; }
         public List<Tag>? Tags { get; set; }
+        public List<ProductImage> Images { get; set; }
     }
 }

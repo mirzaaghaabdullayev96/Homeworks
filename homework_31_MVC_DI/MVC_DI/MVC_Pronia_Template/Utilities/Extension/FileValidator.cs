@@ -1,4 +1,6 @@
 ﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.Extensions.ObjectPool;
+using MVC_Pronia_Template.Models;
 using MVC_Pronia_Template.Utilities.Enums;
 
 namespace MVC_Pronia_Template.Utilities.Extension
@@ -22,20 +24,37 @@ namespace MVC_Pronia_Template.Utilities.Extension
         public static async Task<string> CreateFileAsync(this IFormFile file, params string[] roots)
         {
             string fileName = String.Concat(Guid.NewGuid().ToString(), file.FileName);
-            string path=string.Empty;
+            string path = string.Empty;
             for (int i = 0; i < roots.Length; i++)
             {
-                path=Path.Combine(path, roots[i]);
+                path = Path.Combine(path, roots[i]);
             }
 
-            path= Path.Combine(path, fileName);
+            path = Path.Combine(path, fileName);
 
-            using (FileStream fileStream = new (path, FileMode.Create))
+            using (FileStream fileStream = new(path, FileMode.Create))
             {
                 await file.CopyToAsync(fileStream);
             }
 
             return fileName;
+        }
+
+        public static void DeleteFile(this string fileName, params string[] roots)
+        {
+            string path = string.Empty;
+
+            for (int i = 0; i < roots.Length; i++)
+            {
+                path = Path.Combine(path, roots[i]);
+            }
+
+            path = Path.Combine(path, fileName);
+
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
         }
     }
 }

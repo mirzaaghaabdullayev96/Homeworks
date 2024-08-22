@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using MVC_Pronia_Template.Areas.ProniaAdmin.ViewModels;
 using MVC_Pronia_Template.DAL;
 using MVC_Pronia_Template.Models;
 using MVC_Pronia_Template.Utilities.Enums;
 using MVC_Pronia_Template.Utilities.Extension;
+using System.Drawing;
 
 namespace MVC_Pronia_Template.Areas.ProniaAdmin.Controllers
 {
@@ -20,7 +22,7 @@ namespace MVC_Pronia_Template.Areas.ProniaAdmin.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            List<Slide> slides = await _context.Slides.Where(s=>!s.IsDeleted).ToListAsync();
+            List<Slide> slides = await _context.Slides.Where(s => !s.IsDeleted).ToListAsync();
             return View(slides);
         }
 
@@ -32,7 +34,7 @@ namespace MVC_Pronia_Template.Areas.ProniaAdmin.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Create(Slide slide)
+        public async Task<IActionResult> Create(CreateSlideVM slideVM)
         {
 
 
@@ -41,27 +43,123 @@ namespace MVC_Pronia_Template.Areas.ProniaAdmin.Controllers
                 return View();
             }
 
-            if (!slide.Photo.ValidateType("image/"))
+            if (!slideVM.Photo.ValidateType("image/"))
             {
                 ModelState.AddModelError("Photo", "File type is not correct");
                 return View();
             }
 
-            if (!slide.Photo.ValidateSize(FileSize.MB, 2))
+            if (!slideVM.Photo.ValidateSize(FileSize.MB, 2))
             {
                 ModelState.AddModelError("Photo", "File size is not correct");
                 return View();
             }
 
+            string fileName = await slideVM.Photo.CreateFileAsync(_env.WebRootPath, "assets", "images", "website-images");
 
-            slide.Image = await slide.Photo.CreateFileAsync(_env.WebRootPath,"assets","images","website-images");
+            Slide slide = new()
+            {
+                Title = slideVM.Title,
+                SubTitle = slideVM.SubTitle,
+                Description = slideVM.Description,
+                Order = slideVM.Order,
+                CreateAt = DateTime.Now,
+                IsDeleted = false,
+                Image = fileName
+            };
+
             slide.CreateAt = DateTime.Now;
-           
+
             await _context.Slides.AddAsync(slide);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null || id <= 0) return BadRequest();
+
+            Slide slide = await _context.Slides.FirstOrDefaultAsync(c => c.Id == id);
+
+            if (slide == null) return NotFound();
+
+            slide.Image.DeleteFile(_env.WebRootPath, "assets", "images", "website-images");
+
+            _context.Slides.Remove(slide);
+
             await _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));
 
         }
+
+
+        public async Task<IActionResult> Update(int? id)
+        {
+
+            if (id == null || id <= 0) return BadRequest();
+
+            Slide slide = await _context.Slides.FirstOrDefaultAsync(c => c.Id == id);
+
+            if (slide == null) return NotFound();
+
+            UpdateSlideVM slideVM = new()
+            {
+                Image = slide.Image,
+                Title = slide.Title,
+                SubTitle = slide.SubTitle,
+                Description = slide.Description,
+                Order = slide.Order
+            };
+
+
+            return View(slideVM);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Update(int? id, UpdateSlideVM slideVM)
+        {
+
+            if (!ModelState.IsValid)
+            {
+                return View(slideVM);
+            }
+
+            Slide existed=await _context.Slides.FirstOrDefaultAsync(s => s.Id == id);
+
+            if (existed == null) return NotFound();
+
+            if(slideVM.Photo is not null)
+            {
+
+                if (!slideVM.Photo.ValidateType("image/"))
+                {
+                    ModelState.AddModelError("Photo", "File type is not correct");
+                    return View();
+                }
+
+                if (!slideVM.Photo.ValidateSize(FileSize.MB, 2))
+                {
+                    ModelState.AddModelError("Photo", "File size is not correct");
+                    return View();
+                }
+
+                string fileName = await slideVM.Photo.CreateFileAsync(_env.WebRootPath, "assets", "images", "website-images");
+                existed.Image.DeleteFile(_env.WebRootPath, "assets", "images", "website-images");
+                existed.Image = fileName;
+
+            }
+
+            existed.Title=slideVM.Title;
+            existed.Description=slideVM.Description;
+            existed.SubTitle=slideVM.SubTitle;
+            existed.Order=slideVM.Order;
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+
     }
 }

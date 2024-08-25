@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using MVC_Pronia_Template.DAL;
+using MVC_Pronia_Template.Services.Implementations;
+using MVC_Pronia_Template.Services.Interfaces;
 using System.Data;
 
 namespace MVC_Pronia_Template
@@ -15,6 +17,8 @@ namespace MVC_Pronia_Template
             builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
             builder.Services.AddTransient<IDbConnection>(sp =>
                 new SqlConnection(builder.Configuration.GetConnectionString("Default")));
+
+            builder.Services.AddScoped<ILayoutService,LayoutService>();
 
             var app = builder.Build();
 

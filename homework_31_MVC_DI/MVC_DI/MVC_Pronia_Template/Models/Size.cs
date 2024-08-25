@@ -8,5 +8,6 @@ namespace MVC_Pronia_Template.Models
         [Required]
         [MaxLength(25)]
         public string Name { get; set; }
+        public ICollection<ProductSize> ProductSizes { get; set; }
     }
 }

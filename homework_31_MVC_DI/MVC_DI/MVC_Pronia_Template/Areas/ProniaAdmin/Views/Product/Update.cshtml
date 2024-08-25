@@ -4,8 +4,6 @@
     ProductImage main = Model.Images.FirstOrDefault(i => i.IsPrimary == true);
     ProductImage hover = Model.Images.FirstOrDefault(i => i.IsPrimary == false);
     List<ProductImage> additionals = Model.Images.Where(i => i.IsPrimary == null).ToList();
-
-
 }
 
 
@@ -44,13 +42,17 @@
                             </div>
 
                             <div class="form-group">
+                                <div style="display:flex">
+                                    @foreach (ProductImage image in additionals)
+                                    {
 
-                                @foreach (ProductImage image in additionals)
-                                {
-                                    <img style="width:150px; height:150px;" src="~/assets/images/website-images/@image?.ImageURL" />
-                                }
-
-
+                                        <div style="position:relative" class="me-3">
+                                            <img style="width:150px; height:150px; " src="~/assets/images/website-images/@image?.ImageURL" />
+                                            <input type="hidden" asp-for="ImagesIds" value="@image?.Id" class="form-control">
+                                            <button style="position:absolute; top:0; right:0; display:flex; justify-content:center; align-items:center; width:30px; padding:0; height:25px " class="cusDelete btn btn-danger">X</button>
+                                        </div>
+                                    }
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label asp-for="Photos">Additional Images</label>
@@ -62,17 +64,17 @@
 
                             <div class="form-group">
                                 <label asp-for="Name">Name</label>
-                                <input asp-for="Name" class="form-control" id="Name" placeholder="Name">
+                                <input asp-for="Name" class="form-control" placeholder="Name">
                                 <span class="text-danger" asp-validation-for="Name"></span>
                             </div>
                             <div class="form-group">
                                 <label asp-for="Price">Price</label>
-                                <input asp-for="Price" class="form-control" id="Price" placeholder="Price">
+                                <input asp-for="Price" class="form-control" placeholder="Price">
                                 <span class="text-danger" asp-validation-for="Price"></span>
                             </div>
                             <div class="form-group">
                                 <label asp-for="SKU">SKU</label>
-                                <input asp-for="SKU" class="form-control" id="SKU" placeholder="SKU">
+                                <input asp-for="SKU" class="form-control" placeholder="SKU">
                                 <span class="text-danger" asp-validation-for="SKU"></span>
                             </div>
 
@@ -95,6 +97,20 @@
                             </div>
 
                             <div class="form-group">
+                                <label asp-for="ColorIds">Colors</label>
+                                <select class="form-control" asp-for="ColorIds" asp-items="new SelectList(Model.Colors,nameof(Color.Id),nameof(Color.Name))">
+                                </select>
+                                <span class="text-danger" asp-validation-for="ColorIds"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="SizeIds">Sizes</label>
+                                <select class="form-control" asp-for="SizeIds" asp-items="new SelectList(Model.Sizes,nameof(Size.Id),nameof(Size.Name))">
+                                </select>
+                                <span class="text-danger" asp-validation-for="SizeIds"></span>
+                            </div>
+
+                            <div class="form-group">
                                 <label asp-for="Description">Description</label>
                                 <input asp-for="Description" class="form-control" id="Description" placeholder="Description">
                                 <span class="text-danger" asp-validation-for="Description"></span>
@@ -109,4 +125,20 @@
         </div>
     </div>
 </div>
+
+
+@section DeleteImage {
+
+    <script>
+
+        var btns = document.querySelectorAll(".cusDelete")
+        for (let i = 0; i < btns.length; i++) {
+            btns[i].addEventListener('click', () => {
+                btns[i].parentElement.remove();
+            })
+        }
+    </script>
+
+
+}
 

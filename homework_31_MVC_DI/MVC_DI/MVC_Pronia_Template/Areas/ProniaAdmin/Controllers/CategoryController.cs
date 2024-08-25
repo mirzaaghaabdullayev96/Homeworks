@@ -17,7 +17,7 @@ namespace MVC_Pronia_Template.Areas.ProniaAdmin.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            List<Category> categories = await _context.Categories.Where(c=>!c.IsDeleted).Include(c => c.Products).ToListAsync();
+            List<Category> categories = await _context.Categories.Where(c => !c.IsDeleted).Include(c => c.Products).ToListAsync();
             return View(categories);
         }
 
@@ -89,23 +89,14 @@ namespace MVC_Pronia_Template.Areas.ProniaAdmin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        public async Task<IActionResult> Delete (int? id, Category category)
+        public async Task<IActionResult> Delete(int? id)
         {
-
-           
-
             if (id == null || id <= 0) return BadRequest();
-
             Category existed = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
-
             if (existed == null) return NotFound();
-            category.IsDeleted = true;
+            existed.IsDeleted = true;
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-
-
         }
-
-
     }
 }

@@ -28,6 +28,12 @@ namespace MVC_Pronia_Template.Controllers
             Product? product= await _context.Products
                 .Include(p=>p.Category)
                 .Include(p=>p.ProductImages.OrderByDescending(pi=>pi.IsPrimary))
+                .Include(p=>p.ProductTags)
+                .ThenInclude(pt=>pt.Tag)
+                .Include(p => p.ProductColors)
+                .ThenInclude(pt => pt.Color)
+                .Include(p => p.ProductSizes)
+                .ThenInclude(pt => pt.Size)
                 .FirstOrDefaultAsync(p=>p.Id == id);
 
             if(product == null) return NotFound();

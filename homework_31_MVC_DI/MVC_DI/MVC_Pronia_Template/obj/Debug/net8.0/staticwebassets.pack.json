@@ -885,10 +885,6 @@
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\1-3.png"
     },
     {
-      "Id": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\assets\\images\\website-images\\1-4-270x300.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\website-images\\1-4-270x300.jpg"
-    },
-    {
       "Id": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\assets\\images\\website-images\\1-4-570x633.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\1-4-570x633.jpg"
     },
@@ -929,6 +925,14 @@
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\1.png"
     },
     {
+      "Id": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\assets\\images\\website-images\\13755084-3a2d-493b-81fb-dc851f30e1fe1-2-570x633.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\website-images\\13755084-3a2d-493b-81fb-dc851f30e1fe1-2-570x633.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\assets\\images\\website-images\\1d523318-6fad-41d2-a15b-53a33486659e1-8-270x300.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\website-images\\1d523318-6fad-41d2-a15b-53a33486659e1-8-270x300.jpg"
+    },
+    {
       "Id": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\assets\\images\\website-images\\2-1-370x270.webp",
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\2-1-370x270.webp"
     },
@@ -953,12 +957,24 @@
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\2.png"
     },
     {
+      "Id": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\assets\\images\\website-images\\2f2f333f-c4ef-401b-b992-2667104e5ea61-2-524x617.png",
+      "PackagePath": "staticwebassets\\assets\\images\\website-images\\2f2f333f-c4ef-401b-b992-2667104e5ea61-2-524x617.png"
+    },
+    {
       "Id": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\assets\\images\\website-images\\3.png",
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\3.png"
     },
     {
-      "Id": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\assets\\images\\website-images\\66bc2d29-1df5-4723-a5ff-dbbebac9eb3cgarden-rose-red-pink-56866.webp",
-      "PackagePath": "staticwebassets\\assets\\images\\website-images\\66bc2d29-1df5-4723-a5ff-dbbebac9eb3cgarden-rose-red-pink-56866.webp"
+      "Id": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\assets\\images\\website-images\\5d8be357-95ba-485b-8c8e-79125d30dd2a1-1-570x633.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\website-images\\5d8be357-95ba-485b-8c8e-79125d30dd2a1-1-570x633.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\assets\\images\\website-images\\92a56a08-bb8f-44eb-9fbe-ad21042aa0221-1-524x617.png",
+      "PackagePath": "staticwebassets\\assets\\images\\website-images\\92a56a08-bb8f-44eb-9fbe-ad21042aa0221-1-524x617.png"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\assets\\images\\website-images\\c72c4577-8e8f-433b-aa33-bef5e2298a781-4-570x633.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\website-images\\c72c4577-8e8f-433b-aa33-bef5e2298a781-4-570x633.jpg"
     },
     {
       "Id": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\assets\\images\\website-images\\car.png",
@@ -973,8 +989,12 @@
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\dark.png"
     },
     {
-      "Id": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\assets\\images\\website-images\\e581449a-00f6-4ea4-8699-9a6d85034276garden-rose-red-pink-56866.webp",
-      "PackagePath": "staticwebassets\\assets\\images\\website-images\\e581449a-00f6-4ea4-8699-9a6d85034276garden-rose-red-pink-56866.webp"
+      "Id": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\assets\\images\\website-images\\e03f8d04-3ad4-4e21-9b04-0d6e94590ece1-9-270x300.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\website-images\\e03f8d04-3ad4-4e21-9b04-0d6e94590ece1-9-270x300.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\assets\\images\\website-images\\e9621799-867d-44c9-a67d-8f3832cd95a01-9-270x300.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\website-images\\e9621799-867d-44c9-a67d-8f3832cd95a01-9-270x300.jpg"
     },
     {
       "Id": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\wwwroot\\assets\\images\\website-images\\quotation.png",

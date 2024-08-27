@@ -1,0 +1,13 @@
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.Core\bin\Debug\net8.0\Pustok.Core.deps.json
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.Core\bin\Debug\net8.0\Pustok.Core.dll
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.Core\bin\Debug\net8.0\Pustok.Core.pdb
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.Core\obj\Debug\net8.0\Pustok.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.Core\obj\Debug\net8.0\Pustok.Core.AssemblyInfoInputs.cache
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.Core\obj\Debug\net8.0\Pustok.Core.AssemblyInfo.cs
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.Core\obj\Debug\net8.0\Pustok.Core.csproj.CoreCompileInputs.cache
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.Core\obj\Debug\net8.0\Pustok.Core.sourcelink.json
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.Core\obj\Debug\net8.0\Pustok.Core.dll
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.Core\obj\Debug\net8.0\refint\Pustok.Core.dll
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.Core\obj\Debug\net8.0\Pustok.Core.pdb
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.Core\obj\Debug\net8.0\ref\Pustok.Core.dll
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.Core\obj\Debug\net8.0\Pustok.Core.csproj.AssemblyReference.cache

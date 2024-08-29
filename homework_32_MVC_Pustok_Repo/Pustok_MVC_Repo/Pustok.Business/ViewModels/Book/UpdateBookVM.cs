@@ -33,8 +33,8 @@ namespace Pustok.Business.ViewModels
         [Required]
         public int? GenreId { get; set; }
 
-        public IFormFile MainPhoto { get; set; }
-        public IFormFile HoverPhoto { get; set; }
+        public IFormFile? MainPhoto { get; set; }
+        public IFormFile? HoverPhoto { get; set; }
         public List<IFormFile>? AdditionalPhotos { get; set; }
         public List<int>? BookImagesIds { get; set; }
         public List<BookImage>? BookImages { get; set; }

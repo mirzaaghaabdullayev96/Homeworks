@@ -130,3 +130,17 @@
     </div>
 </div>
 
+
+@section DeleteImage {
+
+    <script>
+
+        var btns = document.querySelectorAll(".cusDelete")
+        for (let i = 0; i < btns.length; i++) {
+            btns[i].addEventListener('click', () => {
+                btns[i].parentElement.remove();
+            })
+        }
+    </script>
+}
+

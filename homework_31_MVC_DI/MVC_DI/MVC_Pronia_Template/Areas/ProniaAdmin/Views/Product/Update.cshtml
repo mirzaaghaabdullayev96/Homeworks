@@ -46,11 +46,11 @@
                                     @foreach (ProductImage image in additionals)
                                     {
 
-                                        <div style="position:relative" class="me-3">
-                                            <img style="width:150px; height:150px; " src="~/assets/images/website-images/@image?.ImageURL" />
-                                            <input type="hidden" asp-for="ImagesIds" value="@image?.Id" class="form-control">
-                                            <button style="position:absolute; top:0; right:0; display:flex; justify-content:center; align-items:center; width:30px; padding:0; height:25px " class="cusDelete btn btn-danger">X</button>
-                                        </div>
+                                                <div style="position:relative" class="me-3">
+                                                    <img style="width:150px; height:150px; " src="~/assets/images/website-images/@image?.ImageURL" />
+                                                    <input type="hidden" asp-for="ImagesIds" value="@image?.Id" class="form-control">
+                                                    <button style="position:absolute; top:0; right:0; display:flex; justify-content:center; align-items:center; width:30px; padding:0; height:25px " class="cusDelete btn btn-danger">X</button>
+                                                </div>
                                     }
                                 </div>
                             </div>
@@ -129,16 +129,14 @@
 
 @section DeleteImage {
 
-    <script>
+            <script>
 
-        var btns = document.querySelectorAll(".cusDelete")
-        for (let i = 0; i < btns.length; i++) {
-            btns[i].addEventListener('click', () => {
-                btns[i].parentElement.remove();
-            })
-        }
-    </script>
-
-
+                var btns = document.querySelectorAll(".cusDelete")
+                for (let i = 0; i < btns.length; i++) {
+                    btns[i].addEventListener('click', () => {
+                        btns[i].parentElement.remove();
+                    })
+                }
+            </script>
 }
 

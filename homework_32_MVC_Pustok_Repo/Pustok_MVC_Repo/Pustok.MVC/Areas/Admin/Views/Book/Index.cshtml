@@ -12,8 +12,8 @@
             <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Genre Table</h4>
-                        <a asp-action="Create" class="btn btn-success">Create Genre</a>
+                        <h4 class="card-title">Book Table</h4>
+                        <a asp-action="Create" class="btn btn-success">Create Book</a>
                         <div class="table-responsive">
                             <table class="table table-striped">
                                 <thead>
@@ -47,7 +47,7 @@
                                                 @no
                                             </td>
                                             <td>
-                                                <img src="~/assets/myProducts/productImages/@book.BookImages.FirstOrDefault(x=>x.IsMain==true).ImageURL" />
+                                                <img src="~/assets/myProducts/productImages/@book.BookImages.FirstOrDefault(x=>x.IsMain==true)?.ImageURL" />
                                             </td>
                                             <td>
                                                 <p>@book.Title</p>

@@ -65,10 +65,10 @@ namespace Pustok.MVC.Areas.Admin.Controllers
             }
             catch (Exception ex)
             {
-                ModelState.AddModelError("Name", ex.Message);   
+                ModelState.AddModelError("Name", ex.Message);
                 return View();
             }
-            
+
             return RedirectToAction(nameof(Index));
         }
     }

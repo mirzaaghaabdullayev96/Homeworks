@@ -8,6 +8,7 @@ using Pustok.Business.Utilities.Extension;
 using Pustok.Business.ViewModels;
 using Pustok.Core.Models;
 using Pustok.Core.Repositories;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Pustok.MVC.Areas.Admin.Controllers
 {
@@ -112,6 +113,70 @@ namespace Pustok.MVC.Areas.Admin.Controllers
 
 
             return View(bookVM);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Update(int? id, UpdateBookVM bookVM)
+        {
+            ViewBag.Genres = await _genreService.GetAll(x => !x.IsDeleted);
+            ViewBag.Authors = await _authorService.GetAll(x => !x.IsDeleted);
+            Book data = null;
+            try
+            {
+                data = await _bookService.GetByExpressionAsync(x => x.Id == id, "BookImages", "Author", "Genre") ?? throw new EntityNotFoundException();
+            }
+            catch (Exception)
+            {
+                return View("Error");
+            }
+            bookVM.BookImages = data.BookImages;
+
+            if (id < 1 || id is null)
+            {
+                return View("Error");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return View(bookVM);
+            }
+
+
+            try
+            {
+                await _bookService.UpdateAsync(id, bookVM);
+            }
+            catch (EntityNotFoundException ex)
+            {
+                ModelState.AddModelError(ex.PropertyName, ex.Message);
+                return View(bookVM);
+            }
+            catch (FileValidationException ex)
+            {
+                ModelState.AddModelError(ex.PropertyName, ex.Message);
+                return View(bookVM);
+            }
+            catch (IdIsNotValidException)
+            {
+                return View("Error");
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> Delete(int? id)
+        {
+            try
+            {
+                await _bookService.DeleteAsync(id);
+            }
+            catch (IdIsNotValidException)
+            {
+                return View("Error");
+            }
+            
+            return RedirectToAction(nameof(Index));
         }
 
     }

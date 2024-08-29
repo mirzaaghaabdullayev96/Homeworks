@@ -1,0 +1,107 @@
+﻿@model CreateBookVM
+
+
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Create Genre</h4>
+
+                        <form class="forms-sample" method="post" enctype="multipart/form-data">
+
+                            <div class="form-group">
+                                <label asp-for="MainPhoto">Main Image</label>
+                                <input asp-for="MainPhoto" class="form-control" placeholder="MainPhoto">
+                                <span class="text-danger" asp-validation-for="MainPhoto"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="HoverPhoto">Hover Image</label>
+                                <input asp-for="HoverPhoto" class="form-control" placeholder="HoverPhoto">
+                                <span class="text-danger" asp-validation-for="HoverPhoto"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="AdditionalPhotos">Additional Images</label>
+                                <input asp-for="AdditionalPhotos" class="form-control" placeholder="Photos">
+                                <span class="text-danger" asp-validation-for="AdditionalPhotos"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Title">Title</label>
+                                <input asp-for="Title" class="form-control" placeholder="Title">
+                                <span class="text-danger" asp-validation-for="Title"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="ProductCode">Code</label>
+                                <input asp-for="ProductCode"  class="form-control" placeholder="Code">
+                                <span class="text-danger" asp-validation-for="ProductCode"></span>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label asp-for="CostPrice">CostPrice</label>
+                                <input asp-for="CostPrice"  class="form-control" placeholder="CostPrice">
+                                <span class="text-danger" asp-validation-for="CostPrice"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="SalePrice" class="form-label">SalePrice</label>
+                                <input asp-for="SalePrice" type="text" class="form-control" placeholder="SalePrice">
+                                <span class="text-danger" asp-validation-for="SalePrice"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="DiscountPercent" class="form-label">Discount Percent</label>
+                                <input asp-for="DiscountPercent" class="form-control" placeholder="DiscountPercent">
+                                <span class="text-danger" asp-validation-for="DiscountPercent"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="IsAvailable" class="form-label">Available</label>
+                                <input asp-for="IsAvailable" class="form-check-input">
+                                <span class="text-danger" asp-validation-for="IsAvailable"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="StockCount" class="form-label">StockCount</label>
+                                <input asp-for="StockCount"  class="form-control">
+                                <span class="text-danger" asp-validation-for="StockCount"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="AuthorId">Author</label>
+                                <select class="form-control" asp-for="AuthorId" asp-items="@(new SelectList(ViewBag.Authors, "Id","FullName"))">
+                                    <option disabled selected>Choose Author</option>
+                                </select>
+                                <span class="text-danger" asp-validation-for="AuthorId"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="GenreId">Category</label>
+                                <select class="form-control" asp-for="GenreId" asp-items="@(new SelectList(ViewBag.Genres, "Id","Name"))">
+                                    <option disabled selected>Choose Genre</option>
+                                </select>
+                                <span class="text-danger" asp-validation-for="GenreId"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Description" class="form-label">Description</label>
+                                <textarea asp-for="Description" class="form-control" placeholder="Description"></textarea>
+                                <span class="text-danger" asp-validation-for="Description"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary me-2">Submit</button>
+                            <button class="btn btn-light" asp-action="Index">Cancel</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

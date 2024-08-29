@@ -6,6 +6,7 @@ using Pustok.Core.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -40,9 +41,9 @@ namespace Pustok.Business.Services.Implementations
             await _genreRepository.CommitAsync();
         }
 
-        public async Task<ICollection<Genre>> GetAll()
+        public async Task<ICollection<Genre>> GetAll(Expression<Func<Genre, bool>>? expression = null, params string[] includes)
         {
-            return await _genreRepository.GetAll().ToListAsync();
+            return await _genreRepository.GetAll(expression,includes).ToListAsync();
         }
 
         public async Task<Genre> GetByIdAsync(int? id)

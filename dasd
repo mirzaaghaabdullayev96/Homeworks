@@ -1,0 +1,63 @@
+[33ma186607[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: commit: books update(get) done
+[33me86fe4f[m HEAD@{1}: commit: slides, genres, architecture, crud
+[33mc5ce704[m HEAD@{2}: commit: size, colors many to many
+[33mba36ae6[m HEAD@{3}: commit: product update get
+[33m846b67b[m HEAD@{4}: commit: many to many
+[33md72373e[m HEAD@{5}: pull: Merge made by the 'ort' strategy.
+[33m800a1ff[m HEAD@{6}: commit: file upload
+[33m15e29eb[m HEAD@{7}: commit: homework Tag, Color, Size
+[33m2f9e62d[m HEAD@{8}: commit: created crud for category
+[33md23692d[m HEAD@{9}: commit: homework 31
+[33m95b306b[m HEAD@{10}: commit: homework 31 mvc DI
+[33mf11bbf3[m HEAD@{11}: commit: homework 30 MVC
+[33m30ca56a[m HEAD@{12}: commit: Last commit
+[33m39bde0b[m HEAD@{13}: commit: fix of passing arr to render function
+[33m2ece5d4[m HEAD@{14}: commit: FilterByGenre
+[33m264cb32[m HEAD@{15}: commit: search updated
+[33m4d3ba6e[m HEAD@{16}: commit: search
+[33m614d5ec[m HEAD@{17}: commit: homework 29 fetch
+[33mb58649c[m HEAD@{18}: commit: homework 28 local storage
+[33mfd09bc8[m HEAD@{19}: commit: homework 27 js intro
+[33mdfeb586[m HEAD@{20}: commit: homework 26 bootstrap
+[33m8c47ccb[m HEAD@{21}: commit: homework 26 bootstrap
+[33mf9e6b4e[m HEAD@{22}: commit: homework 25 html
+[33m6c61b75[m HEAD@{23}: commit: homework 24 ef mtom
+[33m707861e[m HEAD@{24}: commit: homework 23 Entity Framework
+[33m46fff47[m HEAD@{25}: commit: homework 22 ado net
+[33m8ffb7f9[m HEAD@{26}: commit: homework 21 MSSQL functions
+[33m7acc45d[m HEAD@{27}: commit: homework 20 MSSQL Procedure View
+[33me855178[m HEAD@{28}: commit: homework 19 MSSQL JOINS
+[33mef05541[m HEAD@{29}: commit: homework 18 MSSQL
+[33m2042f0f[m HEAD@{30}: commit: homework 17 project
+[33m1ee6da2[m HEAD@{31}: commit: project
+[33m49252de[m HEAD@{32}: commit: homework 17 project
+[33m44d0bbe[m HEAD@{33}: commit: homework 17 project
+[33mb67613f[m HEAD@{34}: reset: moving to origin/main
+[33mb67613f[m HEAD@{35}: pull origin main: Fast-forward
+[33me856495[m HEAD@{36}: reset: moving to HEAD
+[33me856495[m HEAD@{37}: reset: moving to HEAD~1
+[33mabd69db[m HEAD@{38}: reset: moving to HEAD
+[33mabd69db[m HEAD@{39}: reset: moving to HEAD
+[33mabd69db[m HEAD@{40}: reset: moving to HEAD
+[33mabd69db[m HEAD@{41}: reset: moving to HEAD
+[33mabd69db[m HEAD@{42}: commit: homework 17 project
+[33me856495[m HEAD@{43}: commit: homework 17 project
+[33m59a4969[m HEAD@{44}: commit: homework 16 FileIO
+[33m715037a[m HEAD@{45}: commit: homework 15 DTO
+[33m57329f2[m HEAD@{46}: commit: homework 14 course ERP
+[33m744d64b[m HEAD@{47}: commit: homework 13 architecture
+[33m5738725[m HEAD@{48}: commit: homework 12 ClassLibrary
+[33m72f1e95[m HEAD@{49}: commit: update of method
+[33m7ddbd87[m HEAD@{50}: commit: homework 11 generics
+[33mbfb18e1[m HEAD@{51}: commit: homework 10 Upcasting Downcasting Enum Exception
+[33m6d44722[m HEAD@{52}: commit: homework 9 static extension
+[33m1cce9b3[m HEAD@{53}: commit: homework 8 encapsulation
+[33m8723051[m HEAD@{54}: commit: homework 7 class
+[33m4a2e187[m HEAD@{55}: commit: homework 6 Ref Out String
+[33m9db5fba[m HEAD@{56}: commit: homework 5
+[33m228f575[m HEAD@{57}: commit: homework 4 search and sort
+[33ma167996[m HEAD@{58}: commit: homework_3_Array
+[33m2054384[m HEAD@{59}: pull: Merge made by the 'ort' strategy.
+[33m6ebd03b[m HEAD@{60}: commit: new homework
+[33md1f4f1c[m HEAD@{61}: Branch: renamed refs/heads/master to refs/heads/main
+[33md1f4f1c[m HEAD@{63}: commit (initial): homework 1 added

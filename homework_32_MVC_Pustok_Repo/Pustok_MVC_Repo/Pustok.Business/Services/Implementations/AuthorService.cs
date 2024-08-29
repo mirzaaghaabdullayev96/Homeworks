@@ -59,7 +59,7 @@ namespace Pustok.Business.Services.Implementations
             {
                 throw new IdIsNotValidException("Id not valid");
             }
-
+            
             return await _authorRepository.GetByIdAsync(id);
         }
 

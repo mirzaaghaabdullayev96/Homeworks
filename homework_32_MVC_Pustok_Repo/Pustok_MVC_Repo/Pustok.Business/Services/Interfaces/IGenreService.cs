@@ -3,6 +3,7 @@ using Pustok.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,6 +15,6 @@ namespace Pustok.Business.Services.Interfaces
         Task UpdateAsync(int? id, UpdateGenreVM genreVM);
         Task<Genre> GetByIdAsync(int? id);
         Task DeleteAsync(int? id);
-        Task<ICollection<Genre>> GetAll();
+        Task<ICollection<Genre>> GetAll(Expression<Func<Genre, bool>>? expression = null, params string[] includes);
     }
 }

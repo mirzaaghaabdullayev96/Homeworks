@@ -445,6 +445,10 @@
       "PackagePath": "staticwebassets\\assets\\image\\bg-images\\3ef0c2cd-a729-4b9d-a2ad-9200dcccbcf1home-slider-2-ai.png"
     },
     {
+      "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\image\\bg-images\\56406d4f-c9d6-4771-ba1f-6e04b8c0976bhome-2-slider-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\bg-images\\56406d4f-c9d6-4771-ba1f-6e04b8c0976bhome-2-slider-1.jpg"
+    },
+    {
       "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\image\\bg-images\\5b473ab9-c10e-4e5b-a458-218b48917ac9home-slider-1-ai.png",
       "PackagePath": "staticwebassets\\assets\\image\\bg-images\\5b473ab9-c10e-4e5b-a458-218b48917ac9home-slider-1-ai.png"
     },
@@ -747,6 +751,38 @@
     {
       "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\js\\plugins.js",
       "PackagePath": "staticwebassets\\assets\\js\\plugins.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\4255b2ea-438e-4a74-96c1-85712411e24aproduct-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\4255b2ea-438e-4a74-96c1-85712411e24aproduct-3.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\52994d8f-6b4c-4e7c-9b64-777acbde897dcart-product-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\52994d8f-6b4c-4e7c-9b64-777acbde897dcart-product-1.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\5f2f73e6-72c8-48aa-bb1f-a78eb10a36ecproduct-details-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\5f2f73e6-72c8-48aa-bb1f-a78eb10a36ecproduct-details-5.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\80b3418a-e989-404c-acd9-413e78a6d319product-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\80b3418a-e989-404c-acd9-413e78a6d319product-12.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\8cea3b58-6cf9-4717-9d8b-0d817dd41f47product-details-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\8cea3b58-6cf9-4717-9d8b-0d817dd41f47product-details-1.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\b028e1e0-ce81-46c1-b806-c113c508444aproduct-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\b028e1e0-ce81-46c1-b806-c113c508444aproduct-4.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\da9623d3-52b9-4642-86e5-4ee3f246cd1fproduct-details-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\da9623d3-52b9-4642-86e5-4ee3f246cd1fproduct-details-4.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\e1ca23dc-cbd0-467d-9666-35b3c9a671f0product-13.jpg",
+      "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\e1ca23dc-cbd0-467d-9666-35b3c9a671f0product-13.jpg"
     },
     {
       "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\lib\\bootstrap\\LICENSE",

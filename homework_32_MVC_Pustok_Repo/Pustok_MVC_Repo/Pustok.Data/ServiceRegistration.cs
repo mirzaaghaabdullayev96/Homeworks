@@ -15,6 +15,9 @@ namespace Pustok.Data
         {
             services.AddScoped<IGenreRepository, GenreRepository>();
             services.AddScoped<ISlideRepository, SlideRepository>();
+            services.AddScoped<IBookRepository, BookRepository>();
+            services.AddScoped<IAuthorRepository, AuthorRepository>();
+            services.AddScoped<IBookImageRepository, BookImageRepository>();
         }
     }
 }

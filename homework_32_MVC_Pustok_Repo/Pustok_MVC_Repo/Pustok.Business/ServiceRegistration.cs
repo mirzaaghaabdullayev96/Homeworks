@@ -20,6 +20,8 @@ namespace Pustok.Business
             services.AddScoped<IGenreService, GenreService>();
             services.AddScoped<ISlideService, SlideService>();
             services.AddScoped<ILayoutService, LayoutService>();
+            services.AddScoped<IBookService, BookService>();
+            services.AddScoped<IAuthorService, AuthorService>();
             services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(connection));
         }
     }

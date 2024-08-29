@@ -1,7 +1,17 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\homework_32_MVC_Pustok_Repo",
+    "\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo",
+    "\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Business",
+    "\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Business\\bin\\Debug\\net8.0",
+    "\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Business\\Utilities\\Extension",
+    "\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Data",
+    "\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Data\\Configurations",
+    "\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Data\\DAL",
+    "\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Areas",
+    "\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Areas\\Admin"
   ],
-  "SelectedNode": "\\homework_1_var_dataTypes_operators",
+  "SelectedNode": "\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Data\\DAL\\AppDbContext.cs",
   "PreviewInSolutionExplorer": false
 }

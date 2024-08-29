@@ -13,5 +13,15 @@ namespace Pustok.Data.DAL
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
         public DbSet<Genre> Genres { get; set; }
         public DbSet<Slide> Slides { get; set; }
+        public DbSet<Book> Books { get; set; }
+        public DbSet<BookImage> BookImages { get; set; }
+        public DbSet<Author> Authors { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(Book).Assembly);
+            base.OnModelCreating(modelBuilder);
+        }
+
     }
 }

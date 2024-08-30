@@ -749,6 +749,10 @@
       "PackagePath": "staticwebassets\\assets\\js\\custom.js"
     },
     {
+      "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
       "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\js\\plugins.js",
       "PackagePath": "staticwebassets\\assets\\js\\plugins.js"
     },
@@ -757,16 +761,16 @@
       "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\1eaf1077-e519-4ce2-9bde-8d2794c962f4product-11.jpg"
     },
     {
-      "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\2615d8d6-a3a1-4e1c-be59-ddd24dd6c956product-details-1.jpg",
-      "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\2615d8d6-a3a1-4e1c-be59-ddd24dd6c956product-details-1.jpg"
-    },
-    {
       "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\35acd7b8-f957-4290-bce5-fe9bd4a67943product-3.jpg",
       "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\35acd7b8-f957-4290-bce5-fe9bd4a67943product-3.jpg"
     },
     {
       "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\35c786a4-941a-40ef-bc1e-78d0fd3ae25aproduct-9.jpg",
       "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\35c786a4-941a-40ef-bc1e-78d0fd3ae25aproduct-9.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\4af61be5-6b2b-4fd1-94aa-f951b88b5a79product-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\4af61be5-6b2b-4fd1-94aa-f951b88b5a79product-6.jpg"
     },
     {
       "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\54feb154-3dea-437e-a886-201e58313964product-2.jpg",

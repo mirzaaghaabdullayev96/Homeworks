@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using Pustok.Business.Utilities.Extension;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
+using System.Linq.Expressions;
 
 namespace Pustok.Business.Services.Implementations
 {
@@ -32,7 +33,7 @@ namespace Pustok.Business.Services.Implementations
             {
                 Title = genreVM.Title,
                 Subtitle = genreVM.Subtitle,
-                Image = await genreVM.SlidePhoto.CreateFileAsync(_env.WebRootPath,"assets","image", "bg-images"),
+                Image = await genreVM.SlidePhoto.CreateFileAsync(_env.WebRootPath, "assets", "image", "bg-images"),
                 IsDeleted = false,
                 CreateDate = DateTime.Now,
                 UpdateDate = DateTime.Now,
@@ -50,9 +51,9 @@ namespace Pustok.Business.Services.Implementations
             await _slideRepository.CommitAsync();
         }
 
-        public async Task<ICollection<Slide>> GetAll()
+        public async Task<ICollection<Slide>> GetAll(Expression<Func<Slide, bool>>? expression = null)
         {
-            return await _slideRepository.GetAll().ToListAsync();
+            return await _slideRepository.GetAll(expression).ToListAsync();
         }
 
         public async Task<Slide> GetByIdAsync(int? id)
@@ -69,10 +70,10 @@ namespace Pustok.Business.Services.Implementations
             entity.UpdateDate = DateTime.Now;
             entity.Subtitle = slideVM.Subtitle;
 
-            if(slideVM.SlidePhoto != null)
+            if (slideVM.SlidePhoto != null)
             {
                 entity.Image.DeleteFile(_env.WebRootPath, "assets", "image", "bg-images");
-                entity.Image = await slideVM.SlidePhoto.CreateFileAsync(_env.WebRootPath,"assets", "image", "bg-images");
+                entity.Image = await slideVM.SlidePhoto.CreateFileAsync(_env.WebRootPath, "assets", "image", "bg-images");
             }
 
             await _slideRepository.CommitAsync();

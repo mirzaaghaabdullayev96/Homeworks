@@ -1,0 +1,75 @@
+﻿@model List<BookItemInCartVM>
+@{
+    int num = 0;
+    decimal sum = 0;
+
+    foreach (var item in Model)
+    {
+        num += item.Count;
+    }
+
+    foreach (var item in Model)
+    {
+        sum += (item.Count * (item.Book.SalePrice - (item.Book.DiscountPercent * item.Book.SalePrice / 100)));
+    }
+}
+
+
+<div class="cart-total">
+    @if (num > 0)
+    {
+        <span class="text-number">
+            @num
+        </span>
+    }
+
+    <span class="text-item">
+        Shopping Cart
+    </span>
+
+    @if (num > 0)
+    {
+        <span class="price">
+            £@sum
+            <i class="fas fa-chevron-down"></i>
+        </span>
+    }
+
+</div>
+@if (num > 0)
+{
+    <div class="cart-dropdown-block">
+        @* one book *@
+        @foreach (var book in Model)
+        {
+
+            <div class=" single-cart-block ">
+                <div class="cart-product">
+                    <a href="product-details.html" class="image">
+                        <img src="~/assets/myProducts/productImages/@book.Book.BookImages.FirstOrDefault(x=>x.IsMain==true).ImageURL" alt="">
+                    </a>
+                    <div class="content">
+                        <h3 class="title">
+                            <a href="product-details.html">
+                                @book.Book.Title
+                            </a>
+                        </h3>
+                        <p class="price"><span class="qty">@book.Count ×</span> £@(book.Book.SalePrice - (book.Book.DiscountPercent * book.Book.SalePrice / 100))</p>
+                        <button class="cross-btn"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+            </div>
+        }
+        <div class=" single-cart-block ">
+            <div class="btn-block">
+                <a href="cart.html" class="btn">
+                    View Cart <i class="fas fa-chevron-right"></i>
+                </a>
+                <a href="checkout.html" class="btn btn--primary">
+                    Check Out <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+}
+

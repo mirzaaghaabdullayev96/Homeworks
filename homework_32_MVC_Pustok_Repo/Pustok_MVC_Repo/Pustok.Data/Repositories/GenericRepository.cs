@@ -53,7 +53,7 @@ namespace Pustok.Data.Repositories
             var query = _context.Set<T>().AsQueryable();
             if (includes.Length > 0)
             {
-                foreach (var include in includes)
+                foreach (string include in includes)
                 {
                     query = query.Include(include);
                 }

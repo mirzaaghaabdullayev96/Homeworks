@@ -13,6 +13,7 @@ using Pustok.Data.Repositories;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -297,6 +298,12 @@ namespace Pustok.Business.Services.Implementations
             existData.ProductCode = bookVM.ProductCode;
 
             await _bookRepository.CommitAsync();
+        }
+
+
+        public async Task<bool> Exists(Expression<Func<Book, bool>> expression)
+        {
+            return await _bookRepository.Table.AnyAsync(expression);
         }
     }
 }

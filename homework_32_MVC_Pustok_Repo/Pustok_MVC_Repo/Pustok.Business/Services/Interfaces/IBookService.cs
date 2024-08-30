@@ -17,5 +17,6 @@ namespace Pustok.Business.Services.Interfaces
         Task DeleteAsync(int? id);
         Task<ICollection<Book>> GetAll(Expression<Func<Book, bool>>? expression = null, params string[] includes);
         Task<Book> GetByExpressionAsync(Expression<Func<Book, bool>> expression, params string[] includes);
+        Task<bool> Exists(Expression<Func<Book, bool>> expression);
     }
 }

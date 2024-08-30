@@ -26,6 +26,7 @@ namespace Pustok.MVC.ViewComponents
             {
                 BookIndexVM bookVM = new BookIndexVM()
                 {
+                    Id = book.Id,
                     AuthorName = book.Author.FullName,
                     SalePrice = book.SalePrice,
                     DiscountPercent = book.DiscountPercent,

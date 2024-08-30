@@ -9,6 +9,7 @@ namespace Pustok.Business.ViewModels
 {
     public class BookIndexVM
     {
+        public int Id { get; set; }
         public string Title { get; set; }
         public decimal SalePrice { get; set; }
         public int? DiscountPercent { get; set; }

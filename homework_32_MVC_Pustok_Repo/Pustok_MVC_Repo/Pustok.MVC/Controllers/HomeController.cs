@@ -96,5 +96,16 @@ namespace Pustok.MVC.Controllers
         {
             return ViewComponent("Basket");
         }
+
+        public IActionResult OpenModal(int? id)
+        {
+
+            if (id == null || id <= 0)
+            {
+                return BadRequest("Invalid book ID.");
+            }
+
+            return ViewComponent("BookModal", id);
+        }
     }
 }

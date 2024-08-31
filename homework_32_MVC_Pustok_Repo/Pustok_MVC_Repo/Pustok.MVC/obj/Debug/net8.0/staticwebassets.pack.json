@@ -773,6 +773,10 @@
       "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\4af61be5-6b2b-4fd1-94aa-f951b88b5a79product-6.jpg"
     },
     {
+      "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\54413328-dd4f-43b0-acac-7ab0e4a13bf4product-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\54413328-dd4f-43b0-acac-7ab0e4a13bf4product-10.jpg"
+    },
+    {
       "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\54feb154-3dea-437e-a886-201e58313964product-2.jpg",
       "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\54feb154-3dea-437e-a886-201e58313964product-2.jpg"
     },
@@ -809,6 +813,10 @@
       "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\9ad75ef1-f9fe-4899-882a-f72c6c1fe74aproduct-9.jpg"
     },
     {
+      "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\a6cb070f-e917-4a42-8de6-cb73c82d9908product-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\a6cb070f-e917-4a42-8de6-cb73c82d9908product-11.jpg"
+    },
+    {
       "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\a8d49186-e43a-4b8e-93f3-b6dd802804b6product-2.jpg",
       "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\a8d49186-e43a-4b8e-93f3-b6dd802804b6product-2.jpg"
     },
@@ -835,6 +843,10 @@
     {
       "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\dfc695ac-bef0-4989-92c3-f9a15b3e8a3bproduct-8.jpg",
       "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\dfc695ac-bef0-4989-92c3-f9a15b3e8a3bproduct-8.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\e6dd9c69-cd70-43ca-97ed-f2cfddcdca9dproduct-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\myProducts\\productImages\\e6dd9c69-cd70-43ca-97ed-f2cfddcdca9dproduct-12.jpg"
     },
     {
       "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\myProducts\\productImages\\f36051d3-3cfd-4a20-a78f-b911e045e935product-5.jpg",

@@ -258,3 +258,4 @@ D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\obj\Deb
 D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\obj\Debug\net8.0\Pustok.MVC.pdb
 D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\obj\Debug\net8.0\Pustok.MVC.genruntimeconfig.cache
 D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\obj\Debug\net8.0\ref\Pustok.MVC.dll
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\AutoMapper.dll

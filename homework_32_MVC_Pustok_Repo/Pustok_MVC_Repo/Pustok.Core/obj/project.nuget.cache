@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "x0VeEHONCFRGRpZZZYJdvK4hOr0P90YO4ni9ubt+x97Y4/iEqGPX/lDQ4YQf3OUX2j3hUkfzIZKiyUdPRgjHKQ==",
+  "dgSpecHash": "bbptCko5D8yvoEWWwznVijTYX6G0+hutJlfEGrVWwb4MzNxFxz2qcJ0XEvvYIP1CPND4PAyJfP6dkcCFL1FMSg==",
   "success": true,
   "projectFilePath": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Core\\Pustok.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.8\\microsoft.entityframeworkcore.8.0.8.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.8\\microsoft.entityframeworkcore.abstractions.8.0.8.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.8\\microsoft.entityframeworkcore.analyzers.8.0.8.nupkg.sha512",

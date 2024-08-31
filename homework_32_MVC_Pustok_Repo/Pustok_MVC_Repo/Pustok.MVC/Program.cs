@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Pustok.Business;
 using Pustok.Data;
 using Pustok.Data.DAL;
+using Pustok.MVC.Profiles;
 
 namespace Pustok.MVC
 {
@@ -18,7 +19,7 @@ namespace Pustok.MVC
             builder.Services.AddRepositories();
             builder.Services.AddServices(builder.Configuration.GetConnectionString("Default"));
 
-
+            builder.Services.AddAutoMapper(typeof(BookProfile));
 
             var app = builder.Build();
 

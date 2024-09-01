@@ -12,9 +12,25 @@ namespace Pustok.MVC.Profiles
                 .ForMember(dest => dest.PriceAfterDiscount, opt =>
                 opt.MapFrom(src => src.SalePrice - (src.DiscountPercent * src.SalePrice / 100)))
                 .ForMember(dest => dest.AuthorName, opt =>
-                opt.MapFrom(dest => dest.Author.FullName))
-                .ForMember(dest => dest.CreatedDate, opt =>
-                opt.MapFrom(dest => dest.CreateDate));
+                opt.MapFrom(src => src.Author.FullName));
+
+            CreateMap<CreateBookVM, Book>()
+                .AfterMap((src, dest) =>
+                {
+                    dest.IsDeleted = false;
+                    dest.CreateDate = DateTime.Now;
+                    dest.UpdateDate = DateTime.Now;
+                });
+
+            CreateMap<Book, UpdateBookVM>();
+
+            CreateMap<UpdateBookVM, Book>()
+                .ForMember(dest => dest.BookImages, opt => opt.Ignore())
+                .AfterMap((src, dest) =>
+                {
+                    dest.UpdateDate = DateTime.Now;
+                });
+
         }
     }
 }

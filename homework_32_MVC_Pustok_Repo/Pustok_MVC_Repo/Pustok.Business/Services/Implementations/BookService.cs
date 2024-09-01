@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
@@ -28,16 +29,19 @@ namespace Pustok.Business.Services.Implementations
         private readonly IWebHostEnvironment _env;
         private readonly IGenreRepository _genreRepository;
         private readonly IAuthorRepository _authorRepository;
+        private readonly IMapper _mapper;
 
         public BookService(IBookRepository bookRepository,
             IWebHostEnvironment env,
             IGenreRepository genreRepository,
-            IAuthorRepository authorRepository)
+            IAuthorRepository authorRepository,
+            IMapper mapper)
         {
             _bookRepository = bookRepository;
             _env = env;
             _genreRepository = genreRepository;
             _authorRepository = authorRepository;
+            _mapper = mapper;
         }
 
         public async Task CreateAsync(CreateBookVM bookVM)
@@ -94,23 +98,26 @@ namespace Pustok.Business.Services.Implementations
                 ImageURL = await bookVM.HoverPhoto.CreateFileAsync(_env.WebRootPath, "assets", "myProducts", "productImages")
             };
 
-            Book book = new Book()
-            {
-                CreateDate = DateTime.Now,
-                IsDeleted = false,
-                UpdateDate = DateTime.Now,
-                Title = bookVM.Title,
-                Description = bookVM.Description,
-                StockCount = bookVM.StockCount.Value,
-                AuthorId = bookVM.AuthorId,
-                GenreId = bookVM.GenreId,
-                IsAvailable = bookVM.IsAvailable,
-                DiscountPercent = bookVM.DiscountPercent.Value,
-                CostPrice = bookVM.CostPrice.Value,
-                SalePrice = bookVM.SalePrice.Value,
-                ProductCode = bookVM.ProductCode,
-                BookImages = [mainImage, hoverImage]
-            };
+            //Book book = new Book()
+            //{
+            //    CreateDate = DateTime.Now,
+            //    IsDeleted = false,
+            //    UpdateDate = DateTime.Now,
+            //    Title = bookVM.Title,
+            //    Description = bookVM.Description,
+            //    StockCount = bookVM.StockCount.Value,
+            //    AuthorId = bookVM.AuthorId,
+            //    GenreId = bookVM.GenreId,
+            //    IsAvailable = bookVM.IsAvailable,
+            //    DiscountPercent = bookVM.DiscountPercent.Value,
+            //    CostPrice = bookVM.CostPrice.Value,
+            //    SalePrice = bookVM.SalePrice.Value,
+            //    ProductCode = bookVM.ProductCode,
+            //    BookImages = [mainImage, hoverImage]
+            //};
+
+            Book book = _mapper.Map<Book>(bookVM);
+            book.BookImages = [mainImage, hoverImage];
 
 
             if (bookVM.AdditionalPhotos is not null)
@@ -286,16 +293,17 @@ namespace Pustok.Business.Services.Implementations
                 }
             }
 
-            existData.UpdateDate = DateTime.Now;
-            existData.Description = bookVM.Description;
-            existData.Title = bookVM.Title;
-            existData.AuthorId = bookVM.AuthorId.Value;
-            existData.GenreId = bookVM.GenreId.Value;
-            existData.CostPrice = bookVM.CostPrice;
-            existData.SalePrice = bookVM.SalePrice;
-            existData.StockCount = bookVM.StockCount.Value;
-            existData.DiscountPercent = bookVM.DiscountPercent.Value;
-            existData.ProductCode = bookVM.ProductCode;
+            _mapper.Map(bookVM, existData);
+            //existData.UpdateDate = DateTime.Now;
+            //existData.Description = bookVM.Description;
+            //existData.Title = bookVM.Title;
+            //existData.AuthorId = bookVM.AuthorId.Value;
+            //existData.GenreId = bookVM.GenreId.Value;
+            //existData.CostPrice = bookVM.CostPrice;
+            //existData.SalePrice = bookVM.SalePrice;
+            //existData.StockCount = bookVM.StockCount.Value;
+            //existData.DiscountPercent = bookVM.DiscountPercent.Value;
+            //existData.ProductCode = bookVM.ProductCode;
 
             await _bookRepository.CommitAsync();
         }

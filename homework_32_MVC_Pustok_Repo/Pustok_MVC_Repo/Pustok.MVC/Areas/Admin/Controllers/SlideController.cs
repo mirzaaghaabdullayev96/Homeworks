@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Pustok.Business.Services.Implementations;
 using Pustok.Business.Services.Interfaces;
 using Pustok.Business.Utilities.Enums;
@@ -12,9 +13,12 @@ namespace Pustok.MVC.Areas.Admin.Controllers
     {
 
         private readonly ISlideService _slideService;
-        public SlideController(ISlideService slideService)
+        private readonly IMapper _mapper;
+
+        public SlideController(ISlideService slideService, IMapper mapper)
         {
             _slideService = slideService;
+            _mapper = mapper;
         }
         public async Task<IActionResult> Index()
         {
@@ -57,12 +61,14 @@ namespace Pustok.MVC.Areas.Admin.Controllers
         public async Task<IActionResult> Update(int id)
         {
             var data = await _slideService.GetByIdAsync(id) ?? throw new NullReferenceException();
-            UpdateSlideVM slideVM = new UpdateSlideVM()
-            {
-                Title = data.Title,
-                Subtitle = data.Subtitle,
-                ExistedSlidePhoto = data.Image
-            };
+            //UpdateSlideVM slideVM = new UpdateSlideVM()
+            //{
+            //    Title = data.Title,
+            //    Subtitle = data.Subtitle,
+            //    ExistedSlidePhoto = data.Image
+            //};
+
+            UpdateSlideVM slideVM = _mapper.Map<UpdateSlideVM>(data);
             return View(slideVM);
         }
 

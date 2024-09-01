@@ -12,6 +12,7 @@ using Pustok.Business.Utilities.Extension;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using System.Linq.Expressions;
+using AutoMapper;
 
 namespace Pustok.Business.Services.Implementations
 {
@@ -19,12 +20,14 @@ namespace Pustok.Business.Services.Implementations
     {
         private readonly ISlideRepository _slideRepository;
         private readonly IWebHostEnvironment _env;
+        private readonly IMapper _mapper;
 
 
-        public SlideService(ISlideRepository slideRepository, IWebHostEnvironment env)
+        public SlideService(ISlideRepository slideRepository, IWebHostEnvironment env, IMapper mapper)
         {
             _slideRepository = slideRepository;
             _env = env;
+            _mapper = mapper;
         }
 
         public async Task CreateAsync(CreateSlideVM genreVM)
@@ -66,9 +69,11 @@ namespace Pustok.Business.Services.Implementations
         {
             var entity = await _slideRepository.GetByIdAsync(id) ?? throw new NullReferenceException();
 
-            entity.Title = slideVM.Title;
+
+            _mapper.Map(slideVM, entity);
+            //entity.Title = slideVM.Title;
+            //entity.Subtitle = slideVM.Subtitle;
             entity.UpdateDate = DateTime.Now;
-            entity.Subtitle = slideVM.Subtitle;
 
             if (slideVM.SlidePhoto != null)
             {

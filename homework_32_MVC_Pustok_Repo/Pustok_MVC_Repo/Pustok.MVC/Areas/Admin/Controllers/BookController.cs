@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.Blazor;
 using Pustok.Business.Exceptions.CommonExceptions;
 using Pustok.Business.Exceptions.GenreExceptions;
@@ -21,16 +22,19 @@ namespace Pustok.MVC.Areas.Admin.Controllers
         private readonly IGenreService _genreService;
         private readonly IAuthorService _authorService;
         private readonly IBookImageRepository _bookImageRepository;
+        private readonly IMapper _mapper;
 
         public BookController(IBookService bookService,
             IGenreService genreService,
             IAuthorService authorService,
-            IBookImageRepository bookImageRepository)
+            IBookImageRepository bookImageRepository,
+            IMapper mapper)
         {
             _bookService = bookService;
             _genreService = genreService;
             _authorService = authorService;
             _bookImageRepository = bookImageRepository;
+            _mapper = mapper;
         }
         public async Task<IActionResult> Index()
         {
@@ -96,20 +100,22 @@ namespace Pustok.MVC.Areas.Admin.Controllers
                 return View("Error");
             }
 
-            UpdateBookVM bookVM = new()
-            {
-                Title = data.Title,
-                Description = data.Description,
-                StockCount = data.StockCount,
-                AuthorId = data.AuthorId,
-                GenreId = data.GenreId,
-                IsAvailable = data.IsAvailable,
-                DiscountPercent = data.DiscountPercent,
-                CostPrice = data.CostPrice,
-                SalePrice = data.SalePrice,
-                ProductCode = data.ProductCode,
-                BookImages = data.BookImages,
-            };
+            //UpdateBookVM bookVM = new()
+            //{
+            //    Title = data.Title,
+            //    Description = data.Description,
+            //    StockCount = data.StockCount,
+            //    AuthorId = data.AuthorId,
+            //    GenreId = data.GenreId,
+            //    IsAvailable = data.IsAvailable,
+            //    DiscountPercent = data.DiscountPercent,
+            //    CostPrice = data.CostPrice,
+            //    SalePrice = data.SalePrice,
+            //    ProductCode = data.ProductCode,
+            //    BookImages = data.BookImages,
+            //};
+
+            UpdateBookVM bookVM = _mapper.Map<UpdateBookVM>(data);
 
 
             return View(bookVM);
@@ -175,7 +181,7 @@ namespace Pustok.MVC.Areas.Admin.Controllers
             {
                 return View("Error");
             }
-            
+
             return RedirectToAction(nameof(Index));
         }
 

@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{17DDE146-9BF5-4042-AF9C-D09C4CB4FD74}|Pustok.Business\\Pustok.Business.csproj|d:\\c#\\codeacademy\\homework_32_mvc_pustok_repo\\pustok_mvc_repo\\pustok.business\\services\\implementations\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17DDE146-9BF5-4042-AF9C-D09C4CB4FD74}|Pustok.Business\\Pustok.Business.csproj|solutionrelative:pustok.business\\services\\implementations\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF29D13F-82DA-4651-813F-0AD563FFE8D1}|Pustok.MVC\\Pustok.MVC.csproj|d:\\c#\\codeacademy\\homework_32_mvc_pustok_repo\\pustok_mvc_repo\\pustok.mvc\\profiles\\bookprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF29D13F-82DA-4651-813F-0AD563FFE8D1}|Pustok.MVC\\Pustok.MVC.csproj|solutionrelative:pustok.mvc\\profiles\\bookprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookProfile.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Profiles\\BookProfile.cs",
+              "RelativeDocumentMoniker": "Pustok.MVC\\Profiles\\BookProfile.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Profiles\\BookProfile.cs",
+              "RelativeToolTip": "Pustok.MVC\\Profiles\\BookProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T09:24:12.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Business\\Services\\Implementations\\BookService.cs",
+              "RelativeDocumentMoniker": "Pustok.Business\\Services\\Implementations\\BookService.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Business\\Services\\Implementations\\BookService.cs",
+              "RelativeToolTip": "Pustok.Business\\Services\\Implementations\\BookService.cs",
+              "ViewState": "AQIAAAoBAAAAAAAAAAAAADEBAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T09:24:07.742Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -17,6 +17,6 @@ namespace Pustok.Business.ViewModels
         public decimal PriceAfterDiscount { get; set; }
         public List<BookImage>? BookImages { get; set; }
         public bool IsAvailable { get; set; }
-        public DateTime CreatedDate { get; set; }
+        public DateTime CreateDate { get; set; }
     }
 }

@@ -55,7 +55,7 @@ namespace Pustok.MVC.ViewComponents
                     bookIndexVMs = bookIndexVMs.OrderByDescending(x => x.PriceAfterDiscount).ToList();
                     break;
                 case SortType.Newest:
-                    bookIndexVMs = bookIndexVMs.OrderByDescending(x => x.CreatedDate).ToList();
+                    bookIndexVMs = bookIndexVMs.OrderByDescending(x => x.CreateDate).ToList();
                     break;
             }
             return View(bookIndexVMs);

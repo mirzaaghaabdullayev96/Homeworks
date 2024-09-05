@@ -1,0 +1,63 @@
+﻿@model Order
+
+@{
+    int counter = 0;
+}
+
+<div class="container-fluid">
+    <div class="card" style="width: 22rem; margin:10px auto; border: 1px solid black; display:block">
+        <div class="card-body">
+            <h5 class="card-title">Member name: @Model.Fullname</h5>
+            <h5 class="card-title">Email: @Model.EmailAddress</h5>
+            <h5 class="card-title">Phone number: @Model.Phone</h5>
+            <h5 class="card-title">Address: @Model.Address</h5>
+            <h5 class="card-title">Country: @Model.Country</h5>
+            <h5 class="card-title">City: @Model.City</h5>
+            <h5 class="card-title">Zipcode: @Model.ZipCode</h5>
+            <h5 class="card-title">TotalPrice: @Model.TotalPrice</h5>
+            <h5 class="card-title">Note: @Model.Note</h5>
+        </div>
+    </div>
+
+
+    <table class="table table-striped-columns mb-3">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Order item Id</th>
+                <th scope="col">Title</th>
+                <th scope="col">Sale price</th>
+                <th scope="col">Cost price</th>
+                <th scope="col">Discount percent</th>
+                <th scope="col">Price after discount</th>
+                <th scope="col">Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderItems)
+            {
+                counter++;
+                <tr>
+                    <th scope="row">@counter</th>
+                    <td>@item.Id</td>
+                    <td>@item.Title</td>
+                    <td>@item.SalePrice</td>
+                    <td>@item.CostPrice</td>
+                    <td>@item.DiscountPercent%</td>
+                    <td>@item.PriceAfterDiscount</td>
+                    <td>@item.Count</td>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+    <div>
+        <a asp-action="Accept" asp-route-id="@Model.Id" class="btn btn-success">Accept</a>
+        <a asp-action="Reject" asp-route-id="@Model.Id" class="btn btn-danger">Reject</a>
+        <a asp-action="Index"  class="btn btn-primary">Go back</a>
+    </div>
+
+
+</div>

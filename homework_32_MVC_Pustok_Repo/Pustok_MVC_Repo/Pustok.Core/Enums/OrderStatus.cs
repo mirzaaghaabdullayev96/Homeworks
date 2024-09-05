@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Pustok.Core.Enums
 {
-    public enum OrderStatus
+
+    public enum OrderStatus : int
     {
         Pending = 0,
         Accepted = 1,

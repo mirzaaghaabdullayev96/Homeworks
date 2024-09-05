@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Pustok.Core.Models;
+using Pustok.Data.DAL;
 using Pustok.MVC.Areas.Admin.ViewModels;
 using Pustok.MVC.ViewModels;
 
@@ -13,14 +16,17 @@ namespace Pustok.MVC.Controllers
         private readonly UserManager<AppUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly SignInManager<AppUser> _signInManager;
+        private readonly AppDbContext _appDbContext;
 
         public AccountController(UserManager<AppUser> userManager,
             RoleManager<IdentityRole> roleManager,
-            SignInManager<AppUser> signInManager)
+            SignInManager<AppUser> signInManager,
+            AppDbContext appDbContext)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _signInManager = signInManager;
+            _appDbContext = appDbContext;
         }
 
         public IActionResult Index()
@@ -120,6 +126,24 @@ namespace Pustok.MVC.Controllers
             await _signInManager.SignOutAsync();
             return RedirectToAction("Login", "Account");
         }
+
+
+        [Authorize(Roles = "Member, SuperAdmin, Admin")]
+        public async Task<IActionResult> Profile()
+        {
+            AppUser appUser = null;
+
+            if (HttpContext.User.Identity.IsAuthenticated)
+            {
+                appUser=await _userManager.FindByNameAsync(HttpContext.User.Identity.Name);
+            }
+            if (appUser == null) return RedirectToAction("login");
+
+            var orders = await _appDbContext.Orders.Include(x=>x.OrderItems).Where(x => x.IsDeleted == false && x.AppUserId == appUser.Id).ToListAsync();
+
+            return View(orders);
+        }
+
 
     }
 

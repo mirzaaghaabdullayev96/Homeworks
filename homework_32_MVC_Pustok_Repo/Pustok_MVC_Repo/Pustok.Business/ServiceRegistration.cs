@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Pustok.Business.ExternalServices.Implementations;
+using Pustok.Business.ExternalServices.Interfaces;
 using Pustok.Business.Services.Implementations;
 using Pustok.Business.Services.Interfaces;
 using Pustok.Core.Repositories;
@@ -22,6 +24,7 @@ namespace Pustok.Business
             services.AddScoped<ILayoutService, LayoutService>();
             services.AddScoped<IBookService, BookService>();
             services.AddScoped<IAuthorService, AuthorService>();
+            services.AddTransient<IEmailService, EmailService>();
             services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(connection));
         }
     }

@@ -57,7 +57,7 @@ namespace Pustok.MVC.ViewComponents
             else
             {
                 List<BasketItem> userBooks = [];
-                userBooks = _appDbContext.BasketItems.Where(x => x.AppUserId == appUser.Id).ToList();
+                userBooks = _appDbContext.BasketItems.Where(x => x.AppUserId == appUser.Id && x.IsDeleted == false).ToList();
                 foreach (var item in userBooks)
                 {
                     BookItemInCartVM bookItem = new BookItemInCartVM()

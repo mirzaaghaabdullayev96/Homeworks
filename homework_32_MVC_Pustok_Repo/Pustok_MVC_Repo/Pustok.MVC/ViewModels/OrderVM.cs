@@ -1,4 +1,6 @@
-﻿namespace Pustok.MVC.ViewModels
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Pustok.MVC.ViewModels
 {
     public class OrderVM
     {
@@ -7,6 +9,7 @@
         public string Fullname { get; set; }
         public string Country { get; set; }
         public string City { get; set; }
+        [DataType(DataType.EmailAddress)]
         public string EmailAddress { get; set; }
         public string Phone { get; set; }
         public string Address { get; set; }

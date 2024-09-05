@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using Pustok.Business.ExternalServices.Interfaces;
 using Pustok.Business.Services.Interfaces;
 using Pustok.Core.Enums;
 using Pustok.Core.Models;
@@ -22,6 +23,7 @@ namespace Pustok.MVC.Controllers
         private readonly UserManager<AppUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly AppDbContext _appDbContext;
+        private readonly IEmailService _emailService;
 
         public ShopController(IBookService bookService,
             IGenreService genreService,
@@ -30,7 +32,8 @@ namespace Pustok.MVC.Controllers
             IMapper mapper,
             UserManager<AppUser> userManager,
             RoleManager<IdentityRole> roleManager,
-                        AppDbContext appDbContext)
+            AppDbContext appDbContext,
+            IEmailService emailService)
         {
             _bookService = bookService;
             _genreService = genreService;
@@ -40,6 +43,7 @@ namespace Pustok.MVC.Controllers
             _userManager = userManager;
             _roleManager = roleManager;
             _appDbContext = appDbContext;
+            _emailService = emailService;
         }
         public IActionResult Index()
         {
@@ -166,8 +170,7 @@ namespace Pustok.MVC.Controllers
                         order.OrderItems.Add(orderItem);
 
                     }
-
-
+                    HttpContext.Response.Cookies.Delete("Items");
                 }
             }
             else
@@ -198,9 +201,15 @@ namespace Pustok.MVC.Controllers
                 }
             }
 
+            foreach (BasketItem bi in userBasketItems)
+            {
+                bi.IsDeleted = true;
+            }
 
             await _appDbContext.Orders.AddAsync(order);
             await _appDbContext.SaveChangesAsync();
+
+            //await _emailService.SendMailAsync(vm.EmailAddress, "Pustok", vm.Fullname);
 
             return RedirectToAction("Index", "Home");
         }

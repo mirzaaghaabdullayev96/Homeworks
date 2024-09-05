@@ -1,0 +1,86 @@
+﻿@model List<Order>
+
+@{
+    int no = 0;
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Orders Table</h4>
+                        <a asp-action="Create" class="btn btn-success">Create Genre</a>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            No
+                                        </th>
+                                        <th>
+                                            Order Id
+                                        </th>
+                                        <th>
+                                            Member type
+                                        </th>
+                                        <th>
+                                            Order item count
+                                        </th>
+                                        <th>
+                                            Total Price
+                                        </th>
+                                        <th>
+                                            Created Date
+                                        </th> 
+                                        <th>
+                                            Order Status
+                                        </th>
+                                        <th>
+                                            Settings
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        no++;
+                                        <tr>
+                                            <td class="py-1">
+                                                @no
+                                            </td>
+                                            <td>
+                                                <p>@item.Id</p>
+                                            </td>
+                                            <td>
+                                                <p>@(item.AppUserId is null? "Member": "Guest")</p>
+                                            </td>
+                                            <td>
+                                                <p>@item.OrderItems.Count</p>
+                                            </td>
+                                            <td>
+                                                <p>@item.TotalPrice</p>
+                                            </td>
+                                            <td>
+                                                <p>@item.CreateDate</p>
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-@(item.OrderStatus == 0 ? "secondary" : ((int)item.OrderStatus == 1 ? "success" : "danger"))" style="padding:12px 12px !important; font-size:18px">@item.OrderStatus</span>
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-warning btn-info" asp-action="Details" asp-route-id="@item.Id"><i class="mdi mdi-grease-pencil"></i></a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -2,6 +2,11 @@
 
 @{
     var genres = await service.GetGenresAsync();
+    AppUser user = null;
+    if (Context.User.Identity.IsAuthenticated)
+    {
+        user = await service.GetUser(Context.User.Identity.Name);
+    }
 }
 
 
@@ -230,10 +235,20 @@
                         <div class="col-lg-4">
                             <div class="main-navigation flex-lg-right">
                                 <div class="cart-widget">
-                                    <div class="login-block">
-                                        <a href="login-register.html" class="font-weight-bold">Login</a> <br>
-                                        <span>or</span><a href="login-register.html">Register</a>
-                                    </div>
+                                    @if (!Context.User.Identity.IsAuthenticated)
+                                    {
+                                        <div class="login-block">
+                                            <a asp-action="Login" asp-controller="Account" class="font-weight-bold">Login</a> <br>
+                                            <span>or</span><a asp-action="Register" asp-controller="Account">Register</a>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="login-block">
+                                            <a class="font-weight-bold">@user.FullName</a> <br>
+                                            <a asp-action="Logout" asp-controller="account">Logout</a>
+                                        </div>
+                                    }
                                     <div class="cart-block" id="BasketComponent">
                                         @await Component.InvokeAsync("Basket")
                                     </div>
@@ -714,6 +729,9 @@
             </div>
         </div>
         @RenderBody();
+
+        <div id="cus-container-for-modal">
+        </div>
     </div>
     <!--=================================
     Brands Slider

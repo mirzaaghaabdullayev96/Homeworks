@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Pustok.Business;
+using Pustok.Core.Models;
 using Pustok.Data;
 using Pustok.Data.DAL;
 using Pustok.MVC.Profiles;
@@ -20,6 +22,19 @@ namespace Pustok.MVC
             builder.Services.AddServices(builder.Configuration.GetConnectionString("Default"));
 
             builder.Services.AddAutoMapper(typeof(BookProfile));
+            builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
+            {
+                opt.Password.RequiredLength = 8;
+                opt.Password.RequireNonAlphanumeric = true;
+                opt.Password.RequiredUniqueChars = 3;
+                opt.Password.RequireUppercase = true;
+                opt.Password.RequireLowercase = true;
+                opt.Password.RequireDigit = true;
+
+                opt.User.RequireUniqueEmail = true;
+            })
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();
 
             var app = builder.Build();
 
@@ -35,7 +50,7 @@ namespace Pustok.MVC
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

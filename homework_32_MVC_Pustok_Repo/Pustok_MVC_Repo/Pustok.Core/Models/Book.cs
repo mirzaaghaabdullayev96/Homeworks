@@ -17,6 +17,7 @@ namespace Pustok.Core.Models
         public int DiscountPercent { get; set; }
         public bool IsAvailable { get; set; }
         public int StockCount { get; set; }
+        public decimal PriceAfterDiscount { get; set; }
 
         //relational
         public Genre Genre { get; set; }

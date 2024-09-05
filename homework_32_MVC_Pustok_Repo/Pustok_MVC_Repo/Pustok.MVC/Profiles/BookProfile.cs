@@ -20,6 +20,7 @@ namespace Pustok.MVC.Profiles
                     dest.IsDeleted = false;
                     dest.CreateDate = DateTime.Now;
                     dest.UpdateDate = DateTime.Now;
+                    dest.PriceAfterDiscount = dest.SalePrice - (dest.DiscountPercent * dest.SalePrice / 100);
                 });
 
             CreateMap<Book, UpdateBookVM>();

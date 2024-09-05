@@ -10,5 +10,6 @@ namespace Pustok.Business.Services.Interfaces
     public interface ILayoutService
     {
         Task<ICollection<Genre>> GetGenresAsync();
+        Task<AppUser> GetUser(string username);
     }
 }

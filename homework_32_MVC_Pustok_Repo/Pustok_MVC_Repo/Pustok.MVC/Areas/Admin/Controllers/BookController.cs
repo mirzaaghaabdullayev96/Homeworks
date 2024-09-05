@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.Blazor;
 using Pustok.Business.Exceptions.CommonExceptions;
@@ -14,6 +15,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace Pustok.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "SuperAdmin,Admin")]
     public class BookController : Controller
     {
 
@@ -23,6 +25,7 @@ namespace Pustok.MVC.Areas.Admin.Controllers
         private readonly IAuthorService _authorService;
         private readonly IBookImageRepository _bookImageRepository;
         private readonly IMapper _mapper;
+
 
         public BookController(IBookService bookService,
             IGenreService genreService,
@@ -171,6 +174,7 @@ namespace Pustok.MVC.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Delete(int? id)
         {
             try

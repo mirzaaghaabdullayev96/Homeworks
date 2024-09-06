@@ -65,6 +65,13 @@ namespace Pustok.MVC.Controllers
                 ModelState.AddModelError("", "Invalid Credentials");
                 return View();
             }
+
+            if (!await _userManager.IsEmailConfirmedAsync(appUser))
+            {
+                ModelState.AddModelError("", "Email is not confirmed");
+                return View();
+            }
+
             var result = await _signInManager.PasswordSignInAsync(appUser, vm.Password, vm.IsPersistent, false);
 
             if (!result.Succeeded)
@@ -111,14 +118,36 @@ namespace Pustok.MVC.Controllers
 
             await _userManager.AddToRoleAsync(appUser, "Admin");
 
+            string token = await _userManager.GenerateEmailConfirmationTokenAsync(appUser);
+            string url = Url.Action("ConfirmEmail", "Account", new { token = token, email = appUser.Email }, Request.Scheme);
+
             //var member = await _userManager.FindByNameAsync(vm.Username);
 
             //if (member is not null)
             //{
             //}
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Account");
         }
+
+        public async Task<IActionResult> ConfirmEmail(string email, string token)
+        {
+            AppUser appUser = null;
+            appUser = await _userManager.FindByEmailAsync(email);
+
+            if (appUser is null)
+            {
+                ViewBag.Message = "User not found";
+                return View("Common");
+            }
+
+            var result = await _userManager.ConfirmEmailAsync(appUser, token);
+
+
+            return RedirectToAction(nameof(Login));
+        }
+
+
 
 
 

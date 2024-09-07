@@ -1,7 +1,8 @@
-﻿@model List<Order>
+﻿@using Pustok.Business.PaginatedList
+@model PaginatedList<Order>
 
 @{
-    int no = 0;
+    int no = (Model.ActivePage - 1) * (int)Math.Ceiling((Model.TotalDataCount / (double)Model.TotalPage));
 }
 
 <div class="main-panel">
@@ -14,7 +15,7 @@
                         <h4 class="card-title">Orders Table</h4>
                         <a asp-action="Create" class="btn btn-success">Create Genre</a>
                         <div class="table-responsive">
-                            <table class="table table-striped">
+                            <table class="table table-striped mb-4">
                                 <thead>
                                     <tr>
                                         <th>
@@ -34,7 +35,7 @@
                                         </th>
                                         <th>
                                             Created Date
-                                        </th> 
+                                        </th>
                                         <th>
                                             Order Status
                                         </th>
@@ -55,7 +56,7 @@
                                                 <p>@item.Id</p>
                                             </td>
                                             <td>
-                                                <p>@(item.AppUserId is null? "Member": "Guest")</p>
+                                                <p>@(item.AppUserId is null ? "Guest" : "Member")</p>
                                             </td>
                                             <td>
                                                 <p>@item.OrderItems.Count</p>
@@ -76,6 +77,29 @@
                                     }
                                 </tbody>
                             </table>
+
+                            <div class="d-flex justify-content-center align-items-center">
+                                <nav aria-label="...">
+                                    <ul class="pagination">
+                                        <li class="page-item   @(Model.Previous == false ? "disabled":"")  ">
+                                            <a class="page-link" asp-route-page="@(Model.ActivePage-1)">Previous</a>
+                                        </li>
+
+                                        @for (int i = 1; i <= Model.TotalPage; i++)
+                                        {
+                                            <li class="page-item @(Model.ActivePage==i?"active":"")  "><a class="page-link" asp-action="index" asp-route-page="@i">@i</a></li>
+                                        }
+
+                                        <li class="page-item @(Model.Next == false ? "disabled":"")">
+                                            <a class="page-link" asp-action="index" asp-route-page="@(Model.ActivePage+1)">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+
+
+
+
                         </div>
                     </div>
                 </div>

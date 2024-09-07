@@ -33040,6 +33040,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\myProducts\productImages\765913c8-dddd-4b14-9133-99028a8ea7d3product-10.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\myProducts\productImages\7a973137-2174-4a39-b780-fe0a05d46971product-7.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Pustok.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Pustok.MVC</BasePath>
+      <RelativePath>assets/myProducts/productImages/7a973137-2174-4a39-b780-fe0a05d46971product-7.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\myProducts\productImages\7a973137-2174-4a39-b780-fe0a05d46971product-7.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\myProducts\productImages\82d4bae7-d268-4174-926f-09dcfb68e93dproduct-7.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>Pustok.MVC</SourceId>
@@ -33359,22 +33375,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\myProducts\productImages\ce1fa6cc-14f3-468a-85c1-f50acca87671product-12.jpg))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\myProducts\productImages\cee3dfef-bfae-4582-99b0-a236e62f5a11cart-product-1.jpg))">
-      <SourceType>Package</SourceType>
-      <SourceId>Pustok.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Pustok.MVC</BasePath>
-      <RelativePath>assets/myProducts/productImages/cee3dfef-bfae-4582-99b0-a236e62f5a11cart-product-1.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\myProducts\productImages\cee3dfef-bfae-4582-99b0-a236e62f5a11cart-product-1.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\myProducts\productImages\d60f27ad-e1b0-4a13-b3c5-a8e11148e522product-10.jpg))">
       <SourceType>Package</SourceType>

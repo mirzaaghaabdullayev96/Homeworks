@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EF29D13F-82DA-4651-813F-0AD563FFE8D1}|Pustok.MVC\\Pustok.MVC.csproj|d:\\c#\\codeacademy\\homework_32_mvc_pustok_repo\\pustok_mvc_repo\\pustok.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF29D13F-82DA-4651-813F-0AD563FFE8D1}|Pustok.MVC\\Pustok.MVC.csproj|solutionrelative:pustok.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17DDE146-9BF5-4042-AF9C-D09C4CB4FD74}|Pustok.Business\\Pustok.Business.csproj|d:\\c#\\codeacademy\\homework_32_mvc_pustok_repo\\pustok_mvc_repo\\pustok.business\\paginatedlist\\paginatedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17DDE146-9BF5-4042-AF9C-D09C4CB4FD74}|Pustok.Business\\Pustok.Business.csproj|solutionrelative:pustok.business\\paginatedlist\\paginatedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF29D13F-82DA-4651-813F-0AD563FFE8D1}|Pustok.MVC\\Pustok.MVC.csproj|d:\\c#\\codeacademy\\homework_32_mvc_pustok_repo\\pustok_mvc_repo\\pustok.mvc\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EF29D13F-82DA-4651-813F-0AD563FFE8D1}|Pustok.MVC\\Pustok.MVC.csproj|solutionrelative:pustok.mvc\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EF29D13F-82DA-4651-813F-0AD563FFE8D1}|Pustok.MVC\\Pustok.MVC.csproj|d:\\c#\\codeacademy\\homework_32_mvc_pustok_repo\\pustok_mvc_repo\\pustok.mvc\\areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF29D13F-82DA-4651-813F-0AD563FFE8D1}|Pustok.MVC\\Pustok.MVC.csproj|solutionrelative:pustok.mvc\\areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF29D13F-82DA-4651-813F-0AD563FFE8D1}|Pustok.MVC\\Pustok.MVC.csproj|d:\\c#\\codeacademy\\homework_32_mvc_pustok_repo\\pustok_mvc_repo\\pustok.mvc\\views\\shared\\common.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EF29D13F-82DA-4651-813F-0AD563FFE8D1}|Pustok.MVC\\Pustok.MVC.csproj|solutionrelative:pustok.mvc\\views\\shared\\common.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EF29D13F-82DA-4651-813F-0AD563FFE8D1}|Pustok.MVC\\Pustok.MVC.csproj|d:\\c#\\codeacademy\\homework_32_mvc_pustok_repo\\pustok_mvc_repo\\pustok.mvc\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF29D13F-82DA-4651-813F-0AD563FFE8D1}|Pustok.MVC\\Pustok.MVC.csproj|solutionrelative:pustok.mvc\\areas\\admin\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,38 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ChangePassword.cshtml",
-              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Views\\Account\\ChangePassword.cshtml",
-              "RelativeDocumentMoniker": "Pustok.MVC\\Views\\Account\\ChangePassword.cshtml",
-              "ToolTip": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Views\\Account\\ChangePassword.cshtml",
-              "RelativeToolTip": "Pustok.MVC\\Views\\Account\\ChangePassword.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pustok.MVC\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "Pustok.MVC\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T23:26:03.551Z"
+              "WhenOpened": "2024-09-06T19:13:44.094Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Common.cshtml",
-              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Views\\Shared\\Common.cshtml",
-              "RelativeDocumentMoniker": "Pustok.MVC\\Views\\Shared\\Common.cshtml",
-              "ToolTip": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Views\\Shared\\Common.cshtml",
-              "RelativeToolTip": "Pustok.MVC\\Views\\Shared\\Common.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T22:34:41.078Z"
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Pustok.MVC\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Pustok.MVC\\Areas\\Admin\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAUwB0AAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T19:01:17.887Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Pustok.MVC\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Pustok.MVC\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAMQAAAAAAAAAAAAAAPsAAAAAAAAA",
+              "Title": "PaginatedList.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Business\\PaginatedList\\PaginatedList.cs",
+              "RelativeDocumentMoniker": "Pustok.Business\\PaginatedList\\PaginatedList.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Business\\PaginatedList\\PaginatedList.cs",
+              "RelativeToolTip": "Pustok.Business\\PaginatedList\\PaginatedList.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T22:19:07.529Z",
+              "WhenOpened": "2024-09-06T18:54:00.419Z",
               "EditorCaption": ""
             }
           ]

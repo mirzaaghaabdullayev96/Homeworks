@@ -209,7 +209,7 @@ namespace Pustok.MVC.Controllers
             await _appDbContext.Orders.AddAsync(order);
             await _appDbContext.SaveChangesAsync();
 
-            //await _emailService.SendMailAsync(vm.EmailAddress, "Pustok", vm.Fullname);
+            await _emailService.SendMailAsync(vm.EmailAddress, "Pustok", vm.Fullname, "Your order has been received");
 
             return RedirectToAction("Index", "Home");
         }

@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Pustok.Business.Exceptions.CommonExceptions;
 using Pustok.Business.ExternalServices.Interfaces;
+using Pustok.Business.PaginatedList;
 using Pustok.Core.Enums;
+using Pustok.Core.Models;
 using Pustok.Data.DAL;
 
 namespace Pustok.MVC.Areas.Admin.Controllers
@@ -21,11 +23,15 @@ namespace Pustok.MVC.Areas.Admin.Controllers
             _appDbContext = appDbContext;
             _emailService = emailService;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
-            var datas = await _appDbContext.Orders.Include(x => x.OrderItems).ToListAsync();
+            //var datas = await _appDbContext.Orders.Skip((page-1)*5).Take(5).Include(x => x.OrderItems).ToListAsync();
 
-            return View(datas);
+            var query = _appDbContext.Orders.Include(x => x.OrderItems).AsQueryable();
+
+            var paginatedList = PaginatedList<Order>.Create(query, page, 5);
+
+            return View(paginatedList);
         }
 
 

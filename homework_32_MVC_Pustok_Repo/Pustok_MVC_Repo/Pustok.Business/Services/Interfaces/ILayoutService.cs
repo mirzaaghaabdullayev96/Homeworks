@@ -11,5 +11,6 @@ namespace Pustok.Business.Services.Interfaces
     {
         Task<ICollection<Genre>> GetGenresAsync();
         Task<AppUser> GetUser(string username);
+        Task<Dictionary<string,string>> GetSettingsAsync();
     }
 }

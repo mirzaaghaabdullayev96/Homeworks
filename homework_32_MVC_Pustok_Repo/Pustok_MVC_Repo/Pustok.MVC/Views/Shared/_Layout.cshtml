@@ -2,6 +2,7 @@
 
 @{
     var genres = await service.GetGenresAsync();
+    var settings = await service.GetSettingsAsync();
     AppUser user = null;
     if (Context.User.Identity.IsAuthenticated)
     {
@@ -50,7 +51,7 @@
                                 </div>
                                 <div class="text">
                                     <p>Free Support 24/7</p>
-                                    <p class="font-weight-bold number">+01-202-555-0181</p>
+                                    <p class="font-weight-bold number">@settings["Phone Number"]</p>
                                 </div>
                             </div>
                         </div>

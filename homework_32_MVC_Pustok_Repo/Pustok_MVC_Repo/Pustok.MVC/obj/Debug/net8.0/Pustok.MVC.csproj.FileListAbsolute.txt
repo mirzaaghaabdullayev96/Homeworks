@@ -265,3 +265,5 @@ D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Deb
 D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\StackExchange.Redis.dll

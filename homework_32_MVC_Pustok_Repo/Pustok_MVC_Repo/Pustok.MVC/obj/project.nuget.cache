@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "o6dHBmaktGfy2vzb91dJIqI5s8a4pN4buU85RDGZABgoQJNL0CHMnWFPjnTPK5UG+dBrHs+WR/rfKqLUnJKDDw==",
+  "dgSpecHash": "eGPgH+NNUhJkaCDseiyGQ3bytOEXHqAHOZRFOmQkWfitsCHyLOcmwW/3ZaHe9AIR5TudgRNmKL0436+a3GHvvQ==",
   "success": true,
   "projectFilePath": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Pustok.MVC.csproj",
   "expectedPackageFiles": [
@@ -130,6 +130,8 @@
     "C:\\Users\\User\\.nuget\\packages\\nuget.projectmodel\\6.9.1\\nuget.projectmodel.6.9.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\nuget.protocol\\6.9.1\\nuget.protocol.6.9.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\nuget.versioning\\6.9.1\\nuget.versioning.6.9.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\stackexchange.redis\\2.8.12\\stackexchange.redis.2.8.12.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.codedom\\5.0.0\\system.codedom.5.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.composition\\7.0.0\\system.composition.7.0.0.nupkg.sha512",

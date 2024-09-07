@@ -5,6 +5,7 @@ using Pustok.Core.Models;
 using Pustok.Data;
 using Pustok.Data.DAL;
 using Pustok.MVC.Profiles;
+using StackExchange.Redis;
 
 namespace Pustok.MVC
 {
@@ -35,6 +36,10 @@ namespace Pustok.MVC
             })
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
+
+            ConnectionMultiplexer redis = ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("Redis"));
+            builder.Services.AddSingleton<IConnectionMultiplexer>(redis);
+
 
             var app = builder.Build();
 

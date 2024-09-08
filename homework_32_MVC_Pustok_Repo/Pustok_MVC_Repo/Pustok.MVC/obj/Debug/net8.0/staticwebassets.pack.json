@@ -7869,8 +7869,16 @@
       "PackagePath": "staticwebassets\\assets\\image\\bg-images\\5503e84b-f156-4a41-9224-f75832f3432ehome-3-slider-2.jpg"
     },
     {
+      "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\image\\bg-images\\5b25cc65-ca2d-4ce0-9563-82ce445108735b473ab9-c10e-4e5b-a458-218b48917ac9home-slider-1-ai.png",
+      "PackagePath": "staticwebassets\\assets\\image\\bg-images\\5b25cc65-ca2d-4ce0-9563-82ce445108735b473ab9-c10e-4e5b-a458-218b48917ac9home-slider-1-ai.png"
+    },
+    {
       "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\image\\bg-images\\5b473ab9-c10e-4e5b-a458-218b48917ac9home-slider-1-ai.png",
       "PackagePath": "staticwebassets\\assets\\image\\bg-images\\5b473ab9-c10e-4e5b-a458-218b48917ac9home-slider-1-ai.png"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\image\\bg-images\\8d11e196-34fa-4cd6-aa00-93ffe9af16f13ef0c2cd-a729-4b9d-a2ad-9200dcccbcf1home-slider-2-ai.png",
+      "PackagePath": "staticwebassets\\assets\\image\\bg-images\\8d11e196-34fa-4cd6-aa00-93ffe9af16f13ef0c2cd-a729-4b9d-a2ad-9200dcccbcf1home-slider-2-ai.png"
     },
     {
       "Id": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\wwwroot\\assets\\image\\bg-images\\best-seller-bg.jpg",

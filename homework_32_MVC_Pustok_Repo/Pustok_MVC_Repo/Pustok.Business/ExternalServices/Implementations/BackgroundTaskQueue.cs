@@ -1,0 +1,34 @@
+﻿using Pustok.Business.ExternalServices.Interfaces;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Channels;
+using System.Threading.Tasks;
+
+namespace Pustok.Business.ExternalServices.Implementations
+{
+    public class BackgroundTaskQueue : IBackgroundTaskQueue
+    {
+        private readonly Channel<Func<CancellationToken, Task>> _queue;
+
+        public BackgroundTaskQueue(int capacity = 100)
+        {
+            _queue = Channel.CreateBounded<Func<CancellationToken, Task>>(capacity);
+        }
+        public void QueueBackgroundWorkItem(Func<CancellationToken, Task> workItem)
+        {
+            if (!_queue.Writer.TryWrite(workItem))
+            {
+                throw new InvalidOperationException("Очередь задач заполнена.");
+            }
+        }
+
+        public async Task<Func<CancellationToken, Task>> DequeueAsync(CancellationToken cancellationToken)
+        {
+            var workItem = await _queue.Reader.ReadAsync(cancellationToken);
+            return workItem;
+        }
+    }
+}

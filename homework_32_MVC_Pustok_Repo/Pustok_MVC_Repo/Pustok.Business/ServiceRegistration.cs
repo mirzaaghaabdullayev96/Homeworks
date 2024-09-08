@@ -24,7 +24,9 @@ namespace Pustok.Business
             services.AddScoped<ILayoutService, LayoutService>();
             services.AddScoped<IBookService, BookService>();
             services.AddScoped<IAuthorService, AuthorService>();
-            services.AddTransient<IEmailService, EmailService>();
+            services.AddHostedService<QueuedHostedService>();
+            services.AddScoped<IEmailService,EmailService>();
+            services.AddSingleton<IBackgroundTaskQueue, BackgroundTaskQueue>();
             services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(connection));
         }
     }

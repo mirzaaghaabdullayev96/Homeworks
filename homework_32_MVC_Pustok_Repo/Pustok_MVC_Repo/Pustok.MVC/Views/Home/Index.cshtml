@@ -30,15 +30,13 @@
                             <div class="row align-items-center justify-content-start justify-content-md-end">
                                 <div class="col-lg-6 col-xl-7 col-md-6 col-sm-7">
                                     <div class="home-content-inner content-right-side">
-                                        <h1>
-                                            @slide.Title
-                                        </h1>
-                                        <h2>@slide.Subtitle</h2>
+                                        <h1>@Html.Raw(slide.Title.Replace("<br>", "<br />"))</h1>
+                                        <h2>@Html.Raw(slide.Subtitle.Replace("<br>", "<br />"))</h2>
                                         <a href="shop-grid.html" class="btn btn-outlined--primary">
                                             $78.09 - Learn More
                                         </a>
                                     </div>
-                                </div>
+                                </div>  
                             </div>
                         </div>
                     </div>
@@ -56,9 +54,9 @@
                                 <div class="col-xl-6 col-md-6 col-sm-7">
                                     <div class="home-content-inner content-left-side">
                                         <h1>
-                                            @slide.Title
+                                            @Html.Raw(slide.Title.Replace("<br>", "<br />"))
                                         </h1>
-                                        <h2>@slide.Subtitle</h2>
+                                        <h2>@Html.Raw(slide.Subtitle.Replace("<br>", "<br />"))</h2>
                                         <a href="shop-grid.html" class="btn btn-outlined--primary">
                                             $78.09 - Order Now!
                                         </a>
@@ -1420,7 +1418,3 @@ Home Blog
 <!--=================================
 Footer
 ===================================== -->
-
-
-
-

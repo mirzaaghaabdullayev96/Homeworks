@@ -16,34 +16,22 @@ namespace Pustok.MVC.Controllers
     public class ShopController : Controller
     {
         private readonly IBookService _bookService;
-        private readonly IGenreService _genreService;
-        private readonly IAuthorService _authorService;
-        private readonly IBookImageRepository _bookImageRepository;
-        private readonly IMapper _mapper;
         private readonly UserManager<AppUser> _userManager;
-        private readonly RoleManager<IdentityRole> _roleManager;
         private readonly AppDbContext _appDbContext;
         private readonly IEmailService _emailService;
+        private readonly IBackgroundTaskQueue _taskQueue;
 
         public ShopController(IBookService bookService,
-            IGenreService genreService,
-            IAuthorService authorService,
-            IBookImageRepository bookImageRepository,
-            IMapper mapper,
-            UserManager<AppUser> userManager,
-            RoleManager<IdentityRole> roleManager,
+                     UserManager<AppUser> userManager,
             AppDbContext appDbContext,
-            IEmailService emailService)
+            IEmailService emailService,
+            IBackgroundTaskQueue taskQueue)
         {
             _bookService = bookService;
-            _genreService = genreService;
-            _authorService = authorService;
-            _bookImageRepository = bookImageRepository;
-            _mapper = mapper;
             _userManager = userManager;
-            _roleManager = roleManager;
             _appDbContext = appDbContext;
             _emailService = emailService;
+            _taskQueue = taskQueue;
         }
         public IActionResult Index()
         {
@@ -209,7 +197,12 @@ namespace Pustok.MVC.Controllers
             await _appDbContext.Orders.AddAsync(order);
             await _appDbContext.SaveChangesAsync();
 
-            await _emailService.SendMailAsync(vm.EmailAddress, "Pustok", vm.Fullname, "Your order has been received");
+            //await _emailService.SendMailAsync(vm.EmailAddress, "Pustok", vm.Fullname, "Your order has been received");
+
+            _taskQueue.QueueBackgroundWorkItem(async token =>
+            {
+                await _emailService.SendMailAsync(vm.EmailAddress, "Pustok", vm.Fullname, "Your order has been received");
+            });
 
             return RedirectToAction("Index", "Home");
         }

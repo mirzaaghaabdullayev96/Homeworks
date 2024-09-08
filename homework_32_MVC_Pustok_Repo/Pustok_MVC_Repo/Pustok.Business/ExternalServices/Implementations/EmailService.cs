@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
 using Pustok.Business.ExternalServices.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace Pustok.Business.ExternalServices.Implementations
     public class EmailService : IEmailService
     {
         private readonly IConfiguration _configuration;
+
 
         public EmailService(IConfiguration configuration)
         {
@@ -34,8 +36,7 @@ namespace Pustok.Business.ExternalServices.Implementations
         }
 
 
-
-        private string GetBody(string name,string text)
+        private string GetBody(string name, string text)
         {
 
             string body = $@"

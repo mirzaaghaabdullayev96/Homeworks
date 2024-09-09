@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Api_intro_hw_33.props" />
+</Project>

@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3017DE8-C297-48DA-995E-178E086D412B}|Pustok.Data\\Pustok.Data.csproj|d:\\c#\\codeacademy\\homework_32_mvc_pustok_repo\\pustok_mvc_repo\\pustok.data\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3017DE8-C297-48DA-995E-178E086D412B}|Pustok.Data\\Pustok.Data.csproj|solutionrelative:pustok.data\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF29D13F-82DA-4651-813F-0AD563FFE8D1}|Pustok.MVC\\Pustok.MVC.csproj|d:\\c#\\codeacademy\\homework_32_mvc_pustok_repo\\pustok_mvc_repo\\pustok.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF29D13F-82DA-4651-813F-0AD563FFE8D1}|Pustok.MVC\\Pustok.MVC.csproj|solutionrelative:pustok.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF29D13F-82DA-4651-813F-0AD563FFE8D1}|Pustok.MVC\\Pustok.MVC.csproj|d:\\c#\\codeacademy\\homework_32_mvc_pustok_repo\\pustok_mvc_repo\\pustok.mvc\\areas\\admin\\controllers\\settingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF29D13F-82DA-4651-813F-0AD563FFE8D1}|Pustok.MVC\\Pustok.MVC.csproj|solutionrelative:pustok.mvc\\areas\\admin\\controllers\\settingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EF29D13F-82DA-4651-813F-0AD563FFE8D1}|Pustok.MVC\\Pustok.MVC.csproj|d:\\c#\\codeacademy\\homework_32_mvc_pustok_repo\\pustok_mvc_repo\\pustok.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{EF29D13F-82DA-4651-813F-0AD563FFE8D1}|Pustok.MVC\\Pustok.MVC.csproj|solutionrelative:pustok.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3017DE8-C297-48DA-995E-178E086D412B}|Pustok.Data\\Pustok.Data.csproj|d:\\c#\\codeacademy\\homework_32_mvc_pustok_repo\\pustok_mvc_repo\\pustok.data\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3017DE8-C297-48DA-995E-178E086D412B}|Pustok.Data\\Pustok.Data.csproj|solutionrelative:pustok.data\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17DDE146-9BF5-4042-AF9C-D09C4CB4FD74}|Pustok.Business\\Pustok.Business.csproj|d:\\c#\\codeacademy\\homework_32_mvc_pustok_repo\\pustok_mvc_repo\\pustok.business\\externalservices\\implementations\\queuedhostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17DDE146-9BF5-4042-AF9C-D09C4CB4FD74}|Pustok.Business\\Pustok.Business.csproj|solutionrelative:pustok.business\\externalservices\\implementations\\queuedhostedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17DDE146-9BF5-4042-AF9C-D09C4CB4FD74}|Pustok.Business\\Pustok.Business.csproj|d:\\c#\\codeacademy\\homework_32_mvc_pustok_repo\\pustok_mvc_repo\\pustok.business\\externalservices\\implementations\\backgroundtaskqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17DDE146-9BF5-4042-AF9C-D09C4CB4FD74}|Pustok.Business\\Pustok.Business.csproj|solutionrelative:pustok.business\\externalservices\\implementations\\backgroundtaskqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Data\\DAL\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Pustok.Data\\DAL\\AppDbContext.cs",
-              "ToolTip": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Data\\DAL\\AppDbContext.cs",
-              "RelativeToolTip": "Pustok.Data\\DAL\\AppDbContext.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T15:40:47.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Program.cs",
-              "RelativeDocumentMoniker": "Pustok.MVC\\Program.cs",
-              "ToolTip": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Program.cs",
-              "RelativeToolTip": "Pustok.MVC\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T15:37:57.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\appsettings.json",
               "RelativeDocumentMoniker": "Pustok.MVC\\appsettings.json",
               "ToolTip": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\appsettings.json",
               "RelativeToolTip": "Pustok.MVC\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-09T15:37:19.57Z",
+              "WhenOpened": "2024-09-10T19:13:05.954Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Data\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "Pustok.Data\\ServiceRegistration.cs",
-              "ToolTip": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Data\\ServiceRegistration.cs",
-              "RelativeToolTip": "Pustok.Data\\ServiceRegistration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "SettingController.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Areas\\Admin\\Controllers\\SettingController.cs",
+              "RelativeDocumentMoniker": "Pustok.MVC\\Areas\\Admin\\Controllers\\SettingController.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.MVC\\Areas\\Admin\\Controllers\\SettingController.cs",
+              "RelativeToolTip": "Pustok.MVC\\Areas\\Admin\\Controllers\\SettingController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAgwDkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T15:37:15.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BackgroundTaskQueue.cs",
-              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Business\\ExternalServices\\Implementations\\BackgroundTaskQueue.cs",
-              "RelativeDocumentMoniker": "Pustok.Business\\ExternalServices\\Implementations\\BackgroundTaskQueue.cs",
-              "ToolTip": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Business\\ExternalServices\\Implementations\\BackgroundTaskQueue.cs",
-              "RelativeToolTip": "Pustok.Business\\ExternalServices\\Implementations\\BackgroundTaskQueue.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T07:55:07.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "QueuedHostedService.cs",
-              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Business\\ExternalServices\\Implementations\\QueuedHostedService.cs",
-              "RelativeDocumentMoniker": "Pustok.Business\\ExternalServices\\Implementations\\QueuedHostedService.cs",
-              "ToolTip": "D:\\c#\\CodeAcademy\\homework_32_MVC_Pustok_Repo\\Pustok_MVC_Repo\\Pustok.Business\\ExternalServices\\Implementations\\QueuedHostedService.cs",
-              "RelativeToolTip": "Pustok.Business\\ExternalServices\\Implementations\\QueuedHostedService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T07:55:02.915Z",
+              "WhenOpened": "2024-09-10T18:57:20.465Z",
               "EditorCaption": ""
             }
           ]

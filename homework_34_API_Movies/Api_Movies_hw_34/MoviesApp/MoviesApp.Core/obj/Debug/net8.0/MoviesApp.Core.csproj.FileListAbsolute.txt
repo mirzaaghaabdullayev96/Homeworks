@@ -1,0 +1,13 @@
+D:\c#\CodeAcademy\homework_34_API_Movies\Api_Movies_hw_34\MoviesApp\MoviesApp.Core\bin\Debug\net8.0\MoviesApp.Core.deps.json
+D:\c#\CodeAcademy\homework_34_API_Movies\Api_Movies_hw_34\MoviesApp\MoviesApp.Core\bin\Debug\net8.0\MoviesApp.Core.dll
+D:\c#\CodeAcademy\homework_34_API_Movies\Api_Movies_hw_34\MoviesApp\MoviesApp.Core\bin\Debug\net8.0\MoviesApp.Core.pdb
+D:\c#\CodeAcademy\homework_34_API_Movies\Api_Movies_hw_34\MoviesApp\MoviesApp.Core\obj\Debug\net8.0\MoviesApp.Core.csproj.AssemblyReference.cache
+D:\c#\CodeAcademy\homework_34_API_Movies\Api_Movies_hw_34\MoviesApp\MoviesApp.Core\obj\Debug\net8.0\MoviesApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\CodeAcademy\homework_34_API_Movies\Api_Movies_hw_34\MoviesApp\MoviesApp.Core\obj\Debug\net8.0\MoviesApp.Core.AssemblyInfoInputs.cache
+D:\c#\CodeAcademy\homework_34_API_Movies\Api_Movies_hw_34\MoviesApp\MoviesApp.Core\obj\Debug\net8.0\MoviesApp.Core.AssemblyInfo.cs
+D:\c#\CodeAcademy\homework_34_API_Movies\Api_Movies_hw_34\MoviesApp\MoviesApp.Core\obj\Debug\net8.0\MoviesApp.Core.csproj.CoreCompileInputs.cache
+D:\c#\CodeAcademy\homework_34_API_Movies\Api_Movies_hw_34\MoviesApp\MoviesApp.Core\obj\Debug\net8.0\MoviesApp.Core.sourcelink.json
+D:\c#\CodeAcademy\homework_34_API_Movies\Api_Movies_hw_34\MoviesApp\MoviesApp.Core\obj\Debug\net8.0\MoviesApp.Core.dll
+D:\c#\CodeAcademy\homework_34_API_Movies\Api_Movies_hw_34\MoviesApp\MoviesApp.Core\obj\Debug\net8.0\refint\MoviesApp.Core.dll
+D:\c#\CodeAcademy\homework_34_API_Movies\Api_Movies_hw_34\MoviesApp\MoviesApp.Core\obj\Debug\net8.0\MoviesApp.Core.pdb
+D:\c#\CodeAcademy\homework_34_API_Movies\Api_Movies_hw_34\MoviesApp\MoviesApp.Core\obj\Debug\net8.0\ref\MoviesApp.Core.dll

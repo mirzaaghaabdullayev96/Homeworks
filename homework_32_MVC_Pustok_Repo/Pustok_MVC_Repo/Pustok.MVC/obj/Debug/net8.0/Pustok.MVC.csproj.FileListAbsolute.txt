@@ -267,3 +267,16 @@ D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Deb
 D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
 D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\StackExchange.Redis.dll
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\AWSSDK.Core.dll
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\AWSSDK.SecurityToken.dll
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\DnsClient.dll
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\MongoDB.Bson.dll
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\MongoDB.Driver.dll
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\MongoDB.Driver.Core.dll
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\MongoDB.Libmongocrypt.dll
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\SharpCompress.dll
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\Snappier.dll
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\ZstdSharp.dll
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
+D:\c#\CodeAcademy\homework_32_MVC_Pustok_Repo\Pustok_MVC_Repo\Pustok.MVC\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll

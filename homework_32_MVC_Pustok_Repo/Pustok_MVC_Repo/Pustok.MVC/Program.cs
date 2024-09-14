@@ -21,6 +21,9 @@ namespace Pustok.MVC
             // Add repos and service
             builder.Services.AddRepositories();
             builder.Services.AddServices(builder.Configuration.GetConnectionString("Default"));
+            builder.Services.Configure<MongoDbContext>(builder.Configuration.GetSection("MongoDbSettings"));
+
+            builder.Services.AddSingleton<MongoDbContext>();
 
             builder.Services.AddAutoMapper(typeof(BookProfile));
             builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>

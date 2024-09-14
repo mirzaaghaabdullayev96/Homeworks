@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_34_API_Movies\\Api_Movies_hw_34\\MoviesApp\\MoviesApp.API\\wwwroot\\Uploads\\49985099-e62c-49c9-b8d6-76d94d994eb6product-details-1.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\49985099-e62c-49c9-b8d6-76d94d994eb6product-details-1.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_34_API_Movies\\Api_Movies_hw_34\\MoviesApp\\MoviesApp.API\\wwwroot\\Uploads\\e3080585-a92c-4121-b77c-8b3dc9b45100product-9.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\e3080585-a92c-4121-b77c-8b3dc9b45100product-9.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_34_API_Movies\\Api_Movies_hw_34\\MoviesApp\\MoviesApp.API\\wwwroot\\Uploads\\fbd85573-0a0d-446a-a8b7-8e8cf73923bbproduct-details-1.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\fbd85573-0a0d-446a-a8b7-8e8cf73923bbproduct-details-1.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MoviesApp.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MoviesApp.API.props",
+      "PackagePath": "build\\MoviesApp.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MoviesApp.API.props",
+      "PackagePath": "buildMultiTargeting\\MoviesApp.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MoviesApp.API.props",
+      "PackagePath": "buildTransitive\\MoviesApp.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

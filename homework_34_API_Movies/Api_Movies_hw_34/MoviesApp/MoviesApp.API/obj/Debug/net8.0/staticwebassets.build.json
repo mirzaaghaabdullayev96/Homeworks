@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Sglu/V0+NAQ932RSFvOCdQKEq7bPzovwqHWwJTMJS3M=",
+  "Hash": "PmdCyCqX2h17tTOIdhr99uH1xy7rrQo0ZPQHoVZaQ0I=",
   "Source": "MoviesApp.API",
   "BasePath": "_content/MoviesApp.API",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\c#\\CodeAcademy\\homework_34_API_Movies\\Api_Movies_hw_34\\MoviesApp\\MoviesApp.API\\wwwroot\\Uploads\\1745e60f-8df3-413d-ad56-c88dc697b1bbproduct-10.jpg",
+      "SourceId": "MoviesApp.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\c#\\CodeAcademy\\homework_34_API_Movies\\Api_Movies_hw_34\\MoviesApp\\MoviesApp.API\\wwwroot\\",
+      "BasePath": "_content/MoviesApp.API",
+      "RelativePath": "Uploads/1745e60f-8df3-413d-ad56-c88dc697b1bbproduct-10.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\1745e60f-8df3-413d-ad56-c88dc697b1bbproduct-10.jpg"
+    },
     {
       "Identity": "D:\\c#\\CodeAcademy\\homework_34_API_Movies\\Api_Movies_hw_34\\MoviesApp\\MoviesApp.API\\wwwroot\\Uploads\\49985099-e62c-49c9-b8d6-76d94d994eb6product-details-1.jpg",
       "SourceId": "MoviesApp.API",
@@ -34,6 +53,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\49985099-e62c-49c9-b8d6-76d94d994eb6product-details-1.jpg"
+    },
+    {
+      "Identity": "D:\\c#\\CodeAcademy\\homework_34_API_Movies\\Api_Movies_hw_34\\MoviesApp\\MoviesApp.API\\wwwroot\\Uploads\\5eb57694-e9cf-49bf-804c-2f2f15b8c0e0product-details-5.jpg",
+      "SourceId": "MoviesApp.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\c#\\CodeAcademy\\homework_34_API_Movies\\Api_Movies_hw_34\\MoviesApp\\MoviesApp.API\\wwwroot\\",
+      "BasePath": "_content/MoviesApp.API",
+      "RelativePath": "Uploads/5eb57694-e9cf-49bf-804c-2f2f15b8c0e0product-details-5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\5eb57694-e9cf-49bf-804c-2f2f15b8c0e0product-details-5.jpg"
+    },
+    {
+      "Identity": "D:\\c#\\CodeAcademy\\homework_34_API_Movies\\Api_Movies_hw_34\\MoviesApp\\MoviesApp.API\\wwwroot\\Uploads\\9b97e3be-3fad-4cee-baa6-ba43bdc8eff3product-11.jpg",
+      "SourceId": "MoviesApp.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\c#\\CodeAcademy\\homework_34_API_Movies\\Api_Movies_hw_34\\MoviesApp\\MoviesApp.API\\wwwroot\\",
+      "BasePath": "_content/MoviesApp.API",
+      "RelativePath": "Uploads/9b97e3be-3fad-4cee-baa6-ba43bdc8eff3product-11.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\9b97e3be-3fad-4cee-baa6-ba43bdc8eff3product-11.jpg"
     },
     {
       "Identity": "D:\\c#\\CodeAcademy\\homework_34_API_Movies\\Api_Movies_hw_34\\MoviesApp\\MoviesApp.API\\wwwroot\\Uploads\\e3080585-a92c-4121-b77c-8b3dc9b45100product-9.jpg",

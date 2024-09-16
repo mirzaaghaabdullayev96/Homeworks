@@ -30,18 +30,22 @@ public class MovieService : IMovieService
     {
         if (!await _genreService.IsExistAsync(x => x.Id == dto.GenreId && x.IsDeleted == false)) throw new EntityNotFoundException();
         Movie movie = _mapper.Map<Movie>(dto);
-        
-        string imageUrl = dto.ImageFile.SaveFile(_env.WebRootPath, "Uploads");
-        movie.MovieImages = new List<MovieImage>(); 
-        MovieImage movieImage = new MovieImage()
-        {
-            ImageUrl = imageUrl,
-            CreatedDate = DateTime.Now,
-            ModifiedDate = DateTime.Now,
-            IsDeleted = false
-        };
+        movie.MovieImages = new List<MovieImage>();
+        foreach (var item in dto.ImageFiles) {
 
-        movie.MovieImages.Add(movieImage);
+            string imageUrl = item.SaveFile(_env.WebRootPath, "Uploads");
+            
+            MovieImage movieImage = new MovieImage()
+            {
+                ImageUrl = imageUrl,
+                CreatedDate = DateTime.Now,
+                ModifiedDate = DateTime.Now,
+                IsDeleted = false
+            };
+            movie.MovieImages.Add(movieImage);
+        }
+        
+
         movie.CreatedDate = DateTime.Now;
         movie.ModifiedDate = DateTime.Now;
         await _movieRepository.CreateAsync(movie);

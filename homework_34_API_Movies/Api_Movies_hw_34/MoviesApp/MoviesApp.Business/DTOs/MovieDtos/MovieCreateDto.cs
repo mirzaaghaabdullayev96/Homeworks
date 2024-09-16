@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace MoviesApp.Business.DTOs.MovieDtos;
 
-public record MovieCreateDto(string Title, string Desc, bool isDeleted, int GenreId,IFormFile ImageFile);
+public record MovieCreateDto(string Title, string Desc, bool isDeleted, int GenreId, List<IFormFile> ImageFiles);
 
 public class MovieCreateDtoValidator : AbstractValidator<MovieCreateDto>
 {
@@ -23,9 +23,15 @@ public class MovieCreateDtoValidator : AbstractValidator<MovieCreateDto>
 
         RuleFor(x => x.GenreId).NotNull().NotEmpty();
 
-        RuleFor(x => x.ImageFile)
-            .Must(x => x.ContentType == "image/png" || x.ContentType == "image/jpeg")
-            .WithMessage("Image's content type must png/jpeg")
-            .Must(x => x.Length < 2 * 1024 * 1024);
+        RuleForEach(x => x.ImageFiles).ChildRules(files =>
+        {
+            files.RuleFor(file => file.ContentType)
+                .Must(contentType => contentType == "image/png" || contentType == "image/jpeg")
+                .WithMessage("Image's content type must be png or jpeg");
+
+            files.RuleFor(file => file.Length)
+                .LessThan(2 * 1024 * 1024)
+                .WithMessage("Image file size must be less than 2MB");
+        });
     }
 }

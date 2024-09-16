@@ -1,4 +1,7 @@
-﻿namespace MoviesApp.Business.DTOs.MovieDtos;
+﻿using MoviesApp.Business.DTOs.MovieImagesDtos;
 
-public record MovieGetDto(int Id, string Title, string Desc, bool IsDeleted, DateTime CreatedDate, DateTime ModifiedDate, int GenreId, string GenreName);
+namespace MoviesApp.Business.DTOs.MovieDtos;
+
+public record MovieGetDto(int Id, string Title, string Desc, bool IsDeleted, DateTime CreatedDate, DateTime ModifiedDate,
+    int GenreId, string GenreName, IEnumerable<MovieImageGetDto> MovieImages);
 

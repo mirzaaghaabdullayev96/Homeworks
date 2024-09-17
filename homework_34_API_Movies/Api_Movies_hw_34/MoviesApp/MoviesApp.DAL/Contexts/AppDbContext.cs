@@ -14,6 +14,7 @@ public class AppDbContext : IdentityDbContext
     public DbSet<Genre> Genres { get; set; }
     public DbSet<MovieImage> MovieImages { get; set; }
     public DbSet<AppUser> AppUsers { get; set; }
+    public DbSet<Comment> Comments { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

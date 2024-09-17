@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using MoviesApp.Business.DTOs.CommentDtos;
 using MoviesApp.Business.DTOs.GenreDtos;
 using MoviesApp.Business.DTOs.MovieDtos;
 using MoviesApp.Business.DTOs.MovieImagesDtos;
@@ -19,5 +20,9 @@ public class MapProfile : Profile
         CreateMap<Genre, GenreUpdateDto>().ReverseMap();
 
         CreateMap<MovieImage,MovieImageGetDto>().ReverseMap();
+
+        CreateMap<Comment, CommentGetDto>().ReverseMap();
+        CreateMap<Comment, CommentCreateDto>().ReverseMap();
+        CreateMap<Comment, CommentUpdateDto>().ReverseMap();
     }
 }

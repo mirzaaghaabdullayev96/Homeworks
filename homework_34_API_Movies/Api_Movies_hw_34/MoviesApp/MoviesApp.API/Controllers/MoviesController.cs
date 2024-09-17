@@ -23,7 +23,7 @@ namespace PB201MovieApp.API.Controllers
         
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _movieService.GetByExpression(true,null,"Genre","MovieImages"));
+            return Ok(await _movieService.GetByExpression(true,null,"Genre","MovieImages","Comments.AppUser"));
         }
 
         [HttpPost]

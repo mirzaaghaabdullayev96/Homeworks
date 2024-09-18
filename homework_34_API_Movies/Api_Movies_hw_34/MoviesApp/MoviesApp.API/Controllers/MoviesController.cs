@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MoviesApp.API.ApiResponses;
 using MoviesApp.Business.DTOs.MovieDtos;
 using MoviesApp.Business.Exceptions.CommonExceptions;
 using MoviesApp.Business.Services.Interfaces;
@@ -23,7 +24,13 @@ namespace PB201MovieApp.API.Controllers
         
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _movieService.GetByExpression(true,null,"Genre","MovieImages","Comments.AppUser"));
+            return Ok(new ApiResponse<ICollection<MovieGetDto>>
+            {
+                Data = await _movieService.GetByExpression(true, null, "Genre", "MovieImages", "Comments.AppUser"),
+                ErrorMessage = null,
+                PropertyName = null,
+                StatusCode = StatusCodes.Status200OK
+            });
         }
 
         [HttpPost]
@@ -35,12 +42,17 @@ namespace PB201MovieApp.API.Controllers
             {
                 movie = await _movieService.CreateAsync(dto);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return BadRequest();
+                return BadRequest(new ApiResponse<object>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
             }
 
-            return Created(new Uri($"api/movies/{movie.Id}", UriKind.Relative),movie);
+            return Created();
         }
 
         [HttpGet("{id}")]
@@ -49,27 +61,46 @@ namespace PB201MovieApp.API.Controllers
             MovieGetDto dto = null;
             try
             {
-                dto = await _movieService.GetById(id);
+                dto = await _movieService.GetSingleByExpression(false, x => x.Id == id, "Genre", "MovieImages", "Comments.AppUser");
             }
             catch (InvalidIdException)
             {
-                return BadRequest();
+                return BadRequest(new ApiResponse<MovieGetDto>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest, 
+                    ErrorMessage = "Id yanlisdir",
+                    Data = null
+                });
             }
-            catch(EntityNotFoundException)
+            catch (EntityNotFoundException ex)
             {
-                return NotFound();
+                return NotFound(new ApiResponse<MovieGetDto>
+                {
+                    StatusCode = ex.StatusCode,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return BadRequest();
+                return BadRequest(new ApiResponse<MovieGetDto>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
             }
 
-            return Ok(dto);
+            return Ok(new ApiResponse<MovieGetDto>
+            {
+                Data = dto,
+                StatusCode = StatusCodes.Status200OK
+            });
         }
 
         [HttpPut("{id}")]
-        [Authorize(Roles = "SuperAdmin,Admin,Editor")]
-        public async Task<IActionResult> Update(int id,[FromForm] MovieUpdateDto dto)
+        //[Authorize(Roles = "SuperAdmin,Admin,Editor")]
+        public async Task<IActionResult> Update(int id, [FromForm] MovieUpdateDto dto)
         {
             try
             {
@@ -77,22 +108,37 @@ namespace PB201MovieApp.API.Controllers
             }
             catch (InvalidIdException)
             {
-                return BadRequest();
+                return BadRequest(new ApiResponse<MovieUpdateDto>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest, 
+                    ErrorMessage = "Id yanlisdir",
+                    Data = null
+                });
             }
-            catch (EntityNotFoundException)
+            catch (EntityNotFoundException ex)
             {
-                return NotFound();
+                return NotFound(new ApiResponse<MovieUpdateDto>
+                {
+                    StatusCode = ex.StatusCode,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return BadRequest();
+                return BadRequest(new ApiResponse<MovieUpdateDto>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
             }
 
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = "SuperAdmin,Admin")]
+        //[Authorize(Roles = "SuperAdmin,Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             try
@@ -101,15 +147,30 @@ namespace PB201MovieApp.API.Controllers
             }
             catch (InvalidIdException)
             {
-                return BadRequest();
+                return BadRequest(new ApiResponse<object>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = "Id yanlisdir",
+                    Data = null
+                });
             }
-            catch (EntityNotFoundException)
+            catch (EntityNotFoundException ex)
             {
-                return NotFound();
+                return NotFound(new ApiResponse<object>
+                {
+                    StatusCode = ex.StatusCode,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return BadRequest();
+                return BadRequest(new ApiResponse<object>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
             }
 
             return Ok();

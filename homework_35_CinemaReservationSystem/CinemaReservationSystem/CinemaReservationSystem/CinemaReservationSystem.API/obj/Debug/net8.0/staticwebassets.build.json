@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "V5R6mYTcbHW6KGaRyhyiEyUg/BebJIbnmTP5tyXBsys=",
+  "Source": "CinemaReservationSystem.API",
+  "BasePath": "_content/CinemaReservationSystem.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

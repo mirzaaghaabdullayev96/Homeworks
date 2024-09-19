@@ -1,0 +1,13 @@
+D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.Core\bin\Debug\net8.0\CinemaReservationSystem.Core.deps.json
+D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.Core\bin\Debug\net8.0\CinemaReservationSystem.Core.dll
+D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.Core\bin\Debug\net8.0\CinemaReservationSystem.Core.pdb
+D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.Core\obj\Debug\net8.0\CinemaReservationSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.Core\obj\Debug\net8.0\CinemaReservationSystem.Core.AssemblyInfoInputs.cache
+D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.Core\obj\Debug\net8.0\CinemaReservationSystem.Core.AssemblyInfo.cs
+D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.Core\obj\Debug\net8.0\CinemaReservationSystem.Core.csproj.CoreCompileInputs.cache
+D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.Core\obj\Debug\net8.0\CinemaReservationSystem.Core.sourcelink.json
+D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.Core\obj\Debug\net8.0\CinemaReservationSystem.Core.dll
+D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.Core\obj\Debug\net8.0\refint\CinemaReservationSystem.Core.dll
+D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.Core\obj\Debug\net8.0\CinemaReservationSystem.Core.pdb
+D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.Core\obj\Debug\net8.0\ref\CinemaReservationSystem.Core.dll
+D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.Core\obj\Debug\net8.0\CinemaReservationSystem.Core.csproj.AssemblyReference.cache

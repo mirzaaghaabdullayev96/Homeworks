@@ -21,7 +21,7 @@ namespace Pustok.Business.ExternalServices.Implementations
         {
             if (!_queue.Writer.TryWrite(workItem))
             {
-                throw new InvalidOperationException("Очередь задач заполнена.");
+                throw new InvalidOperationException("Task queue is full.");
             }
         }
 

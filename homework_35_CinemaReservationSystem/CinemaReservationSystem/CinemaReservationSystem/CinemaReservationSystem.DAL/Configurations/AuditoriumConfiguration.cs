@@ -25,8 +25,14 @@ namespace CinemaReservationSystem.DAL.Configurations
             builder.HasOne(a => a.Theatre)
                    .WithMany(t => t.Auditoriums)
                    .HasForeignKey(a => a.TheatreId)
-                   .OnDelete(DeleteBehavior.Cascade); 
-                       
+                   .OnDelete(DeleteBehavior.Cascade);
+
+
+            builder.HasMany(a => a.Seats)
+                   .WithOne(t => t.Auditorium)
+                   .HasForeignKey(a => a.AuditoriumId)
+                   .OnDelete(DeleteBehavior.Cascade);
+
             builder.HasOne(a => a.ShowTime)
                    .WithMany(st => st.Auditoriums)
                    .HasForeignKey(a => a.ShowTimeId)

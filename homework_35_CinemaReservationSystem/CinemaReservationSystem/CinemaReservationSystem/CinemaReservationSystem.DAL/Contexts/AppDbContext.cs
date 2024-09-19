@@ -16,7 +16,7 @@ public class AppDbContext : IdentityDbContext
     public DbSet<Movie> Movies { get; set; }
     public DbSet<MovieGenre> MovieGenres { get; set; }
     public DbSet<Reservation> Reservations { get; set; }
-    public DbSet<SeatReservation> SeatReservations { get; set; }
+    public DbSet<Seat> Seats { get; set; }
     public DbSet<ShowTime> ShowTimes { get; set; }
     public DbSet<Theatre> Theatres { get; set; }
 
@@ -47,6 +47,6 @@ public class AppDbContext : IdentityDbContext
             }
         }
 
-        return await base.SaveChangesAsync(cancellationToken); //Daha sonra base-dəki SaveChangesAsync metodunu işə salırıq və dəyişiklikləri save edirik.
+        return await base.SaveChangesAsync(cancellationToken);
     }
 }

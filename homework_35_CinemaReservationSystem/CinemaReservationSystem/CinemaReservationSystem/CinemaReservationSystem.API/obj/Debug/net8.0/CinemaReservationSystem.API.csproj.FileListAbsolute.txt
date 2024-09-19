@@ -15,10 +15,6 @@ D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\Ci
 D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.API\bin\Debug\net8.0\CinemaReservationSystem.API.pdb
 D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.API\bin\Debug\net8.0\Azure.Core.dll
 D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.API\bin\Debug\net8.0\Azure.Identity.dll
-D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.API\bin\Debug\net8.0\EntityFramework.SqlServer.dll
-D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.API\bin\Debug\net8.0\EntityFramework.dll
-D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.API\bin\Debug\net8.0\Microsoft.AspNet.Identity.Core.dll
-D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.API\bin\Debug\net8.0\Microsoft.AspNet.Identity.EntityFramework.dll
 D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

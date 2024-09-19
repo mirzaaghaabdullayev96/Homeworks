@@ -17,5 +17,7 @@ namespace CinemaReservationSystem.Core.Entities
         public int? ShowTimeId { get; set; }
         public Theatre Theatre { get; set; }
         public ShowTime ShowTime { get; set; }
+
+        public ICollection<Seat> Seats { get; set; }
     }
 }

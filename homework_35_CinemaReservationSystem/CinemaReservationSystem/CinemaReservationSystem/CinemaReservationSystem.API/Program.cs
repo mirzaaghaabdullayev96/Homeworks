@@ -1,4 +1,4 @@
-
+using CinemaReservationSystem.DAL;
 using CinemaReservationSystem.Core.Entities;
 using CinemaReservationSystem.DAL.Contexts;
 using Microsoft.AspNetCore.Identity;
@@ -22,6 +22,8 @@ namespace CinemaReservationSystem.API
             {
                 opt.User.RequireUniqueEmail = true;
             }).AddEntityFrameworkStores<AppDbContext>();
+
+            builder.Services.AddRepositories(builder.Configuration.GetConnectionString("Default"));
 
             //builder.Services.AddAuthentication(opt =>
             //{

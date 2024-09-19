@@ -14,34 +14,28 @@ namespace CinemaReservationSystem.DAL.Configurations
         public void Configure(EntityTypeBuilder<ShowTime> builder)
         {
             builder.Property(st => st.StartTime)
-              .IsRequired(); 
+              .IsRequired();
 
             builder.Property(st => st.EndTime)
-                   .IsRequired(); 
+                   .IsRequired();
 
-          
+
             builder.HasOne(st => st.Movie)
                    .WithMany(m => m.ShowTimes)
                    .HasForeignKey(st => st.MovieId)
-                   .OnDelete(DeleteBehavior.Cascade); 
+                   .OnDelete(DeleteBehavior.Cascade);
 
-        
+
             builder.HasMany(st => st.Auditoriums)
                    .WithOne(t => t.ShowTime)
                    .HasForeignKey(st => st.ShowTimeId)
-                   .OnDelete(DeleteBehavior.SetNull); 
+                   .OnDelete(DeleteBehavior.SetNull);
 
-        
-            builder.HasMany(st => st.SeatReservations)
-                   .WithOne(sr => sr.ShowTime)
-                   .HasForeignKey(sr => sr.ShowTimeId)
-                   .OnDelete(DeleteBehavior.Cascade); 
 
-           
             builder.HasMany(st => st.Reservations)
                    .WithOne(r => r.ShowTime)
                    .HasForeignKey(r => r.ShowTimeId)
-                   .OnDelete(DeleteBehavior.Cascade); 
+                   .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

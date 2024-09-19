@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CinemaReservationSystem.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4266069aedfce39915315145dc86f7282769c6e0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b7ea98c905d17f809543fdec1630116c47b0d643")]
 [assembly: System.Reflection.AssemblyProductAttribute("CinemaReservationSystem.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CinemaReservationSystem.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CinemaReservationSystem.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class FirstMigrationAllTablesCreated : Migration
+    public partial class FirstMigrationCreatedAllTables : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -328,8 +328,7 @@ namespace CinemaReservationSystem.DAL.Migrations
                 {
                     SeatNumber = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
                     IsBooked = table.Column<bool>(type: "bit", nullable: false),
-                    AuditoriumId = table.Column<int>(type: "int", nullable: false),
-                    ReservationId = table.Column<int>(type: "int", nullable: true)
+                    AuditoriumId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -340,12 +339,35 @@ namespace CinemaReservationSystem.DAL.Migrations
                         principalTable: "Auditoriums",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "SeatReservation",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    SeatNumber = table.Column<string>(type: "nvarchar(10)", nullable: false),
+                    ReservationId = table.Column<int>(type: "int", nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ModifiedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_SeatReservation", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Seats_Reservations_ReservationId",
+                        name: "FK_SeatReservation_Reservations_ReservationId",
                         column: x => x.ReservationId,
                         principalTable: "Reservations",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.SetNull);
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_SeatReservation_Seats_SeatNumber",
+                        column: x => x.SeatNumber,
+                        principalTable: "Seats",
+                        principalColumn: "SeatNumber",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
@@ -413,14 +435,19 @@ namespace CinemaReservationSystem.DAL.Migrations
                 column: "ShowTimeId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_SeatReservation_ReservationId",
+                table: "SeatReservation",
+                column: "ReservationId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SeatReservation_SeatNumber",
+                table: "SeatReservation",
+                column: "SeatNumber");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Seats_AuditoriumId",
                 table: "Seats",
                 column: "AuditoriumId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Seats_ReservationId",
-                table: "Seats",
-                column: "ReservationId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ShowTimes_MovieId",
@@ -450,7 +477,7 @@ namespace CinemaReservationSystem.DAL.Migrations
                 name: "MovieGenres");
 
             migrationBuilder.DropTable(
-                name: "Seats");
+                name: "SeatReservation");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
@@ -459,19 +486,22 @@ namespace CinemaReservationSystem.DAL.Migrations
                 name: "Genres");
 
             migrationBuilder.DropTable(
-                name: "Auditoriums");
-
-            migrationBuilder.DropTable(
                 name: "Reservations");
 
             migrationBuilder.DropTable(
-                name: "Theatres");
+                name: "Seats");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
+                name: "Auditoriums");
+
+            migrationBuilder.DropTable(
                 name: "ShowTimes");
+
+            migrationBuilder.DropTable(
+                name: "Theatres");
 
             migrationBuilder.DropTable(
                 name: "Movies");

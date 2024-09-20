@@ -8,17 +8,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CinemaReservationSystem.Business.Services.Implementations;
+using CinemaReservationSystem.Business.Services.Interfaces;
 
 namespace CinemaReservationSystem.Business
 {
     public static class ServiceRegistration
     {
-        public static void AddServices(this IServiceCollection services, string connection)
+        public static void AddServices(this IServiceCollection services)
         {
-          
+
             services.AddHostedService<QueuedHostedService>();
-            services.AddScoped<IEmailService,EmailService>();
+            services.AddScoped<IEmailService, EmailService>();
             services.AddSingleton<IBackgroundTaskQueue, BackgroundTaskQueue>();
+            services.AddScoped<IGenreService, GenreService>();
+            services.AddScoped<ITheatreService, TheatreService>();
+            services.AddScoped<IAuditoriumService, AuditoriumService>();
+            services.AddScoped<ISeatService, SeatService>();
         }
     }
 }

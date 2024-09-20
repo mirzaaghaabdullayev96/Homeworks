@@ -195,16 +195,44 @@ namespace CinemaReservationSystem.DAL.Migrations
                     b.Property<bool>("IsBooked")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("ReservationId")
-                        .HasColumnType("int");
-
                     b.HasKey("SeatNumber");
 
                     b.HasIndex("AuditoriumId");
 
+                    b.ToTable("Seats");
+                });
+
+            modelBuilder.Entity("CinemaReservationSystem.Core.Entities.SeatReservation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ReservationId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SeatNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(10)");
+
+                    b.HasKey("Id");
+
                     b.HasIndex("ReservationId");
 
-                    b.ToTable("Seats");
+                    b.HasIndex("SeatNumber");
+
+                    b.ToTable("SeatReservation");
                 });
 
             modelBuilder.Entity("CinemaReservationSystem.Core.Entities.ShowTime", b =>
@@ -557,14 +585,26 @@ namespace CinemaReservationSystem.DAL.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CinemaReservationSystem.Core.Entities.Reservation", "Reservation")
-                        .WithMany("Seats")
-                        .HasForeignKey("ReservationId")
-                        .OnDelete(DeleteBehavior.SetNull);
-
                     b.Navigation("Auditorium");
+                });
+
+            modelBuilder.Entity("CinemaReservationSystem.Core.Entities.SeatReservation", b =>
+                {
+                    b.HasOne("CinemaReservationSystem.Core.Entities.Reservation", "Reservation")
+                        .WithMany("SeatReservations")
+                        .HasForeignKey("ReservationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CinemaReservationSystem.Core.Entities.Seat", "Seat")
+                        .WithMany("SeatReservations")
+                        .HasForeignKey("SeatNumber")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Reservation");
+
+                    b.Navigation("Seat");
                 });
 
             modelBuilder.Entity("CinemaReservationSystem.Core.Entities.ShowTime", b =>
@@ -648,7 +688,12 @@ namespace CinemaReservationSystem.DAL.Migrations
 
             modelBuilder.Entity("CinemaReservationSystem.Core.Entities.Reservation", b =>
                 {
-                    b.Navigation("Seats");
+                    b.Navigation("SeatReservations");
+                });
+
+            modelBuilder.Entity("CinemaReservationSystem.Core.Entities.Seat", b =>
+                {
+                    b.Navigation("SeatReservations");
                 });
 
             modelBuilder.Entity("CinemaReservationSystem.Core.Entities.ShowTime", b =>

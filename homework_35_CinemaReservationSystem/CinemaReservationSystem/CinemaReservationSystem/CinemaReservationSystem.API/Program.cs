@@ -2,6 +2,7 @@ using CinemaReservationSystem.DAL;
 using CinemaReservationSystem.Core.Entities;
 using CinemaReservationSystem.DAL.Contexts;
 using Microsoft.AspNetCore.Identity;
+using CinemaReservationSystem.Business;
 
 namespace CinemaReservationSystem.API
 {
@@ -24,6 +25,7 @@ namespace CinemaReservationSystem.API
             }).AddEntityFrameworkStores<AppDbContext>();
 
             builder.Services.AddRepositories(builder.Configuration.GetConnectionString("Default"));
+            builder.Services.AddServices();
 
             //builder.Services.AddAuthentication(opt =>
             //{

@@ -28,7 +28,7 @@ namespace CinemaReservationSystem.DAL.Configurations
                    .OnDelete(DeleteBehavior.Restrict); 
 
             
-            builder.HasMany(r => r.Seats)
+            builder.HasMany(r => r.SeatReservations)
                    .WithOne(sr => sr.Reservation)
                    .HasForeignKey(sr => sr.ReservationId)
                    .OnDelete(DeleteBehavior.SetNull);

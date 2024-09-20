@@ -38,6 +38,7 @@ public class AppDbContext : IdentityDbContext
             {
                 case EntityState.Added:
                     data.Entity.CreatedDate = DateTime.UtcNow;
+                    data.Entity.ModifiedDate = DateTime.UtcNow;
                     break;
                 case EntityState.Modified:
                     data.Entity.ModifiedDate = DateTime.UtcNow;

@@ -21,10 +21,10 @@ namespace CinemaReservationSystem.DAL.Configurations
                    .OnDelete(DeleteBehavior.Cascade);
 
            
-            builder.HasOne(s => s.Reservation)
-                   .WithMany(r => r.Seats) 
-                   .HasForeignKey(s => s.ReservationId)
-                   .OnDelete(DeleteBehavior.SetNull); 
+            builder.HasMany(s => s.SeatReservations)
+                   .WithOne(r => r.Seat) 
+                   .HasForeignKey(s => s.SeatNumber)
+                   .OnDelete(DeleteBehavior.Cascade); 
 
             
             builder.Property(s => s.SeatNumber)

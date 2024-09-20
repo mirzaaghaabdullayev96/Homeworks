@@ -9,6 +9,7 @@ namespace CinemaReservationSystem.Business.Exceptions.CommonExceptions
     public class IdIsNotValidException : Exception
     {
         public string PropertyName { get; set; }
+        public int StatusCode { get; set; }
         public IdIsNotValidException()
         {
         }
@@ -17,8 +18,9 @@ namespace CinemaReservationSystem.Business.Exceptions.CommonExceptions
         {
         }
 
-        public IdIsNotValidException(string propertyName,string? message) : base(message)
+        public IdIsNotValidException(int statusCode, string propertyName, string? message) : base(message)
         {
+            StatusCode = statusCode;
             PropertyName = propertyName;
         }
     }

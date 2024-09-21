@@ -15,8 +15,8 @@ namespace CinemaReservationSystem.DAL.Configurations
         {
             builder.HasOne(s => s.Seat)
                 .WithMany(s=>s.SeatReservations)
-                .HasForeignKey(s => s.SeatNumber)
-                .OnDelete(DeleteBehavior.Cascade);
+                .HasForeignKey(s => s.SeatId)
+                .OnDelete(DeleteBehavior.NoAction);
                   
 
             builder.HasOne(s => s.Reservation)

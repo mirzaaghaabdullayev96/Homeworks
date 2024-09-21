@@ -10,12 +10,6 @@
     <ProjectReference Include="..\CinemaReservationSystem.DAL\CinemaReservationSystem.DAL.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DTOs\MovieDtos\" />
-    <Folder Include="DTOs\ShowTimeDtos\" />
-    <Folder Include="ViewModels\" />
-  </ItemGroup>
-
 	<ItemGroup>
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />
 	</ItemGroup>

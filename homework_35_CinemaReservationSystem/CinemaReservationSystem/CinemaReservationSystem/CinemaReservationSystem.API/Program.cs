@@ -3,6 +3,12 @@ using CinemaReservationSystem.Core.Entities;
 using CinemaReservationSystem.DAL.Contexts;
 using Microsoft.AspNetCore.Identity;
 using CinemaReservationSystem.Business;
+using FluentValidation.AspNetCore;
+using FluentValidation;
+using CinemaReservationSystem.Business.DTOs.MovieDtos;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace CinemaReservationSystem.API
 {
@@ -19,6 +25,9 @@ namespace CinemaReservationSystem.API
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddFluentValidationAutoValidation();
+            builder.Services.AddValidatorsFromAssemblyContaining<MovieCreateDtoValidator>();
+
             builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
             {
                 opt.User.RequireUniqueEmail = true;
@@ -27,26 +36,26 @@ namespace CinemaReservationSystem.API
             builder.Services.AddRepositories(builder.Configuration.GetConnectionString("Default"));
             builder.Services.AddServices();
 
-            //builder.Services.AddAuthentication(opt =>
-            //{
-            //    opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-            //    opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            //    opt.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-            //}).AddJwtBearer(opt =>
-            //{
-            //    opt.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
-            //    {
-            //        ValidateIssuer = true,
-            //        ValidateAudience = true,
+            builder.Services.AddAuthentication(opt =>
+            {
+                opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                opt.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(opt =>
+            {
+                opt.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
 
-            //        ValidIssuer = "http://localhost:5267/",
-            //        ValidAudience = "http://localhost:5267/",
-            //        ValidateLifetime = true,
+                    ValidIssuer = "http://localhost:5126/",
+                    ValidAudience = "http://localhost:5126/",
+                    ValidateLifetime = true,
 
-            //        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("25e75b38-ff37-42c4-a8a2-bdbacd380945")),
-            //        ClockSkew = TimeSpan.Zero
-            //    };
-            //});
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("25e75b38-ff37-42c4-a8a2-bdbacd380945")),
+                    ClockSkew = TimeSpan.Zero
+                };
+            });
 
 
 

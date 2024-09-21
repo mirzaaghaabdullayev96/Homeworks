@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using CinemaReservationSystem.Core.Repositories;
 using CinemaReservationSystem.DAL.Contexts;
 using CinemaReservationSystem.DAL.Repositories;
+using CinemaReservationSystem.Core.Entities;
 
 namespace CinemaReservationSystem.DAL;
 
@@ -18,6 +19,7 @@ public static class ServiceRegistration
         services.AddScoped<ISeatReservationRepository, SeatReservationRepository>();
         services.AddScoped<ITheatreRepository, TheatreRepository>();
         services.AddScoped<IShowTimeRepository, ShowTimeRepository>();
+        services.AddScoped<IMovieGenreRepository, MovieGenreRepository>();
 
 
 

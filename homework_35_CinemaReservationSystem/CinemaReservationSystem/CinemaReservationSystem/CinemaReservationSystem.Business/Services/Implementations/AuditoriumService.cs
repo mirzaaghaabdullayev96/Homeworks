@@ -1,4 +1,5 @@
 ﻿using CinemaReservationSystem.Business.DTOs.AuditoriumDtos;
+using CinemaReservationSystem.Business.Exceptions.AuditoriumExceptions;
 using CinemaReservationSystem.Business.Exceptions.CommonExceptions;
 using CinemaReservationSystem.Business.Services.Interfaces;
 using CinemaReservationSystem.Core.Entities;
@@ -18,16 +19,20 @@ namespace CinemaReservationSystem.Business.Services.Implementations
     {
         private readonly IAuditoriumRepository _auditoriumRepository;
         private readonly ISeatService _seatService;
+        private readonly ITheatreRepository _theatreRepository;
 
-        public AuditoriumService(IAuditoriumRepository auditoriumRepository, ISeatService seatService)
+        public AuditoriumService(IAuditoriumRepository auditoriumRepository, ISeatService seatService, ITheatreRepository theatreRepository)
         {
             _auditoriumRepository = auditoriumRepository;
             _seatService = seatService;
+            _theatreRepository = theatreRepository;
         }
 
         public async Task CreateAsync(AuditoriumCreateDto dto)
         {
             if (await _auditoriumRepository.Table.AnyAsync(x => x.Name.Trim().ToLower() == dto.Name.Trim().ToLower())) throw new AlreadyExistsException(StatusCodes.Status400BadRequest, "Name", "Auditorium already exists");
+            if (dto.TotalSeats > 25 || dto.TotalSeats < 10) throw new SeatsTotalNumberException(StatusCodes.Status400BadRequest, "TotalSeats", "Total seats must be between 10 and 25");
+            if (!await _theatreRepository.Table.AnyAsync(x => x.Id == dto.TheatreId)) throw new EntityNotFoundException(StatusCodes.Status404NotFound, "TheatreId", "Theatre by this Id not found");
 
             Auditorium data = new()
             {

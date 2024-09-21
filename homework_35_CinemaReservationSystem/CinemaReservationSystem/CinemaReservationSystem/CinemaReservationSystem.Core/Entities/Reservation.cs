@@ -13,8 +13,10 @@ namespace CinemaReservationSystem.Core.Entities
         //relational
         public string AppUserId { get; set; }
         public int ShowTimeId { get; set; }
+        public int AuditoriumId { get; set; }
         public AppUser AppUser { get; set; }
         public ShowTime ShowTime { get; set; }
+        public Auditorium Auditorium { get; set; }
         public ICollection<SeatReservation> SeatReservations { get; set; }
     }
 }

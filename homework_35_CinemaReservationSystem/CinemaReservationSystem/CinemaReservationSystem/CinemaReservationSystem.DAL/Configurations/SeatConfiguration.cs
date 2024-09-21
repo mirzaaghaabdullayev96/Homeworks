@@ -13,23 +13,22 @@ namespace CinemaReservationSystem.DAL.Configurations
     {
         public void Configure(EntityTypeBuilder<Seat> builder)
         {
-            builder.HasKey(s => s.SeatNumber);
 
             builder.HasOne(s => s.Auditorium)
-                   .WithMany(a => a.Seats) 
+                   .WithMany(a => a.Seats)
                    .HasForeignKey(s => s.AuditoriumId)
                    .OnDelete(DeleteBehavior.Cascade);
 
-           
-            builder.HasMany(s => s.SeatReservations)
-                   .WithOne(r => r.Seat) 
-                   .HasForeignKey(s => s.SeatNumber)
-                   .OnDelete(DeleteBehavior.Cascade); 
 
-            
+            builder.HasMany(s => s.SeatReservations)
+                   .WithOne(r => r.Seat)
+                   .HasForeignKey(s => s.SeatId)
+                   .OnDelete(DeleteBehavior.NoAction);
+
+
             builder.Property(s => s.SeatNumber)
                    .IsRequired()
-                   .HasMaxLength(10); 
+                   .HasMaxLength(10);
         }
     }
 }

@@ -25,6 +25,10 @@ namespace CinemaReservationSystem.Business
             services.AddScoped<ITheatreService, TheatreService>();
             services.AddScoped<IAuditoriumService, AuditoriumService>();
             services.AddScoped<ISeatService, SeatService>();
+            services.AddScoped<IMovieService, MovieService>();
+            services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IReservationService, ReservationService>();
+            services.AddScoped<IShowTimeService, ShowTimeService>();
         }
     }
 }

@@ -19,6 +19,7 @@ public class AppDbContext : IdentityDbContext
     public DbSet<Seat> Seats { get; set; }
     public DbSet<ShowTime> ShowTimes { get; set; }
     public DbSet<Theatre> Theatres { get; set; }
+    public DbSet<SeatReservation> SeatReservations { get; set; }
 
 
 

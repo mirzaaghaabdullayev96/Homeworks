@@ -44,7 +44,8 @@ namespace CinemaReservationSystem.API.Controllers
                 {
                     StatusCode = StatusCodes.Status400BadRequest,
                     ErrorMessage = ex.Message,
-                    Entities = null
+                    Entities = null,
+                    PropertyName = ex.PropertyName
                 });
             }
             catch (EntityNotFoundException ex)
@@ -53,7 +54,8 @@ namespace CinemaReservationSystem.API.Controllers
                 {
                     StatusCode = ex.StatusCode,
                     ErrorMessage = ex.Message,
-                    Entities = null
+                    Entities = null,
+                    PropertyName = ex.PropertyName
                 });
             }
             catch (Exception ex)
@@ -86,7 +88,8 @@ namespace CinemaReservationSystem.API.Controllers
                 {
                     Entities = null,
                     StatusCode = ex.StatusCode,
-                    ErrorMessage = ex.Message
+                    ErrorMessage = ex.Message,
+                    PropertyName = ex.PropertyName
                 });
             }
 
@@ -116,7 +119,8 @@ namespace CinemaReservationSystem.API.Controllers
                 {
                     StatusCode = StatusCodes.Status400BadRequest,
                     ErrorMessage = ex.Message,
-                    Entities = null
+                    Entities = null,
+                    PropertyName = ex.PropertyName
                 });
             }
             catch (EntityNotFoundException ex)
@@ -125,7 +129,8 @@ namespace CinemaReservationSystem.API.Controllers
                 {
                     StatusCode = ex.StatusCode,
                     ErrorMessage = ex.Message,
-                    Entities = null
+                    Entities = null,
+                    PropertyName = ex.PropertyName
                 });
             }
             catch (AlreadyExistsException ex)
@@ -164,7 +169,8 @@ namespace CinemaReservationSystem.API.Controllers
                 {
                     StatusCode = StatusCodes.Status400BadRequest,
                     ErrorMessage = ex.Message,
-                    Entities = null
+                    Entities = null,
+                    PropertyName = ex.PropertyName
                 });
             }
             catch (EntityNotFoundException ex)
@@ -173,7 +179,8 @@ namespace CinemaReservationSystem.API.Controllers
                 {
                     StatusCode = ex.StatusCode,
                     ErrorMessage = ex.Message,
-                    Entities = null
+                    Entities = null,
+                    PropertyName = ex.PropertyName
                 });
             }
             catch (Exception ex)

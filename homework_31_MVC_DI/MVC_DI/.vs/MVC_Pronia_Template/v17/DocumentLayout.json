@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|d:\\c#\\codeacademy\\homework_31_mvc_di\\mvc_di\\mvc_pronia_template\\utilities\\extension\\filevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|solutionrelative:mvc_pronia_template\\utilities\\extension\\filevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|d:\\c#\\codeacademy\\homework_31_mvc_di\\mvc_di\\mvc_pronia_template\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|solutionrelative:mvc_pronia_template\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|d:\\c#\\codeacademy\\homework_31_mvc_di\\mvc_di\\mvc_pronia_template\\areas\\proniaadmin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|solutionrelative:mvc_pronia_template\\areas\\proniaadmin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|d:\\c#\\codeacademy\\homework_31_mvc_di\\mvc_di\\mvc_pronia_template\\models\\productcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|solutionrelative:mvc_pronia_template\\models\\productcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|d:\\c#\\codeacademy\\homework_31_mvc_di\\mvc_di\\mvc_pronia_template\\utilities\\extension\\filevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|solutionrelative:mvc_pronia_template\\utilities\\extension\\filevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C437E2F-8890-492B-B148-4A45D7F0FE04}|MVC_Pronia_Template\\MVC_Pronia_Template.csproj|d:\\c#\\codeacademy\\homework_31_mvc_di\\mvc_di\\mvc_pronia_template\\models\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,6 +55,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\Areas\\ProniaAdmin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "MVC_Pronia_Template\\Areas\\ProniaAdmin\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\Areas\\ProniaAdmin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "MVC_Pronia_Template\\Areas\\ProniaAdmin\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAN0AAAAAAAAAAAAAAL4BAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T13:49:10.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FileValidator.cs",
               "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\Utilities\\Extension\\FileValidator.cs",
               "RelativeDocumentMoniker": "MVC_Pronia_Template\\Utilities\\Extension\\FileValidator.cs",
@@ -75,33 +88,19 @@
               "RelativeToolTip": "MVC_Pronia_Template\\Models\\Color.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T19:19:16.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-19T19:19:16.801Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ProductColor.cs",
               "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\Models\\ProductColor.cs",
               "RelativeDocumentMoniker": "MVC_Pronia_Template\\Models\\ProductColor.cs",
               "ToolTip": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\Models\\ProductColor.cs",
               "RelativeToolTip": "MVC_Pronia_Template\\Models\\ProductColor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAoAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-19T19:18:36.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "MVC_Pronia_Template\\Models\\Product.cs",
-              "ToolTip": "D:\\c#\\CodeAcademy\\homework_31_MVC_DI\\MVC_DI\\MVC_Pronia_Template\\Models\\Product.cs",
-              "RelativeToolTip": "MVC_Pronia_Template\\Models\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T19:18:35.409Z",
               "EditorCaption": ""
             },
             {
@@ -114,8 +113,7 @@
               "RelativeToolTip": "MVC_Pronia_Template\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-30T20:19:51.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T20:19:51.975Z"
             },
             {
               "$type": "Document",
@@ -127,8 +125,7 @@
               "RelativeToolTip": "MVC_Pronia_Template\\Services\\Implementations\\LayoutService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T20:19:46.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T20:19:46.825Z"
             },
             {
               "$type": "Document",
@@ -140,8 +137,7 @@
               "RelativeToolTip": "MVC_Pronia_Template\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAGUAAAAAAAAAAABUwJoAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-29T21:13:04.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T21:13:04.151Z"
             },
             {
               "$type": "Document",
@@ -153,8 +149,7 @@
               "RelativeToolTip": "MVC_Pronia_Template\\Views\\Shared\\ProductPartialView.cshtml",
               "ViewState": "AQIAAAkAAAAAAAAAAABOwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-29T21:12:49.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T21:12:49.758Z"
             },
             {
               "$type": "Document",
@@ -166,8 +161,7 @@
               "RelativeToolTip": "MVC_Pronia_Template\\Views\\Shared\\Components\\Product\\Default.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-29T21:12:12.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T21:12:12.309Z"
             },
             {
               "$type": "Document",
@@ -179,8 +173,7 @@
               "RelativeToolTip": "MVC_Pronia_Template\\ViewComponents\\ProductViewComponent.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAABOwB0AAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T21:11:49.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T21:11:49.775Z"
             }
           ]
         }

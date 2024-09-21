@@ -36,6 +36,9 @@ namespace CinemaReservationSystem.DAL.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsShowingMovie")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("datetime2");
 
@@ -159,6 +162,9 @@ namespace CinemaReservationSystem.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<int>("AuditoriumId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
@@ -178,6 +184,8 @@ namespace CinemaReservationSystem.DAL.Migrations
 
                     b.HasIndex("AppUserId");
 
+                    b.HasIndex("AuditoriumId");
+
                     b.HasIndex("ShowTimeId");
 
                     b.ToTable("Reservations");
@@ -185,9 +193,11 @@ namespace CinemaReservationSystem.DAL.Migrations
 
             modelBuilder.Entity("CinemaReservationSystem.Core.Entities.Seat", b =>
                 {
-                    b.Property<string>("SeatNumber")
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("AuditoriumId")
                         .HasColumnType("int");
@@ -195,7 +205,12 @@ namespace CinemaReservationSystem.DAL.Migrations
                     b.Property<bool>("IsBooked")
                         .HasColumnType("bit");
 
-                    b.HasKey("SeatNumber");
+                    b.Property<string>("SeatNumber")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.HasKey("Id");
 
                     b.HasIndex("AuditoriumId");
 
@@ -222,17 +237,16 @@ namespace CinemaReservationSystem.DAL.Migrations
                     b.Property<int>("ReservationId")
                         .HasColumnType("int");
 
-                    b.Property<string>("SeatNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(10)");
+                    b.Property<int>("SeatId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ReservationId");
 
-                    b.HasIndex("SeatNumber");
+                    b.HasIndex("SeatId");
 
-                    b.ToTable("SeatReservation");
+                    b.ToTable("SeatReservations");
                 });
 
             modelBuilder.Entity("CinemaReservationSystem.Core.Entities.ShowTime", b =>
@@ -242,9 +256,6 @@ namespace CinemaReservationSystem.DAL.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("AuditoriumId")
-                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -566,6 +577,12 @@ namespace CinemaReservationSystem.DAL.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("CinemaReservationSystem.Core.Entities.Auditorium", "Auditorium")
+                        .WithMany("Reservations")
+                        .HasForeignKey("AuditoriumId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("CinemaReservationSystem.Core.Entities.ShowTime", "ShowTime")
                         .WithMany("Reservations")
                         .HasForeignKey("ShowTimeId")
@@ -573,6 +590,8 @@ namespace CinemaReservationSystem.DAL.Migrations
                         .IsRequired();
 
                     b.Navigation("AppUser");
+
+                    b.Navigation("Auditorium");
 
                     b.Navigation("ShowTime");
                 });
@@ -598,8 +617,8 @@ namespace CinemaReservationSystem.DAL.Migrations
 
                     b.HasOne("CinemaReservationSystem.Core.Entities.Seat", "Seat")
                         .WithMany("SeatReservations")
-                        .HasForeignKey("SeatNumber")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .HasForeignKey("SeatId")
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Reservation");
@@ -671,6 +690,8 @@ namespace CinemaReservationSystem.DAL.Migrations
 
             modelBuilder.Entity("CinemaReservationSystem.Core.Entities.Auditorium", b =>
                 {
+                    b.Navigation("Reservations");
+
                     b.Navigation("Seats");
                 });
 

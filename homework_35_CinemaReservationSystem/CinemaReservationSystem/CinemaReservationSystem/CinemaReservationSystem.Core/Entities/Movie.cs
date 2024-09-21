@@ -10,7 +10,7 @@ namespace CinemaReservationSystem.Core.Entities
     {
         public string Title { get; set; }
         public string Description { get; set; }
-        public int Duration { get; set; }
+        public int Duration { get; set; } // in minutes
         public double Rating { get; set; }
         public DateTime ReleaseDate { get; set; }
 

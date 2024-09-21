@@ -151,3 +151,4 @@ D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\Ci
 D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.API\bin\Debug\net8.0\FluentValidation.dll
 D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\c#\CodeAcademy\homework_35_CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem\CinemaReservationSystem.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

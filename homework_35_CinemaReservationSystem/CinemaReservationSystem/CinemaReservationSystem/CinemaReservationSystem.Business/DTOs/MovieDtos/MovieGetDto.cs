@@ -7,5 +7,5 @@ using System.Threading.Tasks;
 
 namespace CinemaReservationSystem.Business.DTOs.MovieDtos
 {
-    public record MovieGetDto(int Id,string Title, string Description, int Duration, ICollection<string> Genres, double Rating, DateTime ReleaseDate,bool IsDeleted );
+    public record MovieGetDto(int Id,string Title, string Description, int Duration, ICollection<string> Genres, double Rating, DateTime ReleaseDate,bool IsDeleted , string ImageUrl );
 }

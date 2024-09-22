@@ -1,5 +1,6 @@
 ﻿using CinemaReservationSystem.Business.DTOs.GenreDtos;
 using FluentValidation;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CinemaReservationSystem.Business.DTOs.MovieDtos
 {
-    public record MovieCreateDto(string Title, string Description,List<int> GenreIds, int Duration, double Rating, DateTime ReleaseDate);
+    public record MovieCreateDto(string Title, string Description,List<int> GenreIds, int Duration, double Rating, DateTime ReleaseDate, IFormFile Image);
 
     public class MovieCreateDtoValidator : AbstractValidator<MovieCreateDto>
     {

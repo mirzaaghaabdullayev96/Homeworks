@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CinemaReservationSystem.MVC.bundle.scp.css",
-      "PackagePath": "staticwebassets\\CinemaReservationSystem.MVC.bundle.scp.css"
-    },
-    {
       "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\css\\maps\\style.css.map",
       "PackagePath": "staticwebassets\\admin\\css\\maps\\style.css.map"
     },
@@ -339,6 +335,22 @@
     {
       "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\front\\assets\\images\\JustWatch-logo-large.webp",
+      "PackagePath": "staticwebassets\\front\\assets\\images\\JustWatch-logo-large.webp"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\front\\assets\\images\\home-bg.png",
+      "PackagePath": "staticwebassets\\front\\assets\\images\\home-bg.png"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\front\\assets\\script.js",
+      "PackagePath": "staticwebassets\\front\\assets\\script.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\front\\assets\\style.css",
+      "PackagePath": "staticwebassets\\front\\assets\\style.css"
     },
     {
       "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\js\\site.js",

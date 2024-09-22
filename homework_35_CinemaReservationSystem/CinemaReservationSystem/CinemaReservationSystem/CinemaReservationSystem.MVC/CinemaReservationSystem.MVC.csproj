@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Home\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\admin\fonts\.DS_Store" />
     <None Include="wwwroot\admin\fonts\Roboto\.DS_Store" />
     <None Include="wwwroot\admin\images\.DS_Store" />
@@ -23,6 +19,10 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.5" />
     <PackageReference Include="RestSharp" Version="112.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CinemaReservationSystem.Business\CinemaReservationSystem.Business.csproj" />
   </ItemGroup>
 
 </Project>

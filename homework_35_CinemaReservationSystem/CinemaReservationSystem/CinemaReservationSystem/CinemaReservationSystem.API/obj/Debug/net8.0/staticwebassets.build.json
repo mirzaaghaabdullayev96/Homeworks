@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "V5R6mYTcbHW6KGaRyhyiEyUg/BebJIbnmTP5tyXBsys=",
+  "Hash": "H5x/Ti6Sv/eqlaWFUHx6l9yiz6LeMRbGGm4FX3gfLuc=",
   "Source": "CinemaReservationSystem.API",
   "BasePath": "_content/CinemaReservationSystem.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "CinemaReservationSystem.API\\wwwroot",
+      "Source": "CinemaReservationSystem.API",
+      "ContentRoot": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.API\\wwwroot\\",
+      "BasePath": "_content/CinemaReservationSystem.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.API\\wwwroot\\imagesOfMovies\\8211cbf6-64e3-4f77-a79b-84b5e789e29bproduct-12.jpg",
+      "SourceId": "CinemaReservationSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.API\\wwwroot\\",
+      "BasePath": "_content/CinemaReservationSystem.API",
+      "RelativePath": "imagesOfMovies/8211cbf6-64e3-4f77-a79b-84b5e789e29bproduct-12.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagesOfMovies\\8211cbf6-64e3-4f77-a79b-84b5e789e29bproduct-12.jpg"
+    }
+  ]
 }

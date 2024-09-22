@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+.navbar {
+  padding: 2rem 4rem;
+  width: 100%;
+}
+
+.navbar-logo img {
+  width: 14rem;
+}
+
+.navbar-list {
+  padding-left: 2rem;
+  color: #999c9f;
+}
+
+.navbar input {
+  background-color: #10161d;
+  border: none;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+  width: 22rem;
+}
+#first-section {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 1)
+    ),
+    url(./images/home-bg.png);
+  background-repeat: no-repeat;
+}
+
+#first-section h1 {
+  color: white;
+  text-align: center;
+  margin-top: 8rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#first-section h5 {
+  color: #999c9f;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: lighter;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#first-section .btn-yellow {
+  background-color: #fbc500;
+}
+#first-section a:hover {
+  color: white;
+}
+
+#first-section .btn-yellow {
+  font-weight: bold;
+  margin: 2rem 0;
+}
+.movies-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  padding: 1rem;
+  width: 14rem;
+  text-align: center;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 0.4rem;
+  height: auto;
+  cursor: pointer;
+}
+
+.modal .modal-img {
+  width: 10rem;
+  height: 100%;
+}
+
+.modal-content {
+  background-color: #000000;
+  color: #999c9f;
+  border: 0.5rem solid white;
+}
+
+.modal-header {
+  color: white;
+}

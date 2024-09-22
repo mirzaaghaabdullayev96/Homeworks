@@ -13,6 +13,7 @@ namespace CinemaReservationSystem.Core.Entities
         public int Duration { get; set; } // in minutes
         public double Rating { get; set; }
         public DateTime ReleaseDate { get; set; }
+        public string ImageURL { get; set; }
 
 
         //relational

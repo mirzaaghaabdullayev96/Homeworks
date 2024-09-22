@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.API\\wwwroot\\imagesOfMovies\\8211cbf6-64e3-4f77-a79b-84b5e789e29bproduct-12.jpg",
+      "PackagePath": "staticwebassets\\imagesOfMovies\\8211cbf6-64e3-4f77-a79b-84b5e789e29bproduct-12.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CinemaReservationSystem.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CinemaReservationSystem.API.props",
+      "PackagePath": "build\\CinemaReservationSystem.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CinemaReservationSystem.API.props",
+      "PackagePath": "buildMultiTargeting\\CinemaReservationSystem.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CinemaReservationSystem.API.props",
+      "PackagePath": "buildTransitive\\CinemaReservationSystem.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

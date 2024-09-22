@@ -2,9 +2,12 @@
 using CinemaReservationSystem.Business.DTOs.MovieDtos;
 using CinemaReservationSystem.Business.Exceptions.CommonExceptions;
 using CinemaReservationSystem.Business.Services.Interfaces;
+using CinemaReservationSystem.Business.Utilities.Enums;
+using CinemaReservationSystem.Business.Utilities.Extension;
 using CinemaReservationSystem.Core.Entities;
 using CinemaReservationSystem.Core.Repositories;
 using CinemaReservationSystem.DAL.Repositories;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -21,12 +24,14 @@ namespace CinemaReservationSystem.Business.Services.Implementations
         private readonly IMovieRepository _movieRepository;
         private readonly IGenreRepository _genreRepository;
         private readonly IMovieGenreRepository _movieGenreRepository;
+        private readonly IWebHostEnvironment _env;
 
-        public MovieService(IMovieRepository movieRepository, IGenreRepository genreRepository, IMovieGenreRepository movieGenreRepository)
+        public MovieService(IMovieRepository movieRepository, IGenreRepository genreRepository, IMovieGenreRepository movieGenreRepository, IWebHostEnvironment env)
         {
             _movieRepository = movieRepository;
             _genreRepository = genreRepository;
             _movieGenreRepository = movieGenreRepository;
+            _env = env;
         }
 
         public async Task CreateAsync(MovieCreateDto dto)
@@ -37,6 +42,17 @@ namespace CinemaReservationSystem.Business.Services.Implementations
                 if (!await _genreRepository.Table.AnyAsync(x => x.Id == genre)) throw new EntityNotFoundException(StatusCodes.Status404NotFound, "GenreIds", "Genre by this Id not found");
             }
 
+
+            if (!dto.Image.ValidateType("image/jpeg") && !dto.Image.ValidateType("image/png"))
+            {
+                throw new FileValidationException("Image", "Content type must be png or jpeg/jpg");
+            }
+            if (!dto.Image.ValidateSize(FileSize.MB, 3))
+            {
+                throw new FileValidationException("Image", "Image size must be less than 2MB");
+            }
+
+
             Movie data = new()
             {
                 Title = dto.Title,
@@ -44,7 +60,8 @@ namespace CinemaReservationSystem.Business.Services.Implementations
                 MovieGenres = dto.GenreIds.Select(gId => new MovieGenre { GenreId = gId }).ToList(),
                 Rating = dto.Rating,
                 ReleaseDate = dto.ReleaseDate,
-                Duration = dto.Duration
+                Duration = dto.Duration,
+                ImageURL = await dto.Image.CreateFileAsync(_env.WebRootPath, "imagesOfMovies")
             };
 
             await _movieRepository.CreateAsync(data);
@@ -66,7 +83,7 @@ namespace CinemaReservationSystem.Business.Services.Implementations
         public async Task<ICollection<MovieGetDto>> GetByExpression(bool asNoTracking = false, Expression<Func<Movie, bool>>? expression = null, params string[] includes)
         {
             var datas = await _movieRepository.GetByExpression(asNoTracking, expression, includes).ToListAsync();
-            return datas.Select(data => new MovieGetDto(data.Id, data.Title, data.Description, data.Duration, data.MovieGenres.Select(genre => genre.Genre.Name).ToList(), data.Rating, data.ReleaseDate, data.IsDeleted)).ToList();
+            return datas.Select(data => new MovieGetDto(data.Id, data.Title, data.Description, data.Duration, data.MovieGenres.Select(genre => genre.Genre.Name).ToList(), data.Rating, data.ReleaseDate, data.IsDeleted, data.ImageURL)).ToList();
         }
 
         public async Task<MovieGetDto> GetById(int id)
@@ -78,14 +95,14 @@ namespace CinemaReservationSystem.Business.Services.Implementations
             if (data is null) throw new EntityNotFoundException(StatusCodes.Status404NotFound, "", "Movie not found");
 
 
-            return new MovieGetDto(data.Id, data.Title, data.Description, data.Duration, data.MovieGenres.Select(genre => genre.Genre.Name).ToList(), data.Rating, data.ReleaseDate, data.IsDeleted);
+            return new MovieGetDto(data.Id, data.Title, data.Description, data.Duration, data.MovieGenres.Select(genre => genre.Genre.Name).ToList(), data.Rating, data.ReleaseDate, data.IsDeleted, data.ImageURL);
         }
 
         public async Task<MovieGetDto> GetSingleByExpression(bool asNoTracking = false, Expression<Func<Movie, bool>>? expression = null, params string[] includes)
         {
             var data = await _movieRepository.GetByExpression(asNoTracking, expression, includes).FirstOrDefaultAsync();
 
-            return new MovieGetDto(data.Id, data.Title, data.Description, data.Duration, data.MovieGenres.Select(genre => genre.Genre.Name).ToList(), data.Rating, data.ReleaseDate, data.IsDeleted);
+            return new MovieGetDto(data.Id, data.Title, data.Description, data.Duration, data.MovieGenres.Select(genre => genre.Genre.Name).ToList(), data.Rating, data.ReleaseDate, data.IsDeleted, data.ImageURL);
         }
 
         public async Task<bool> IsExistAsync(Expression<Func<Movie, bool>>? expression = null)
@@ -105,6 +122,12 @@ namespace CinemaReservationSystem.Business.Services.Implementations
             data.Rating = dto.Rating;
             data.ReleaseDate = dto.ReleaseDate;
             data.Description = dto.Description;
+
+            if (dto.Image is not null)
+            {
+                data.ImageURL.DeleteFile(_env.WebRootPath, "imagesOfMovies");
+                data.ImageURL = await dto.Image.CreateFileAsync(_env.WebRootPath, "imagesOfMovies");
+            }
 
             foreach (var genre in dto.GenreIds)
             {

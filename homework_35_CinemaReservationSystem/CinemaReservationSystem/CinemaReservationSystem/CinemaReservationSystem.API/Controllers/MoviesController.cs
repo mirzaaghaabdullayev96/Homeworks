@@ -78,7 +78,7 @@ namespace CinemaReservationSystem.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] MovieCreateDto dto)
+        public async Task<IActionResult> Create([FromForm] MovieCreateDto dto)
         {
             try
             {

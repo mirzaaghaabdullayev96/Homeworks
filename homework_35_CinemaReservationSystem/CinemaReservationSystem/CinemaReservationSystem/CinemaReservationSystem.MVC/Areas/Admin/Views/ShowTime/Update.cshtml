@@ -1,0 +1,60 @@
+﻿@model ShowTimeUpdateVM
+
+
+@{
+    var movies = ViewBag.Movies as List<MovieGetVM>;
+    var auditoriums = ViewBag.Auditoriums as List<AuditoriumGetVM>;
+}
+
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Update ShowTime</h4>
+
+                        <form class="forms-sample" method="post">
+                            <div class="form-group">
+                                <label asp-for="StartTime">StartTime</label>
+                                <input asp-for="StartTime" class="form-control" id="StartTime" placeholder="StartTime">
+                                <span class="text-danger" asp-validation-for="StartTime"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="EndTime">EndTime</label>
+                                <input asp-for="EndTime" class="form-control" id="EndTime" placeholder="EndTime">
+                                <span class="text-danger" asp-validation-for="EndTime"></span>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label asp-for="AuditoriumIds">Auditoriums</label>
+                                <select class="form-control" asp-for="AuditoriumIds" asp-items="new SelectList(auditoriums,nameof(AuditoriumGetVM.Id), nameof(AuditoriumGetVM.Name))">
+                                </select>
+                                <span class="text-danger" asp-validation-for="AuditoriumIds"></span>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label asp-for="MovieId">Movies</label>
+                                <select class="form-control" asp-for="MovieId" asp-items="new SelectList(movies,nameof(MovieGetVM.Id), nameof(MovieGetVM.Title))">
+                                </select>
+                                <span class="text-danger" asp-validation-for="MovieId"></span>
+                            </div>
+
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                            <button type="submit" class="btn btn-primary me-2">Submit</button>
+                            <button class="btn btn-light" asp-action="Index">Cancel</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

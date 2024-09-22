@@ -1,0 +1,593 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CinemaReservationSystem.MVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CinemaReservationSystem.MVC.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\css\\maps\\style.css.map",
+      "PackagePath": "staticwebassets\\admin\\css\\maps\\style.css.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\css\\style.css",
+      "PackagePath": "staticwebassets\\admin\\css\\style.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Black.eot",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Black.eot"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Black.ttf",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Black.ttf"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Black.woff",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Black.woff"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Black.woff2",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Black.woff2"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Bold.eot",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Bold.eot"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Bold.ttf",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Bold.ttf"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Bold.woff",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Bold.woff"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Bold.woff2",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Bold.woff2"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Light.eot",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Light.eot"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Light.ttf",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Light.ttf"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Light.woff",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Light.woff"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Light.woff2",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Light.woff2"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Medium.eot",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Medium.eot"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Medium.ttf",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Medium.ttf"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Medium.woff",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Medium.woff"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Medium.woff2",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Medium.woff2"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Regular.eot",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Regular.eot"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Regular.ttf",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Regular.ttf"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Regular.woff",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Regular.woff"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\fonts\\Roboto\\Roboto-Regular.woff2",
+      "PackagePath": "staticwebassets\\admin\\fonts\\Roboto\\Roboto-Regular.woff2"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\auth\\lockscreen-bg.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\auth\\lockscreen-bg.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\auth\\login-bg.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\auth\\login-bg.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\auth\\register-bg.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\auth\\register-bg.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face1.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face10.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face10.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face11.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face11.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face12.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face12.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face13.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face13.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face14.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face14.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face15.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face15.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face16.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face16.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face17.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face17.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face18.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face18.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face19.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face19.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face2.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face20.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face20.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face21.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face21.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face22.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face22.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face23.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face23.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face24.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face24.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face25.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face25.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face26.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face26.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face27.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face27.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face3.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face4.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face5.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face5.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face6.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face6.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face7.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face7.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face8.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face8.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face9.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face9.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\admin\\images\\favicon.ico"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\admin\\images\\favicon.png"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\logo-mini.svg",
+      "PackagePath": "staticwebassets\\admin\\images\\logo-mini.svg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\logo.svg",
+      "PackagePath": "staticwebassets\\admin\\images\\logo.svg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\js\\Chart.min.js",
+      "PackagePath": "staticwebassets\\admin\\js\\Chart.min.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\js\\chart.js",
+      "PackagePath": "staticwebassets\\admin\\js\\chart.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\js\\dashboard.js",
+      "PackagePath": "staticwebassets\\admin\\js\\dashboard.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\js\\data-table.js",
+      "PackagePath": "staticwebassets\\admin\\js\\data-table.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\js\\dataTables.bootstrap4.js",
+      "PackagePath": "staticwebassets\\admin\\js\\dataTables.bootstrap4.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\js\\documentation.js",
+      "PackagePath": "staticwebassets\\admin\\js\\documentation.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\js\\file-upload.js",
+      "PackagePath": "staticwebassets\\admin\\js\\file-upload.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\js\\hoverable-collapse.js",
+      "PackagePath": "staticwebassets\\admin\\js\\hoverable-collapse.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\js\\jquery.cookie.js",
+      "PackagePath": "staticwebassets\\admin\\js\\jquery.cookie.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\js\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\admin\\js\\jquery.dataTables.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\js\\off-canvas.js",
+      "PackagePath": "staticwebassets\\admin\\js\\off-canvas.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\js\\tabs.js",
+      "PackagePath": "staticwebassets\\admin\\js\\tabs.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\js\\template.js",
+      "PackagePath": "staticwebassets\\admin\\js\\template.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\vendors\\base\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\admin\\vendors\\base\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\vendors\\base\\vendor.bundle.base.css",
+      "PackagePath": "staticwebassets\\admin\\vendors\\base\\vendor.bundle.base.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\vendors\\base\\vendor.bundle.base.js",
+      "PackagePath": "staticwebassets\\admin\\vendors\\base\\vendor.bundle.base.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\vendors\\chart.js\\Chart.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendors\\chart.js\\Chart.min.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.css",
+      "PackagePath": "staticwebassets\\admin\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.js",
+      "PackagePath": "staticwebassets\\admin\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\vendors\\datatables.net\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\admin\\vendors\\datatables.net\\jquery.dataTables.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\vendors\\mdi\\css\\materialdesignicons.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendors\\mdi\\css\\materialdesignicons.min.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\vendors\\mdi\\css\\materialdesignicons.min.css.map",
+      "PackagePath": "staticwebassets\\admin\\vendors\\mdi\\css\\materialdesignicons.min.css.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.eot",
+      "PackagePath": "staticwebassets\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.eot"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.ttf",
+      "PackagePath": "staticwebassets\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.ttf"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff",
+      "PackagePath": "staticwebassets\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2",
+      "PackagePath": "staticwebassets\\admin\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CinemaReservationSystem.MVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CinemaReservationSystem.MVC.props",
+      "PackagePath": "build\\CinemaReservationSystem.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CinemaReservationSystem.MVC.props",
+      "PackagePath": "buildMultiTargeting\\CinemaReservationSystem.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CinemaReservationSystem.MVC.props",
+      "PackagePath": "buildTransitive\\CinemaReservationSystem.MVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

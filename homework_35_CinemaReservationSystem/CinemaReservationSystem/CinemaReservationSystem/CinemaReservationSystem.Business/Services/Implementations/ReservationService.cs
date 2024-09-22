@@ -50,11 +50,11 @@ namespace CinemaReservationSystem.Business.Services.Implementations
 
         public async Task DeleteAsync(int id)
         {
-            if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, null, "Id must be higher than 1");
+            if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, "", "Id must be higher than 1");
 
             var data = await _reservationRepository.GetByIdAsync(id);
 
-            if (data is null) throw new EntityNotFoundException(StatusCodes.Status404NotFound, null, "Reservation not found");
+            if (data is null) throw new EntityNotFoundException(StatusCodes.Status404NotFound, "", "Reservation not found");
 
             _reservationRepository.Delete(data);
             await _reservationRepository.CommitAsync();
@@ -70,11 +70,11 @@ namespace CinemaReservationSystem.Business.Services.Implementations
 
         public async Task<ReservationGetDto> GetById(int id)
         {
-            if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, null, "Id must be higher than 1");
+            if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, "", "Id must be higher than 1");
 
             var x = await _reservationRepository.GetByIdAsync(id);
 
-            if (x is null) throw new EntityNotFoundException(StatusCodes.Status404NotFound, null, "Reservation not found");
+            if (x is null) throw new EntityNotFoundException(StatusCodes.Status404NotFound, "", "Reservation not found");
 
             return new ReservationGetDto(x.Id, x.ReservationDate, x.AppUser.Fullname, x.ShowTime.Movie.Title, x.SeatReservations.Select(s => s.Seat.SeatNumber).ToList());
         }

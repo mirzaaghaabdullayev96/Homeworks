@@ -1,5 +1,6 @@
 ﻿using CinemaReservationSystem.API.ApiResponses;
 using CinemaReservationSystem.Business.DTOs.AuditoriumDtos;
+using CinemaReservationSystem.Business.Exceptions.AuditoriumExceptions;
 using CinemaReservationSystem.Business.Exceptions.CommonExceptions;
 using CinemaReservationSystem.Business.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
@@ -20,7 +21,7 @@ namespace CinemaReservationSystem.API.Controllers
         [HttpGet("")]
         public async Task<IActionResult> GetAll()
         {
-            var data = await _auditoriumService.GetByExpression();
+            var data = await _auditoriumService.GetByExpression(true,null,"Theatre");
 
             return Ok(new ApiResponse<ICollection<AuditoriumGetDto>>
             {
@@ -36,7 +37,7 @@ namespace CinemaReservationSystem.API.Controllers
             AuditoriumGetDto? dto = null;
             try
             {
-                dto = await _auditoriumService.GetById(id);
+                dto = await _auditoriumService.GetSingleByExpression(true, x => x.Id == id, "Theatre");
             }
             catch (IdIsNotValidException ex)
             {
@@ -64,7 +65,8 @@ namespace CinemaReservationSystem.API.Controllers
                 {
                     StatusCode = StatusCodes.Status400BadRequest,
                     ErrorMessage = ex.Message,
-                    Entities = null
+                    Entities = null,
+                    PropertyName = ""
                 });
             }
             return Ok(new ApiResponse<AuditoriumGetDto>
@@ -92,14 +94,34 @@ namespace CinemaReservationSystem.API.Controllers
                     PropertyName = ex.PropertyName
                 });
             }
-
+            catch (EntityNotFoundException ex)
+            {
+                return NotFound(new ApiResponse<AuditoriumGetDto>
+                {
+                    StatusCode = ex.StatusCode,
+                    ErrorMessage = ex.Message,
+                    Entities = null,
+                    PropertyName = ex.PropertyName
+                });
+            }
+            catch (SeatsTotalNumberException ex)
+            {
+                return BadRequest(new ApiResponse<AuditoriumGetDto>
+                {
+                    Entities = null,
+                    StatusCode = ex.StatusCode,
+                    ErrorMessage = ex.Message,
+                    PropertyName = ex.PropertyName
+                });
+            }
             catch (Exception ex)
             {
                 return BadRequest(new ApiResponse<AuditoriumGetDto>
                 {
                     Entities = null,
                     StatusCode = StatusCodes.Status400BadRequest,
-                    ErrorMessage = ex.Message
+                    ErrorMessage = ex.Message,
+                    PropertyName = ""
                 });
             }
             return Created();
@@ -143,13 +165,24 @@ namespace CinemaReservationSystem.API.Controllers
                     PropertyName = ex.PropertyName
                 });
             }
+            catch (SeatsTotalNumberException ex)
+            {
+                return BadRequest(new ApiResponse<AuditoriumGetDto>
+                {
+                    Entities = null,
+                    StatusCode = ex.StatusCode,
+                    ErrorMessage = ex.Message,
+                    PropertyName = ex.PropertyName
+                });
+            }
             catch (Exception ex)
             {
                 return BadRequest(new ApiResponse<AuditoriumGetDto>
                 {
                     Entities = null,
                     StatusCode = StatusCodes.Status400BadRequest,
-                    ErrorMessage = ex.Message
+                    ErrorMessage = ex.Message,
+                    PropertyName = ""
                 });
             }
 
@@ -189,7 +222,8 @@ namespace CinemaReservationSystem.API.Controllers
                 {
                     StatusCode = StatusCodes.Status400BadRequest,
                     ErrorMessage = ex.Message,
-                    Entities = null
+                    Entities = null,
+                    PropertyName = ""
                 });
             }
             return Ok(new ApiResponse<AuditoriumGetDto>

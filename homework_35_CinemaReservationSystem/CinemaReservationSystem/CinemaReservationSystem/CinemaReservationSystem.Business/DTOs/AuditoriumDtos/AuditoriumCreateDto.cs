@@ -15,9 +15,9 @@ namespace CinemaReservationSystem.Business.DTOs.AuditoriumDtos
         public AuditoriumCreateDtoValidator()
         {
             RuleFor(x => x.Name).NotNull().NotEmpty().MaximumLength(50).MinimumLength(2);
-            RuleFor(x => x.TotalSeats)
-             .InclusiveBetween(10, 25)
-             .WithMessage("Total seats must be between 10 and 25.");
+            //RuleFor(x => x.TotalSeats)
+            // .InclusiveBetween(10, 25)
+            // .WithMessage("Total seats must be between 10 and 25.");
         }
     }
 }

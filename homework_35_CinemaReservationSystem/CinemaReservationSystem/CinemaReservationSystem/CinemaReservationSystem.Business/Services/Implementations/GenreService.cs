@@ -32,11 +32,11 @@ public class GenreService : IGenreService
 
     public async Task DeleteAsync(int id)
     {
-        if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, null, "Id must be higher than 1");
+        if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest,"", "Id must be higher than 1");
 
         var data = await _genreRepository.GetByIdAsync(id);
 
-        if (data is null) throw new EntityNotFoundException(StatusCodes.Status404NotFound, null, "Genre not found");
+        if (data is null) throw new EntityNotFoundException(StatusCodes.Status404NotFound, "", "Genre not found");
 
         _genreRepository.Delete(data);
         await _genreRepository.CommitAsync();
@@ -52,11 +52,11 @@ public class GenreService : IGenreService
 
     public async Task<GenreGetDto> GetById(int id)
     {
-        if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, null, "Id must be higher than 1");
+        if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, "", "Id must be higher than 1");
 
         var data = await _genreRepository.GetByIdAsync(id);
 
-        if (data is null) throw new EntityNotFoundException(StatusCodes.Status404NotFound, null, "Genre not found");
+        if (data is null) throw new EntityNotFoundException(StatusCodes.Status404NotFound, "", "Genre not found");
 
         return new GenreGetDto(data.Id, data.Name, data.IsDeleted, data.CreatedDate, data.ModifiedDate);
     }
@@ -75,10 +75,10 @@ public class GenreService : IGenreService
 
     public async Task UpdateAsync(int id, GenreUpdateDto dto)
     {
-        if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, null, "Id must be higher than 1");
+        if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, "", "Id must be higher than 1");
 
         if (await _genreRepository.Table.AnyAsync(x => x.Name.Trim().ToLower() == dto.Name.Trim().ToLower() && x.Id != id)) throw new AlreadyExistsException(StatusCodes.Status400BadRequest, "Name", "Genre already exists");
-        var data = await _genreRepository.GetByIdAsync(id) ?? throw new EntityNotFoundException(StatusCodes.Status404NotFound, null, "Genre not found");
+        var data = await _genreRepository.GetByIdAsync(id) ?? throw new EntityNotFoundException(StatusCodes.Status404NotFound, "", "Genre not found");
 
         data.Name = dto.Name;
 

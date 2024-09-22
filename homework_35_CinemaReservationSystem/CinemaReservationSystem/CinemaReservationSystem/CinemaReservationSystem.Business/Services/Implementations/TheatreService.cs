@@ -39,11 +39,11 @@ namespace CinemaReservationSystem.Business.Services.Implementations
 
         public async Task DeleteAsync(int id)
         {
-            if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, null, "Id must be higher than 1");
+            if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, "", "Id must be higher than 1");
 
             var data = await _theatreRepository.GetByIdAsync(id);
 
-            if (data is null) throw new EntityNotFoundException(StatusCodes.Status404NotFound, null, "Theatre not found");
+            if (data is null) throw new EntityNotFoundException(StatusCodes.Status404NotFound, "", "Theatre not found");
 
             _theatreRepository.Delete(data);
             await _theatreRepository.CommitAsync();
@@ -59,11 +59,11 @@ namespace CinemaReservationSystem.Business.Services.Implementations
 
         public async Task<TheatreGetDto> GetById(int id)
         {
-            if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, null, "Id must be higher than 1");
+            if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, "", "Id must be higher than 1");
 
             var data = await _theatreRepository.GetByIdAsync(id);
 
-            if (data is null) throw new EntityNotFoundException(StatusCodes.Status404NotFound, null, "Theatre not found");
+            if (data is null) throw new EntityNotFoundException(StatusCodes.Status404NotFound, "", "Theatre not found");
 
             return new TheatreGetDto(data.Id, data.Name,data.Location, data.IsDeleted, data.CreatedDate, data.ModifiedDate);
         }
@@ -82,10 +82,10 @@ namespace CinemaReservationSystem.Business.Services.Implementations
 
         public async Task UpdateAsync(int id, TheatreUpdateDto dto)
         {
-            if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, null, "Id must be higher than 1");
+            if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, "", "Id must be higher than 1");
 
             if (await _theatreRepository.Table.AnyAsync(x => x.Name.Trim().ToLower() == dto.Name.Trim().ToLower() && x.Id != id)) throw new AlreadyExistsException(StatusCodes.Status400BadRequest, "Name", "Theatre already exists");
-            var data = await _theatreRepository.GetByIdAsync(id) ?? throw new EntityNotFoundException(StatusCodes.Status404NotFound, null, "Theatre not found");
+            var data = await _theatreRepository.GetByIdAsync(id) ?? throw new EntityNotFoundException(StatusCodes.Status404NotFound, "", "Theatre not found");
 
             data.Name = dto.Name;
 

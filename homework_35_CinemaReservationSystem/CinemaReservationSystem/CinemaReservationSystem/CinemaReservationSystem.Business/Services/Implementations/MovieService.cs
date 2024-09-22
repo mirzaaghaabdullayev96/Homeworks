@@ -53,11 +53,11 @@ namespace CinemaReservationSystem.Business.Services.Implementations
 
         public async Task DeleteAsync(int id)
         {
-            if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, null, "Id must be higher than 1");
+            if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, "", "Id must be higher than 1");
 
             var data = await _movieRepository.GetByIdAsync(id);
 
-            if (data is null) throw new EntityNotFoundException(StatusCodes.Status404NotFound, null, "Movie not found");
+            if (data is null) throw new EntityNotFoundException(StatusCodes.Status404NotFound, "", "Movie not found");
 
             _movieRepository.Delete(data);
             await _movieRepository.CommitAsync();
@@ -71,11 +71,11 @@ namespace CinemaReservationSystem.Business.Services.Implementations
 
         public async Task<MovieGetDto> GetById(int id)
         {
-            if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, null, "Id must be higher than 1");
+            if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, "", "Id must be higher than 1");
 
             var data = await _movieRepository.GetByIdAsync(id);
 
-            if (data is null) throw new EntityNotFoundException(StatusCodes.Status404NotFound, null, "Movie not found");
+            if (data is null) throw new EntityNotFoundException(StatusCodes.Status404NotFound, "", "Movie not found");
 
 
             return new MovieGetDto(data.Id, data.Title, data.Description, data.Duration, data.MovieGenres.Select(genre => genre.Genre.Name).ToList(), data.Rating, data.ReleaseDate, data.IsDeleted);
@@ -95,10 +95,10 @@ namespace CinemaReservationSystem.Business.Services.Implementations
 
         public async Task UpdateAsync(int id, MovieUpdateDto dto)
         {
-            if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, null, "Id must be higher than 1");
+            if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest, "", "Id must be higher than 1");
 
             if (await _movieRepository.Table.AnyAsync(x => x.Title.Trim().ToLower() == dto.Title.Trim().ToLower() && x.Id != id)) throw new AlreadyExistsException(StatusCodes.Status400BadRequest, "Title", "Movie already exists");
-            Movie data = await _movieRepository.Table.Include(x => x.MovieGenres).FirstOrDefaultAsync(x => x.Id == id) ?? throw new EntityNotFoundException(StatusCodes.Status404NotFound, null, "Movie not found");
+            Movie data = await _movieRepository.Table.Include(x => x.MovieGenres).FirstOrDefaultAsync(x => x.Id == id) ?? throw new EntityNotFoundException(StatusCodes.Status404NotFound, "", "Movie not found");
 
             data.Title = dto.Title;
             data.Duration = dto.Duration;

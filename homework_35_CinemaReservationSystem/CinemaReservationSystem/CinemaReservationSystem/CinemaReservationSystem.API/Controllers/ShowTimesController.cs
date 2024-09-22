@@ -64,7 +64,8 @@ namespace CinemaReservationSystem.API.Controllers
                 {
                     StatusCode = StatusCodes.Status400BadRequest,
                     ErrorMessage = ex.Message,
-                    Entities = null
+                    Entities = null,
+                    PropertyName = ""
                 });
             }
             return Ok(new ApiResponse<ShowTimeGetDto>
@@ -99,7 +100,8 @@ namespace CinemaReservationSystem.API.Controllers
                 {
                     Entities = null,
                     StatusCode = StatusCodes.Status400BadRequest,
-                    ErrorMessage = ex.Message
+                    ErrorMessage = ex.Message,
+                    PropertyName = ""
                 });
             }
             return Created();
@@ -149,7 +151,8 @@ namespace CinemaReservationSystem.API.Controllers
                 {
                     Entities = null,
                     StatusCode = StatusCodes.Status400BadRequest,
-                    ErrorMessage = ex.Message
+                    ErrorMessage = ex.Message,
+                    PropertyName = ""
                 });
             }
 
@@ -189,7 +192,8 @@ namespace CinemaReservationSystem.API.Controllers
                 {
                     StatusCode = StatusCodes.Status400BadRequest,
                     ErrorMessage = ex.Message,
-                    Entities = null
+                    Entities = null,
+                    PropertyName = ""
                 });
             }
             return Ok(new ApiResponse<ShowTimeGetDto>

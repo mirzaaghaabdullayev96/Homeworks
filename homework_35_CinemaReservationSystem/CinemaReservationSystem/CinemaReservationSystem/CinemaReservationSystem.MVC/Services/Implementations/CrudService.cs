@@ -15,12 +15,13 @@ namespace CinemaReservationSystem.MVC.Services.Implementations
             _configuration = configuration;
             _httpContextAccessor = httpContextAccessor;
             _restClient = new RestClient(_configuration.GetSection("API:Base_Url").Value);
-            //var token = _httpContextAccessor.HttpContext.Request.Cookies["token"];
 
-            //if (token != null)
-            //{
-            //    _restClient.AddDefaultHeader("Authorization", "Bearer " + token);
-            //}
+            var token = _httpContextAccessor.HttpContext.Request.Cookies["token"];
+
+            if (token != null)
+            {
+                _restClient.AddDefaultHeader("Authorization", "Bearer " + token);
+            }
         }
 
         public async Task<RestResponse<ApiResponseMessage<T>>> Create<T>(string endpoint, T entity) where T : class

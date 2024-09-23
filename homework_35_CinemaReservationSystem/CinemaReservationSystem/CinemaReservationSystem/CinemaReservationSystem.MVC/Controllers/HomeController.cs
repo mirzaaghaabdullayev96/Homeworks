@@ -12,5 +12,9 @@ namespace CinemaReservationSystem.MVC.Controllers
             return View();
         }
 
+        public IActionResult Forbidden()
+        {
+            return View("Forbidden");
+        }
     }
 }

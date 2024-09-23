@@ -1,10 +1,12 @@
 ﻿using CinemaReservationSystem.MVC.Areas.Admin.ViewModels;
+using CinemaReservationSystem.MVC.Services.Implementations;
 using CinemaReservationSystem.MVC.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CinemaReservationSystem.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [ServiceFilter(typeof(TokenAuthorizationFilter))]
     public class GenreController : Controller
     {
         private readonly ICrudService _crudService;

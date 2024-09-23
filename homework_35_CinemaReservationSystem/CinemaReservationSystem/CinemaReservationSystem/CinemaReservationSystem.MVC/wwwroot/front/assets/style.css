@@ -35,6 +35,8 @@ body {
     ),
     url(./images/home-bg.png);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #first-section h1 {

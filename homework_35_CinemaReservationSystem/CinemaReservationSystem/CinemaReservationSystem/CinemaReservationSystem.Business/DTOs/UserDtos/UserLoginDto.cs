@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace CinemaReservationSystem.Business.DTOs.UserDtos
 {
-    public record UserLoginDto(string Username, string Password);
+    public record UserLoginDto(string Email, string Password);
 
 }

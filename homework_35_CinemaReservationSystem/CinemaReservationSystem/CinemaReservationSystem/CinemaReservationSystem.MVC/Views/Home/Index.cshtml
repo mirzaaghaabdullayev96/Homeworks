@@ -14,12 +14,9 @@
 </head>
 <body>
     <section id="first-section" class="pb-5">
-        <div class="navbar d-flex align-items-center">
-            <div class="navbar-logo">
-                <img src="~/front/assets/images/JustWatch-logo-large.webp" width="100%" />
-            </div>
-            <div class="d-flex align-items-center">
-                <div class="navbar-list"></div><button class="btn btn-dark">Sign In</button>
+        <div class="navbar d-flex align-items-end">
+            <div class="d-flex align-items-center ms-auto">
+               @await Component.InvokeAsync("SignIn")
             </div>
         </div>
         </div>

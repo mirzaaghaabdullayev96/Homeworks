@@ -16,6 +16,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace CinemaReservationSystem.Business.Services.Implementations
 {
@@ -129,13 +130,17 @@ namespace CinemaReservationSystem.Business.Services.Implementations
                 data.ImageURL = await dto.Image.CreateFileAsync(_env.WebRootPath, "imagesOfMovies");
             }
 
-            foreach (var genre in dto.GenreIds)
+            if (dto.GenreIds is not null)
             {
-                if (data.MovieGenres.Any(x => x.GenreId == genre)) continue;
-                data.MovieGenres.Add(new MovieGenre { GenreId = genre });
+                foreach (var genre in dto.GenreIds)
+                {
+                    if (data.MovieGenres.Any(x => x.GenreId == genre)) continue;
+                    data.MovieGenres.Add(new MovieGenre { GenreId = genre });
+                }
+
+                _movieGenreRepository.Table.RemoveRange(data.MovieGenres.Where(mg => !dto.GenreIds.Exists(gId => gId == mg.GenreId)).ToList());
             }
 
-            _movieGenreRepository.Table.RemoveRange(data.MovieGenres.Where(mg => !dto.GenreIds.Exists(gId => gId == mg.GenreId)).ToList());
 
             await _movieRepository.CommitAsync();
         }

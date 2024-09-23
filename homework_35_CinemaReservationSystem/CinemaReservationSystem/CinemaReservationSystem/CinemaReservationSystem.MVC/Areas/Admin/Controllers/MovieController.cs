@@ -3,6 +3,7 @@ using CinemaReservationSystem.Business.Utilities.Enums;
 using CinemaReservationSystem.Business.Utilities.Extension;
 using CinemaReservationSystem.MVC.ApiResponseMessages;
 using CinemaReservationSystem.MVC.Areas.Admin.ViewModels;
+using CinemaReservationSystem.MVC.Services.Implementations;
 using CinemaReservationSystem.MVC.Services.Interfaces;
 using Humanizer;
 using Microsoft.AspNetCore.Mvc;
@@ -11,6 +12,7 @@ using RestSharp;
 namespace CinemaReservationSystem.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [ServiceFilter(typeof(TokenAuthorizationFilter))]
     public class MovieController : Controller
     {
         private readonly ICrudService _crudService;
@@ -116,15 +118,52 @@ namespace CinemaReservationSystem.MVC.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(int id, MovieUpdateVM vm)
         {
-            var result = await _crudService.Update($"/movies/{id}", vm);
+            //var result = await _crudService.Update($"/movies/{id}", vm);
 
-            if (!result.IsSuccessful)
+            //if (!result.IsSuccessful)
+            //{
+            //    ViewBag.Genres = (await _crudService.GetAllAsync<List<GenreGetVM>>("/genres")).Data.Entities;
+            //    ModelState.AddModelError(result.Data.PropertyName, result.Data.ErrorMessage);
+            //    return View();
+            //}
+            //return RedirectToAction("Index");
+
+            var movieRequest = new RestRequest($"movies/{id}", Method.Put);
+
+            movieRequest.AddParameter("Title", vm.Title);
+            movieRequest.AddParameter("Description", vm.Description);
+            movieRequest.AddParameter("Duration", vm.Duration);
+            movieRequest.AddParameter("Rating", vm.Rating);
+            movieRequest.AddParameter("ReleaseDate", vm.ReleaseDate);
+
+            if (vm.GenreIds is not null)
+            {
+                foreach (var genreId in vm.GenreIds)
+                {
+                    movieRequest.AddParameter("GenreIds", genreId);
+                }
+            }
+
+
+            if (vm.Image is not null)
+            {
+                await using var memoryStream = new MemoryStream();
+                await vm.Image.CopyToAsync(memoryStream);
+                byte[] bytes = memoryStream.ToArray();
+                movieRequest.AddFile("Image", bytes, vm.Image.FileName, contentType: vm.Image.ContentType);
+            }
+
+
+            var movieResponse = await _restClient.ExecuteAsync<ApiResponseMessage<object>>(movieRequest);
+
+            if (!movieResponse.IsSuccessful)
             {
                 ViewBag.Genres = (await _crudService.GetAllAsync<List<GenreGetVM>>("/genres")).Data.Entities;
-                ModelState.AddModelError(result.Data.PropertyName, result.Data.ErrorMessage);
+                //ModelState.AddModelError("", movieResponse.Data.ErrorMessage);
                 return View();
             }
-            return RedirectToAction("Index");
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }

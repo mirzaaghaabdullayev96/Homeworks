@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H5x/Ti6Sv/eqlaWFUHx6l9yiz6LeMRbGGm4FX3gfLuc=",
+  "Hash": "DftgVEYI6O0wf0cw4UESRbQRC6XXeaq5uKWEboj+YOw=",
   "Source": "CinemaReservationSystem.API",
   "BasePath": "_content/CinemaReservationSystem.API",
   "Mode": "Default",
@@ -16,6 +16,44 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.API\\wwwroot\\imagesOfMovies\\1a14b525-f712-49a9-9483-3c227aad4450product-11.jpg",
+      "SourceId": "CinemaReservationSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.API\\wwwroot\\",
+      "BasePath": "_content/CinemaReservationSystem.API",
+      "RelativePath": "imagesOfMovies/1a14b525-f712-49a9-9483-3c227aad4450product-11.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagesOfMovies\\1a14b525-f712-49a9-9483-3c227aad4450product-11.jpg"
+    },
+    {
+      "Identity": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.API\\wwwroot\\imagesOfMovies\\544211fb-5341-4ef0-973b-d9058a83db3cproduct-3.jpg",
+      "SourceId": "CinemaReservationSystem.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.API\\wwwroot\\",
+      "BasePath": "_content/CinemaReservationSystem.API",
+      "RelativePath": "imagesOfMovies/544211fb-5341-4ef0-973b-d9058a83db3cproduct-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagesOfMovies\\544211fb-5341-4ef0-973b-d9058a83db3cproduct-3.jpg"
+    },
     {
       "Identity": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.API\\wwwroot\\imagesOfMovies\\8211cbf6-64e3-4f77-a79b-84b5e789e29bproduct-12.jpg",
       "SourceId": "CinemaReservationSystem.API",

@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.API\\wwwroot\\imagesOfMovies\\1a14b525-f712-49a9-9483-3c227aad4450product-11.jpg",
+      "PackagePath": "staticwebassets\\imagesOfMovies\\1a14b525-f712-49a9-9483-3c227aad4450product-11.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.API\\wwwroot\\imagesOfMovies\\544211fb-5341-4ef0-973b-d9058a83db3cproduct-3.jpg",
+      "PackagePath": "staticwebassets\\imagesOfMovies\\544211fb-5341-4ef0-973b-d9058a83db3cproduct-3.jpg"
+    },
+    {
       "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.API\\wwwroot\\imagesOfMovies\\8211cbf6-64e3-4f77-a79b-84b5e789e29bproduct-12.jpg",
       "PackagePath": "staticwebassets\\imagesOfMovies\\8211cbf6-64e3-4f77-a79b-84b5e789e29bproduct-12.jpg"
     },

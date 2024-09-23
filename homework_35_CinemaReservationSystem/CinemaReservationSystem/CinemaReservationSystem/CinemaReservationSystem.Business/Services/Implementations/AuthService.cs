@@ -1,7 +1,9 @@
 ﻿using CinemaReservationSystem.Business.DTOs.TokenDtos;
 using CinemaReservationSystem.Business.DTOs.UserDtos;
+using CinemaReservationSystem.Business.Exceptions.LoginRegisterExceptions;
 using CinemaReservationSystem.Business.Services.Interfaces;
 using CinemaReservationSystem.Core.Entities;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -27,13 +29,13 @@ namespace CinemaReservationSystem.Business.Services.Implementations
         public async Task<TokenResponseDto> Login(UserLoginDto userLoginDto)
         {
             AppUser user = null;
-            user = await _userManager.FindByNameAsync(userLoginDto.Username);
+            user = await _userManager.FindByEmailAsync(userLoginDto.Email);
             if (user == null)
             {
                 throw new NullReferenceException("Invalid Credentials");
             }
 
-            var result = await _signInManager.CheckPasswordSignInAsync(user, userLoginDto.Password,false);
+            var result = await _signInManager.CheckPasswordSignInAsync(user, userLoginDto.Password, false);
             var roles = await _userManager.GetRolesAsync(user);
 
             List<Claim> claims =
@@ -64,21 +66,32 @@ namespace CinemaReservationSystem.Business.Services.Implementations
             return new TokenResponseDto(token, expires);
         }
 
-       
+
 
         public async Task Register(UserRegisterDto userRegisterDto)
         {
+            if (userRegisterDto.Password != userRegisterDto.ConfirmPassword) throw new PasswordsDoNotMatchException(StatusCodes.Status400BadRequest, "ConfirmPassword", "Passwords do not match");
+
+
+            Random random = new Random();
+            int randomDigits = random.Next(100, 1000);
+
+            string userName = $"{userRegisterDto.Name}{randomDigits}";
+
             AppUser appUser = new AppUser()
             {
                 Email = userRegisterDto.Email,
-                Fullname = userRegisterDto.Fullname,
-                UserName = userRegisterDto.Username,
-                PhoneNumber= userRegisterDto.PhoneNumber,
+                Fullname = string.Concat(userRegisterDto.Name, " ", userRegisterDto.LastName),
+                UserName = userName
             };
 
-            await _userManager.CreateAsync(appUser, userRegisterDto.Password);
-        }
+            var result = await _userManager.CreateAsync(appUser, userRegisterDto.Password);
 
-       
+            if (!result.Succeeded)
+            {
+                throw new Exception();
+            }
+            await _userManager.AddToRoleAsync(appUser, "Member");
+        }
     }
 }

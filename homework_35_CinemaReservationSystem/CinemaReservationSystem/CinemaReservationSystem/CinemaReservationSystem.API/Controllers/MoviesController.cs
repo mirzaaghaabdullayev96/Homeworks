@@ -3,6 +3,7 @@ using CinemaReservationSystem.Business.DTOs.MovieDtos;
 using CinemaReservationSystem.Business.Exceptions.CommonExceptions;
 using CinemaReservationSystem.Business.Services.Implementations;
 using CinemaReservationSystem.Business.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,6 +19,9 @@ namespace CinemaReservationSystem.API.Controllers
         {
             _movieService = movieService;
         }
+
+        [Authorize(Roles="Admin")]
+
         [HttpGet("")]
         public async Task<IActionResult> GetAll()
         {
@@ -110,7 +114,7 @@ namespace CinemaReservationSystem.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update([FromRoute] int id, [FromBody] MovieUpdateDto dto)
+        public async Task<IActionResult> Update([FromRoute] int id, [FromForm] MovieUpdateDto dto)
         {
             try
             {

@@ -18,12 +18,20 @@ namespace CinemaReservationSystem.MVC.Areas.Admin.Controllers
         private readonly ICrudService _crudService;
         private readonly RestClient _restClient;
         private readonly IConfiguration _configuration;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public MovieController(ICrudService crudService, IConfiguration configuration)
+        public MovieController(ICrudService crudService, IConfiguration configuration, IHttpContextAccessor httpContextAccessor)
         {
             _configuration = configuration;
+            _httpContextAccessor = httpContextAccessor;
             _restClient = new RestClient(_configuration.GetSection("API:Base_Url").Value);
             _crudService = crudService;
+            var token = _httpContextAccessor.HttpContext.Request.Cookies["token"];
+
+            if (token != null)
+            {
+                _restClient.AddDefaultHeader("Authorization", "Bearer " + token);
+            }
         }
 
         public async Task<IActionResult> Index()

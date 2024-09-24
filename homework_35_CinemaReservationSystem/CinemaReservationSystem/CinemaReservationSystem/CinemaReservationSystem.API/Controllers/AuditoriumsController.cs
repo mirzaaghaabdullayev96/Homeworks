@@ -3,6 +3,7 @@ using CinemaReservationSystem.Business.DTOs.AuditoriumDtos;
 using CinemaReservationSystem.Business.Exceptions.AuditoriumExceptions;
 using CinemaReservationSystem.Business.Exceptions.CommonExceptions;
 using CinemaReservationSystem.Business.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,6 +11,7 @@ namespace CinemaReservationSystem.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
     public class AuditoriumsController : ControllerBase
     {
         private readonly IAuditoriumService _auditoriumService;
@@ -22,6 +24,19 @@ namespace CinemaReservationSystem.API.Controllers
         public async Task<IActionResult> GetAll()
         {
             var data = await _auditoriumService.GetByExpression(true,null,"Theatre");
+
+            return Ok(new ApiResponse<ICollection<AuditoriumGetDto>>
+            {
+                StatusCode = StatusCodes.Status200OK,
+                ErrorMessage = string.Empty,
+                Entities = data
+            });
+        }
+
+        [HttpGet("Free")]
+        public async Task<IActionResult> GetAllFree()
+        {
+            var data = await _auditoriumService.GetByExpression(true, x=>x.IsShowingMovie==false, "Theatre");
 
             return Ok(new ApiResponse<ICollection<AuditoriumGetDto>>
             {

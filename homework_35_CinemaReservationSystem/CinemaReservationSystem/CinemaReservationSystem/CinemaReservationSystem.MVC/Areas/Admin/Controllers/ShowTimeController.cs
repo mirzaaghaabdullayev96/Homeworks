@@ -35,8 +35,8 @@ namespace CinemaReservationSystem.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Create()
         {
-            ViewBag.Movies = (await _crudService.GetAllAsync<List<MovieGetVM>>("/movies")).Data.Entities;
-            ViewBag.Auditoriums = (await _crudService.GetAllAsync<List<AuditoriumGetVM>>("/auditoriums")).Data.Entities;
+            ViewBag.Movies = (await _crudService.GetAllAsync<List<MovieGetVM>>("/movies/Free"))?.Data?.Entities;
+            ViewBag.Auditoriums = (await _crudService.GetAllAsync<List<AuditoriumGetVM>>("/auditoriums/Free"))?.Data?.Entities;
 
             return View();
         }
@@ -47,8 +47,8 @@ namespace CinemaReservationSystem.MVC.Areas.Admin.Controllers
             var result = await _crudService.Create("/showtimes", vm);
             if (!result.IsSuccessful)
             {
-                ViewBag.Movies = (await _crudService.GetAllAsync<List<MovieGetVM>>("/movies")).Data.Entities;
-                ViewBag.Auditoriums = (await _crudService.GetAllAsync<List<AuditoriumGetVM>>("/auditoriums")).Data.Entities;
+                ViewBag.Movies = (await _crudService.GetAllAsync<List<MovieGetVM>>("/movies/Free"))?.Data?.Entities;
+                ViewBag.Auditoriums = (await _crudService.GetAllAsync<List<AuditoriumGetVM>>("/auditoriums/Free"))?.Data?.Entities;
 
                 ModelState.AddModelError(result.Data.PropertyName, result.Data.ErrorMessage);
                 return View();
@@ -72,8 +72,8 @@ namespace CinemaReservationSystem.MVC.Areas.Admin.Controllers
         public async Task<IActionResult> Update(int id)
         {
             var result = await _crudService.GetByIdAsync<ShowTimeUpdateVM>($"/showtimes/{id}", id);
-            ViewBag.Movies = (await _crudService.GetAllAsync<List<MovieGetVM>>("/movies")).Data.Entities;
-            ViewBag.Auditoriums = (await _crudService.GetAllAsync<List<AuditoriumGetVM>>("/auditoriums")).Data.Entities;
+            ViewBag.Movies = (await _crudService.GetAllAsync<List<MovieGetVM>>("/movies/Free"))?.Data?.Entities;
+            ViewBag.Auditoriums = (await _crudService.GetAllAsync<List<AuditoriumGetVM>>("/auditoriums/Free"))?.Data?.Entities;
 
 
             if (!result.IsSuccessful)
@@ -92,8 +92,8 @@ namespace CinemaReservationSystem.MVC.Areas.Admin.Controllers
 
             if (!result.IsSuccessful)
             {
-                ViewBag.Movies = (await _crudService.GetAllAsync<List<MovieGetVM>>("/movies")).Data.Entities;
-                ViewBag.Auditoriums = (await _crudService.GetAllAsync<List<AuditoriumGetVM>>("/auditoriums")).Data.Entities;
+                ViewBag.Movies = (await _crudService.GetAllAsync<List<MovieGetVM>>("/movies/Free"))?.Data?.Entities;
+                ViewBag.Auditoriums = (await _crudService.GetAllAsync<List<AuditoriumGetVM>>("/auditoriums/Free"))?.Data?.Entities;
                 ModelState.AddModelError(result.Data.PropertyName, result.Data.ErrorMessage);
                 return View();
             }

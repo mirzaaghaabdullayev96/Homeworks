@@ -1,0 +1,11 @@
+﻿@using CinemaReservationSystem.MVC.ViewModels
+@model List<MemberMovieGetVM>
+
+@foreach (var movie in Model)
+{
+    <div class="movie-card">
+        <a class="for-modal-to-open" data-id="@movie.Id">
+            <img src="http://localhost:5126/imagesOfMovies/@movie?.ImageUrl" class="card-img" alt="Movie Poster" />
+        </a>
+    </div>
+}

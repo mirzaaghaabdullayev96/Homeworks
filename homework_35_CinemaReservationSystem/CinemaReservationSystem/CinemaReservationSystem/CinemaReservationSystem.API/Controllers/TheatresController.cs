@@ -2,6 +2,7 @@
 using CinemaReservationSystem.Business.DTOs.TheatreDtos;
 using CinemaReservationSystem.Business.Exceptions.CommonExceptions;
 using CinemaReservationSystem.Business.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,6 +10,7 @@ namespace CinemaReservationSystem.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
     public class TheatresController : ControllerBase
     {
         private readonly ITheatreService _theatreService;

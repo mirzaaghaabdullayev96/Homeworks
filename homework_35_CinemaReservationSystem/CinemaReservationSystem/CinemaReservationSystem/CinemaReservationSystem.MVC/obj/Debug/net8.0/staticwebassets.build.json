@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "F+sLzXbi3XTpsexkwI2yI63QM6KLMZWui87kseB7WwQ=",
+  "Hash": "C/ZSDt29zweZkGSPrt2EXpIuCij5R4sq0WiFWp1L6Dw=",
   "Source": "CinemaReservationSystem.MVC",
   "BasePath": "_content/CinemaReservationSystem.MVC",
   "Mode": "Default",
@@ -490,6 +490,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\admin\\images\\auth\\register-bg.jpg"
+    },
+    {
+      "Identity": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\cinem.png",
+      "SourceId": "CinemaReservationSystem.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\",
+      "BasePath": "_content/CinemaReservationSystem.MVC",
+      "RelativePath": "admin/images/cinem.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\images\\cinem.png"
     },
     {
       "Identity": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face1.jpg",

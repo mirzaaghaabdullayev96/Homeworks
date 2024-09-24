@@ -101,6 +101,10 @@
       "PackagePath": "staticwebassets\\admin\\images\\auth\\register-bg.jpg"
     },
     {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\cinem.png",
+      "PackagePath": "staticwebassets\\admin\\images\\cinem.png"
+    },
+    {
       "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\admin\\images\\faces\\face1.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face1.jpg"
     },

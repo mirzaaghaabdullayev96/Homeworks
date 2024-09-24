@@ -281,7 +281,8 @@ namespace CinemaReservationSystem.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("MovieId");
+                    b.HasIndex("MovieId")
+                        .IsUnique();
 
                     b.ToTable("ShowTimes");
                 });
@@ -633,8 +634,8 @@ namespace CinemaReservationSystem.DAL.Migrations
             modelBuilder.Entity("CinemaReservationSystem.Core.Entities.ShowTime", b =>
                 {
                     b.HasOne("CinemaReservationSystem.Core.Entities.Movie", "Movie")
-                        .WithMany("ShowTimes")
-                        .HasForeignKey("MovieId")
+                        .WithOne("ShowTime")
+                        .HasForeignKey("CinemaReservationSystem.Core.Entities.ShowTime", "MovieId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -708,7 +709,7 @@ namespace CinemaReservationSystem.DAL.Migrations
                 {
                     b.Navigation("MovieGenres");
 
-                    b.Navigation("ShowTimes");
+                    b.Navigation("ShowTime");
                 });
 
             modelBuilder.Entity("CinemaReservationSystem.Core.Entities.Reservation", b =>

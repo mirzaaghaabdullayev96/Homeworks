@@ -4,11 +4,13 @@ using CinemaReservationSystem.API.ApiResponses;
 using CinemaReservationSystem.Business.DTOs.GenreDtos;
 using CinemaReservationSystem.Business.Exceptions.CommonExceptions;
 using CinemaReservationSystem.Business.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CinemaReservationSystem.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
     public class GenresController : ControllerBase
     {
         private readonly IGenreService _genreService;

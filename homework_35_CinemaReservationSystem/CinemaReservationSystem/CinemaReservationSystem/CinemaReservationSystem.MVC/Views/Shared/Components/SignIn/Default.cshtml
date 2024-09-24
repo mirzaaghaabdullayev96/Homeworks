@@ -1,6 +1,9 @@
-﻿@model string
+﻿@using CinemaReservationSystem.MVC.ViewComponents
+@model CheckAdmin
 
-@if(Model is null)
+
+
+@if(Model.IsAdmin is null)
 {
     <div class="d-flex align-items-center ms-auto">
         <a class="btn btn-dark" href="@Url.Action("Login", "Auth", new { area = "loginRegister" })"> Sign In </a>
@@ -9,10 +12,20 @@
 }
 
 
-@if (Model is not null)
+@if (Model.IsAdmin ==false)
 {
     <div class="d-flex align-items-center ms-auto">
-        <h4 style="color:white">@Model</h4>
+        <h4 style="color:white">@Model.FullName</h4>
+        <a class="btn btn-dark ms-5" href="@Url.Action("Logout", "Auth", new { area = "loginRegister" })"> Log Out </a>
+    </div>
+}
+
+
+@if (Model.IsAdmin == true)
+{
+    <div class="d-flex align-items-center ms-auto">
+        <h4 style="color:white">@Model.FullName</h4>
+        <a class="btn btn-dark ms-5" href="@Url.Action("Index", "Dashboard", new { area = "Admin" })"> Admin Page </a>
         <a class="btn btn-dark ms-5" href="@Url.Action("Logout", "Auth", new { area = "loginRegister" })"> Log Out </a>
     </div>
 }

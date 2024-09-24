@@ -8,6 +8,7 @@ using CinemaReservationSystem.Core.Entities;
 using CinemaReservationSystem.Business.Exceptions.LoginRegisterExceptions;
 using CinemaReservationSystem.API.ApiResponses;
 using CinemaReservationSystem.Business.DTOs.GenreDtos;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CinemaReservationSystem.API.Controllers
 {

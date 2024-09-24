@@ -1,4 +1,5 @@
 ﻿using CinemaReservationSystem.API.ApiResponses;
+using CinemaReservationSystem.Business.DTOs.AuditoriumDtos;
 using CinemaReservationSystem.Business.DTOs.MovieDtos;
 using CinemaReservationSystem.Business.Exceptions.CommonExceptions;
 using CinemaReservationSystem.Business.Services.Implementations;
@@ -11,6 +12,7 @@ namespace CinemaReservationSystem.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
     public class MoviesController : ControllerBase
     {
         private readonly IMovieService _movieService;
@@ -20,12 +22,25 @@ namespace CinemaReservationSystem.API.Controllers
             _movieService = movieService;
         }
 
-        [Authorize(Roles="Admin")]
 
         [HttpGet("")]
         public async Task<IActionResult> GetAll()
         {
-            var data = await _movieService.GetByExpression(true,null,"MovieGenres.Genre");
+            var data = await _movieService.GetByExpression(true, null, "MovieGenres.Genre");
+
+            return Ok(new ApiResponse<ICollection<MovieGetDto>>
+            {
+                StatusCode = StatusCodes.Status200OK,
+                ErrorMessage = string.Empty,
+                Entities = data
+            });
+        }
+
+
+        [HttpGet("Free")]
+        public async Task<IActionResult> GetAllFree()
+        {
+            var data = await _movieService.GetByExpression(true, x => x.ShowTime == null, "MovieGenres.Genre", "ShowTime");
 
             return Ok(new ApiResponse<ICollection<MovieGetDto>>
             {

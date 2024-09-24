@@ -5,12 +5,24 @@
       "PackagePath": "staticwebassets\\imagesOfMovies\\1a14b525-f712-49a9-9483-3c227aad4450product-11.jpg"
     },
     {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.API\\wwwroot\\imagesOfMovies\\44a7403c-4085-4ac0-afad-d8d2ebfeb704modernFamily.jpg",
+      "PackagePath": "staticwebassets\\imagesOfMovies\\44a7403c-4085-4ac0-afad-d8d2ebfeb704modernFamily.jpg"
+    },
+    {
       "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.API\\wwwroot\\imagesOfMovies\\544211fb-5341-4ef0-973b-d9058a83db3cproduct-3.jpg",
       "PackagePath": "staticwebassets\\imagesOfMovies\\544211fb-5341-4ef0-973b-d9058a83db3cproduct-3.jpg"
     },
     {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.API\\wwwroot\\imagesOfMovies\\70fde389-32ce-4983-b18d-d30e1253aa2bBitten.jpg",
+      "PackagePath": "staticwebassets\\imagesOfMovies\\70fde389-32ce-4983-b18d-d30e1253aa2bBitten.jpg"
+    },
+    {
       "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.API\\wwwroot\\imagesOfMovies\\8211cbf6-64e3-4f77-a79b-84b5e789e29bproduct-12.jpg",
       "PackagePath": "staticwebassets\\imagesOfMovies\\8211cbf6-64e3-4f77-a79b-84b5e789e29bproduct-12.jpg"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.API\\wwwroot\\imagesOfMovies\\d5d55559-3bb6-4202-ab85-b0731aae2427Arrow.jpg",
+      "PackagePath": "staticwebassets\\imagesOfMovies\\d5d55559-3bb6-4202-ab85-b0731aae2427Arrow.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CinemaReservationSystem.API.Microsoft.AspNetCore.StaticWebAssets.props",

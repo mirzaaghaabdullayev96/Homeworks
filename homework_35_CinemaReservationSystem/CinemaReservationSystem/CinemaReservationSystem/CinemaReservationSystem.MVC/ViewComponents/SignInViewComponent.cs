@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace CinemaReservationSystem.MVC.ViewComponents
 {
@@ -7,19 +8,44 @@ namespace CinemaReservationSystem.MVC.ViewComponents
     {
         public async Task<IViewComponentResult> InvokeAsync()
         {
+            CheckAdmin checkAdmin = new();
             var token = HttpContext.Request.Cookies["token"];
-            string fullName = null;
+
+            if (token is null)
+            {
+                checkAdmin.IsAdmin = null;
+            }
+
 
             if (token != null)
             {
 
                 var handler = new JwtSecurityTokenHandler();
                 var jwtToken = handler.ReadJwtToken(token);
+                checkAdmin.FullName = jwtToken.Claims.FirstOrDefault(c => c.Type == "Fullname")?.Value;
+                bool isAdmin = jwtToken.Claims
+                         .Where(c => c.Type == ClaimTypes.Role)
+                         .Any(c => c.Value == "Admin");
 
-                fullName = jwtToken.Claims.FirstOrDefault(c => c.Type == "Fullname")?.Value;
+                if (isAdmin)
+                {
+                    checkAdmin.IsAdmin = true;
+                }
+                else
+                {
+                    checkAdmin.IsAdmin= false;
+                }
+
+
             }
 
-            return View((object)fullName);
+            return View(checkAdmin);
         }
+    }
+
+    public class CheckAdmin
+    {
+        public bool? IsAdmin { get; set; }
+        public string FullName { get; set; }
     }
 }

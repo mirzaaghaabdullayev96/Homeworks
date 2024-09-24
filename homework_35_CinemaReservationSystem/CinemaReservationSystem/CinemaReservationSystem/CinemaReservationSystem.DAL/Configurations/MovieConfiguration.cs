@@ -12,10 +12,11 @@ public class MovieConfiguration : IEntityTypeConfiguration<Movie>
         builder.Property(x => x.Description).IsRequired(false).HasMaxLength(800);
         builder.Property(x => x.Duration).IsRequired(true);
 
-        builder.HasMany(m => m.ShowTimes)
-               .WithOne(st => st.Movie)
-               .HasForeignKey(st => st.MovieId)
-               .OnDelete(DeleteBehavior.Cascade);
+        builder.HasOne(x => x.ShowTime)
+            .WithOne(x => x.Movie)
+            .HasForeignKey<ShowTime>(s => s.MovieId)
+            .IsRequired(true);
+
 
         builder.HasMany(m => m.MovieGenres)
              .WithOne(mg => mg.Movie)

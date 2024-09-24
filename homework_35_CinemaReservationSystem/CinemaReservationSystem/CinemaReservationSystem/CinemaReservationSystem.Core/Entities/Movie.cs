@@ -18,8 +18,9 @@ namespace CinemaReservationSystem.Core.Entities
 
         //relational
         public ICollection<MovieGenre> MovieGenres { get; set; }
-        public ICollection<ShowTime> ShowTimes { get; set; }
 
+        //public ICollection<ShowTime> ShowTimes { get; set; }
+        public ShowTime? ShowTime { get; set; }
 
     }
 }

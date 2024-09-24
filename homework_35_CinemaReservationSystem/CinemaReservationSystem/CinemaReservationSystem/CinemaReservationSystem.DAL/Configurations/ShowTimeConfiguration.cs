@@ -20,10 +20,6 @@ namespace CinemaReservationSystem.DAL.Configurations
                    .IsRequired();
 
 
-            builder.HasOne(st => st.Movie)
-                   .WithMany(m => m.ShowTimes)
-                   .HasForeignKey(st => st.MovieId)
-                   .OnDelete(DeleteBehavior.Cascade);
 
 
             builder.HasMany(st => st.Auditoriums)

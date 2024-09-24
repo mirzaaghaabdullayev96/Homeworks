@@ -2,6 +2,7 @@
 using CinemaReservationSystem.Business.DTOs.ShowTimeDtos;
 using CinemaReservationSystem.Business.Exceptions.CommonExceptions;
 using CinemaReservationSystem.Business.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,6 +10,7 @@ namespace CinemaReservationSystem.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
     public class ShowTimesController : ControllerBase
     {
         private readonly IShowTimeService _showtimeService;
@@ -20,7 +22,7 @@ namespace CinemaReservationSystem.API.Controllers
         [HttpGet("")]
         public async Task<IActionResult> GetAll()
         {
-            var data = await _showtimeService.GetByExpression(true,null,"Movie");
+            var data = await _showtimeService.GetByExpression(true, null, "Movie");
 
             return Ok(new ApiResponse<ICollection<ShowTimeGetDto>>
             {
@@ -30,13 +32,15 @@ namespace CinemaReservationSystem.API.Controllers
             });
         }
 
+
+
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById([FromRoute] int id)
         {
             ShowTimeGetDto? dto = null;
             try
             {
-                dto = await _showtimeService.GetSingleByExpression(true,x=>x.Id==id,"Movie");
+                dto = await _showtimeService.GetSingleByExpression(true, x => x.Id == id, "Movie");
             }
             catch (IdIsNotValidException ex)
             {

@@ -1,5 +1,9 @@
+using CinemaReservationSystem.DAL.Contexts;
 using CinemaReservationSystem.MVC.Services;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using System.Data;
 
 namespace CinemaReservationSystem.MVC
 {
@@ -14,7 +18,20 @@ namespace CinemaReservationSystem.MVC
             builder.Services.AddRegisterService();
             builder.Services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
+            builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
+            builder.Services.AddTransient<IDbConnection>(sp =>
+                new SqlConnection(builder.Configuration.GetConnectionString("Default")));
+
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", builder =>
+                {
+                    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                });
+            });
+
             var app = builder.Build();
+            app.UseCors("AllowAll");
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())

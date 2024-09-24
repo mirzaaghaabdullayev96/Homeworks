@@ -14,13 +14,10 @@ namespace CinemaReservationSystem.DAL.Configurations
         public void Configure(EntityTypeBuilder<Auditorium> builder)
         {
             builder.Property(a => a.Name)
-             .IsRequired() 
+             .IsRequired()
              .HasMaxLength(100);
 
 
-            builder.Property(a => a.TotalSeats);
-
-            builder.HasCheckConstraint("CK_Auditorium_TotalSeats", "TotalSeats <= 40");
 
             builder.HasOne(a => a.Theatre)
                    .WithMany(t => t.Auditoriums)
@@ -33,10 +30,11 @@ namespace CinemaReservationSystem.DAL.Configurations
                    .HasForeignKey(a => a.AuditoriumId)
                    .OnDelete(DeleteBehavior.Cascade);
 
-            builder.HasOne(a => a.ShowTime)
-                   .WithMany(st => st.Auditoriums)
-                   .HasForeignKey(a => a.ShowTimeId)
-                   .OnDelete(DeleteBehavior.SetNull); 
+            builder.HasOne(x => x.ShowTime)
+            .WithOne(x => x.Auditorium)
+            .HasForeignKey<ShowTime>(s => s.AuditoriumId)
+            .IsRequired(true)
+            .OnDelete(DeleteBehavior.NoAction);
 
         }
     }

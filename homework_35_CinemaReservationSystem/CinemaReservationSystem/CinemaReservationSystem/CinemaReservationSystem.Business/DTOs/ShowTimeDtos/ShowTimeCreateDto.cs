@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CinemaReservationSystem.Business.DTOs.ShowTimeDtos
 {
-    public record ShowTimeCreateDto(DateTime StartTime, DateTime EndTime, int MovieId, ICollection<int> AuditoriumIds);
+    public record ShowTimeCreateDto(DateTime StartTime, DateTime EndTime, int MovieId, int AuditoriumId);
 
     public class ShowTimeCreateDtoValidator : AbstractValidator<ShowTimeCreateDto>
     {
@@ -17,7 +17,6 @@ namespace CinemaReservationSystem.Business.DTOs.ShowTimeDtos
             RuleFor(x => x.StartTime).NotNull().NotEmpty();
             RuleFor(x => x.EndTime).NotNull().NotEmpty();
             RuleFor(x => x.MovieId).NotNull().NotEmpty();
-            RuleFor(x => x.AuditoriumIds).NotNull().NotEmpty();
         }
     }
 

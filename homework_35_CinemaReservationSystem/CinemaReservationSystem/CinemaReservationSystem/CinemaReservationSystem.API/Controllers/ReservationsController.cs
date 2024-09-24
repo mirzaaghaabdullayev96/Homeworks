@@ -10,7 +10,7 @@ namespace CinemaReservationSystem.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Admin")]
+    
     public class ReservationsController : ControllerBase
     {
 

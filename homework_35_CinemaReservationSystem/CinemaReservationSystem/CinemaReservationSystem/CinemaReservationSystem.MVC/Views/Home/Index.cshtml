@@ -32,8 +32,8 @@
         </div>
 
         @* load more *@
-       @*  <div class="text-center mt-4">
-            <button id="load-more" class="btn btn-warning mb-5 fw-bold py-2 px-4">Load more</button>
+        @*  <div class="text-center mt-4">
+        <button id="load-more" class="btn btn-warning mb-5 fw-bold py-2 px-4">Load more</button>
         </div> *@
 
         @* modal *@
@@ -46,9 +46,15 @@
                     </div>
                     <div class="modal-body d-flex">
                         <img id="modalImage" src="" alt="Movie Poster" class="img-fluid modal-img">
-                        <p id="modalSummary" class="px-4"></p>
+                        <div>
+                            <p id="modalSummary" class="px-4">Description</p>
+                            <p id="modalDuration" class="px-4">Duration</p>
+                            <p id="modalRating" class="px-4">Rating</p>
+                            <p id="modalReleaseDate" class="px-4">Release Date</p>
+                        </div>
                     </div>
                     <div class="modal-footer">
+                        <a type="button" class="btn btn-warning fw-bold" id="buy-ticket">Buy Ticket</a>
                         <button type="button" class="btn btn-warning fw-bold" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>

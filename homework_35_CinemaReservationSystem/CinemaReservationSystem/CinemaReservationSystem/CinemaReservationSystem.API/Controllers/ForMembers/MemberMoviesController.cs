@@ -22,7 +22,7 @@ namespace CinemaReservationSystem.API.Controllers.ForMembers
         [HttpGet("")]
         public async Task<IActionResult> GetAll()
         {
-            var datas = _movieRepository.Table.Include(x => x.MovieGenres).ThenInclude(x => x.Genre).Include(x => x.ShowTime).ThenInclude(x => x.Auditoriums).Where(x => x.ShowTime != null);
+            var datas = _movieRepository.Table.Include(x => x.MovieGenres).ThenInclude(x => x.Genre).Include(x => x.ShowTime).ThenInclude(x => x.Auditorium).Where(x => x.ShowTime != null);
 
             var data = datas.Select(x => new MovieMemberGetDto(
                  x.Id,
@@ -33,7 +33,7 @@ namespace CinemaReservationSystem.API.Controllers.ForMembers
                  x.Rating,
                  x.ReleaseDate,
                  x.ImageURL,
-                 x.ShowTime.Auditoriums.Select(a => a.Name).ToList())).ToList();
+                 x.ShowTime.Auditorium.Name)).ToList();
 
 
             return Ok(new ApiResponse<ICollection<MovieMemberGetDto>>

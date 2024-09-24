@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "C/ZSDt29zweZkGSPrt2EXpIuCij5R4sq0WiFWp1L6Dw=",
+  "Hash": "cVYZeq1O3cr+gn5VzDNvi7jbKFuYBRofweo5UmhSr5w=",
   "Source": "CinemaReservationSystem.MVC",
   "BasePath": "_content/CinemaReservationSystem.MVC",
   "Mode": "Default",
@@ -6836,6 +6836,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\loginRegister\\assets\\scss\\style.scss"
+    },
+    {
+      "Identity": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\reservation\\script.js",
+      "SourceId": "CinemaReservationSystem.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\",
+      "BasePath": "_content/CinemaReservationSystem.MVC",
+      "RelativePath": "reservation/script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reservation\\script.js"
+    },
+    {
+      "Identity": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\reservation\\style.css",
+      "SourceId": "CinemaReservationSystem.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\",
+      "BasePath": "_content/CinemaReservationSystem.MVC",
+      "RelativePath": "reservation/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reservation\\style.css"
     }
   ]
 }

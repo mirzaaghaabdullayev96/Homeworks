@@ -25,4 +25,8 @@
     <ProjectReference Include="..\CinemaReservationSystem.Business\CinemaReservationSystem.Business.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\TicketReservation\Data\" />
+  </ItemGroup>
+
 </Project>

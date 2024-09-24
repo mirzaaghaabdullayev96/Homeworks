@@ -1437,6 +1437,14 @@
       "PackagePath": "staticwebassets\\loginRegister\\assets\\scss\\style.scss"
     },
     {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\reservation\\script.js",
+      "PackagePath": "staticwebassets\\reservation\\script.js"
+    },
+    {
+      "Id": "D:\\c#\\CodeAcademy\\homework_35_CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem\\CinemaReservationSystem.MVC\\wwwroot\\reservation\\style.css",
+      "PackagePath": "staticwebassets\\reservation\\style.css"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CinemaReservationSystem.MVC.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

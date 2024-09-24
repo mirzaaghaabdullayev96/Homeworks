@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CinemaReservationSystem.Business.DTOs.ShowTimeDtos
 {
-    public record ShowTimeUpdateDto(DateTime StartTime, DateTime EndTime, int MovieId);
+    public record ShowTimeUpdateDto(DateTime StartTime, DateTime EndTime);
 
     public class ShowTimeUpdateDtoValidator : AbstractValidator<ShowTimeUpdateDto>
     {
@@ -15,7 +15,6 @@ namespace CinemaReservationSystem.Business.DTOs.ShowTimeDtos
         {
             RuleFor(x => x.StartTime).NotNull().NotEmpty();
             RuleFor(x => x.EndTime).NotNull().NotEmpty();
-            RuleFor(x => x.MovieId).NotNull().NotEmpty();
         }
     }
 

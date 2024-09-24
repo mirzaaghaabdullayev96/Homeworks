@@ -31,15 +31,14 @@ namespace CinemaReservationSystem.Business.Services.Implementations
         public async Task CreateAsync(AuditoriumCreateDto dto)
         {
             if (await _auditoriumRepository.Table.AnyAsync(x => x.Name.Trim().ToLower() == dto.Name.Trim().ToLower())) throw new AlreadyExistsException(StatusCodes.Status400BadRequest, "Name", "Auditorium already exists");
-            if (dto.TotalSeats > 25 || dto.TotalSeats < 10) throw new SeatsTotalNumberException(StatusCodes.Status400BadRequest, "TotalSeats", "Total seats must be between 10 and 25");
             if (!await _theatreRepository.Table.AnyAsync(x => x.Id == dto.TheatreId)) throw new EntityNotFoundException(StatusCodes.Status404NotFound, "TheatreId", "Theatre by this Id not found");
 
             Auditorium data = new()
             {
                 Name = dto.Name,
                 TheatreId = dto.TheatreId,
-                TotalSeats = dto.TotalSeats,
-                Seats = _seatService.CreateSeats(dto.TotalSeats)
+                TotalSeats = 20,
+                Seats = _seatService.CreateSeats(20)
             };
             await _auditoriumRepository.CreateAsync(data);
             await _auditoriumRepository.CommitAsync();
@@ -88,12 +87,10 @@ namespace CinemaReservationSystem.Business.Services.Implementations
         public async Task UpdateAsync(int id, AuditoriumUpdateDto dto)
         {
             if (id < 1) throw new IdIsNotValidException(StatusCodes.Status400BadRequest,"", "Id must be higher than 1");
-            if (dto.TotalSeats > 25 || dto.TotalSeats < 10) throw new SeatsTotalNumberException(StatusCodes.Status400BadRequest, "TotalSeats", "Total seats must be between 10 and 25");
             if (await _auditoriumRepository.Table.AnyAsync(x => x.Name.Trim().ToLower() == dto.Name.Trim().ToLower() && x.Id != id)) throw new AlreadyExistsException(StatusCodes.Status400BadRequest, "Name", "Auditorium already exists");
             var data = await _auditoriumRepository.GetByIdAsync(id) ?? throw new EntityNotFoundException(StatusCodes.Status404NotFound,"", "Auditorium not found");
 
             data.Name = dto.Name;
-            data.TotalSeats = dto.TotalSeats;
             data.TheatreId = dto.TheatreId;
 
             await _auditoriumRepository.CommitAsync();

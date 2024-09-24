@@ -47,9 +47,6 @@ namespace CinemaReservationSystem.DAL.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int?>("ShowTimeId")
-                        .HasColumnType("int");
-
                     b.Property<int>("TheatreId")
                         .HasColumnType("int");
 
@@ -58,14 +55,9 @@ namespace CinemaReservationSystem.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ShowTimeId");
-
                     b.HasIndex("TheatreId");
 
-                    b.ToTable("Auditoriums", t =>
-                        {
-                            t.HasCheckConstraint("CK_Auditorium_TotalSeats", "TotalSeats <= 40");
-                        });
+                    b.ToTable("Auditoriums");
                 });
 
             modelBuilder.Entity("CinemaReservationSystem.Core.Entities.Genre", b =>
@@ -261,6 +253,9 @@ namespace CinemaReservationSystem.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("AuditoriumId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
@@ -280,6 +275,9 @@ namespace CinemaReservationSystem.DAL.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AuditoriumId")
+                        .IsUnique();
 
                     b.HasIndex("MovieId")
                         .IsUnique();
@@ -539,18 +537,11 @@ namespace CinemaReservationSystem.DAL.Migrations
 
             modelBuilder.Entity("CinemaReservationSystem.Core.Entities.Auditorium", b =>
                 {
-                    b.HasOne("CinemaReservationSystem.Core.Entities.ShowTime", "ShowTime")
-                        .WithMany("Auditoriums")
-                        .HasForeignKey("ShowTimeId")
-                        .OnDelete(DeleteBehavior.SetNull);
-
                     b.HasOne("CinemaReservationSystem.Core.Entities.Theatre", "Theatre")
                         .WithMany("Auditoriums")
                         .HasForeignKey("TheatreId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("ShowTime");
 
                     b.Navigation("Theatre");
                 });
@@ -633,11 +624,19 @@ namespace CinemaReservationSystem.DAL.Migrations
 
             modelBuilder.Entity("CinemaReservationSystem.Core.Entities.ShowTime", b =>
                 {
+                    b.HasOne("CinemaReservationSystem.Core.Entities.Auditorium", "Auditorium")
+                        .WithOne("ShowTime")
+                        .HasForeignKey("CinemaReservationSystem.Core.Entities.ShowTime", "AuditoriumId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
                     b.HasOne("CinemaReservationSystem.Core.Entities.Movie", "Movie")
                         .WithOne("ShowTime")
                         .HasForeignKey("CinemaReservationSystem.Core.Entities.ShowTime", "MovieId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Auditorium");
 
                     b.Navigation("Movie");
                 });
@@ -698,6 +697,9 @@ namespace CinemaReservationSystem.DAL.Migrations
                     b.Navigation("Reservations");
 
                     b.Navigation("Seats");
+
+                    b.Navigation("ShowTime")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("CinemaReservationSystem.Core.Entities.Genre", b =>
@@ -724,8 +726,6 @@ namespace CinemaReservationSystem.DAL.Migrations
 
             modelBuilder.Entity("CinemaReservationSystem.Core.Entities.ShowTime", b =>
                 {
-                    b.Navigation("Auditoriums");
-
                     b.Navigation("Reservations");
                 });
 

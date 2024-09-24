@@ -10,16 +10,15 @@ namespace CinemaReservationSystem.Core.Entities
     {
         public string Name { get; set; }
         public int TotalSeats { get; set; }
-        public bool IsShowingMovie {  get; set; }
+        public bool IsShowingMovie { get; set; }
 
         //relational
 
         public int TheatreId { get; set; }
-        public int? ShowTimeId { get; set; }
         public Theatre Theatre { get; set; }
         public ShowTime ShowTime { get; set; }
 
         public ICollection<Seat> Seats { get; set; }
-        public ICollection<Reservation> Reservations{ get; set; }
+        public ICollection<Reservation> Reservations { get; set; }
     }
 }

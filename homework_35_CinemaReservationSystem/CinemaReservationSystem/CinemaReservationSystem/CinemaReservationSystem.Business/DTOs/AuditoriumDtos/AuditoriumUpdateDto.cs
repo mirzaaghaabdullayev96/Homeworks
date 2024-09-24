@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CinemaReservationSystem.Business.DTOs.AuditoriumDtos
 {
-    public record AuditoriumUpdateDto(int TotalSeats, int TheatreId, string Name);
+    public record AuditoriumUpdateDto(int TheatreId, string Name);
 
     public class AuditoriumUpdateDtoValidator : AbstractValidator<AuditoriumUpdateDto>
     {

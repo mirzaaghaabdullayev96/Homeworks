@@ -78,6 +78,24 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById(
                 "modalGenres"
             ).textContent = `Genres: ${movie.genres.join(", ")}`;
+
+
+
+            const totalMinutes = movie.duration;
+            const hours = Math.floor(totalMinutes / 60);
+            const minutes = totalMinutes % 60;
+
+            document.getElementById("modalDuration").textContent = `Duration: ${hours}h ${minutes}m`;
+
+            const buttonBuyTicket = document.getElementById("buy-ticket")
+            buttonBuyTicket.setAttribute("href", `http://localhost:7228/ticketreservation/reservation/buy/${movie.id}`);
+
+            document.getElementById("modalRating").textContent = `Rating: ${movie.rating}`;
+
+            const releaseDate = new Date(movie.releaseDate);
+            const formattedDate = releaseDate.toISOString().split('T')[0];
+
+            document.getElementById("modalReleaseDate").textContent = `Release date: ${formattedDate}`;
             movieModal.show();
         });
     });

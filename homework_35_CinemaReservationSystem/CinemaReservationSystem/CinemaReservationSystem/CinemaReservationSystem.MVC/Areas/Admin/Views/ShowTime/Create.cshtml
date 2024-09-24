@@ -32,11 +32,11 @@
 
                         
                             <div class="form-group">
-                                <label asp-for="AuditoriumIds">Auditoriums</label>
-                                <select class="form-control" asp-for="AuditoriumIds" asp-items="new SelectList(auditoriums,nameof(AuditoriumGetVM.Id), nameof(AuditoriumGetVM.Name))">
+                                <label asp-for="AuditoriumId">Auditoriums</label>
+                                <select class="form-control" asp-for="AuditoriumId" asp-items="new SelectList(auditoriums,nameof(AuditoriumGetVM.Id), nameof(AuditoriumGetVM.Name))">
                                     <option disabled selected>Choose Auditoriums</option>
                                 </select>
-                                <span class="text-danger" asp-validation-for="AuditoriumIds"></span>
+                                <span class="text-danger" asp-validation-for="AuditoriumId"></span>
                             </div>
 
 

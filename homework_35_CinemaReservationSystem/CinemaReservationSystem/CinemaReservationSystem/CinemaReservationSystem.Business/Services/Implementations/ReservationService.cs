@@ -27,12 +27,22 @@ namespace CinemaReservationSystem.Business.Services.Implementations
 
         public async Task CreateAsync(ReservationCreateDto dto)
         {
-            var seats = _seatRepository.Table.Where(x => x.AuditoriumId == dto.AuditoriumId && dto.SeatsNumbers.Contains(x.SeatNumber)).ToList();
+            List<Seat> seats = [];
+            //var seats = _seatRepository.Table.Where(x => x.AuditoriumId == dto.AuditoriumId && dto.SeatsNumbers.Contains(x.SeatNumber)).ToList();
+
+            var allSeats = _seatRepository.Table.Where(x=>x.AuditoriumId==dto.AuditoriumId).ToList();
+            foreach (var seat in allSeats)
+            {
+                if (dto.SeatsNumbers.Any(x=>x.Trim()==seat.SeatNumber))
+                {
+                    seats.Add(seat);
+                }
+            }
 
             Reservation data = new()
             {
                 AppUserId = dto.AppUserId,
-                ReservationDate = dto.ReservationDate,
+                ReservationDate = DateTime.Now,
                 ShowTimeId = dto.ShowTimeId,
                 SeatReservations = seats.Select(s => new SeatReservation() { SeatId = s.Id }).ToList(),
                 AuditoriumId = dto.AuditoriumId
